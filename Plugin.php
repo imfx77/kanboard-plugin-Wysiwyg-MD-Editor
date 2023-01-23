@@ -32,7 +32,7 @@ class Plugin extends Base
         //  - Example for menu item in kanboard settings page: $this->template->hook->attach('template:config:sidebar', 'pluginNameExampleCamelCase:config/sidebar');
 
         // Extra Page - Routes
-        //  - Example: $this->route->addRoute('/my/custom/route', 'myController', 'show', 'PluginNameExampleStudlyCaps');
+        //  - Example: $this->route->addRoute('/my/custom/route', 'MyController', 'show', 'PluginNameExampleStudlyCaps');
         //  - Must have the corresponding action in the matching controller
         $this->route->addRoute('/ / ', ' ', ' ', 'PluginNameExampleStudlyCaps');
 
