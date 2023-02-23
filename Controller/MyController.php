@@ -8,7 +8,7 @@ use Kanboard\Core\Plugin\Directory;
 /**
  * Plugin PluginNameExampleStudlyCaps
  * Class myController
- * @author aljawaid
+ * @author 
  */
 
 class MyController extends \Kanboard\Controller\PluginController
