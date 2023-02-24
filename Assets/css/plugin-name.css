@@ -45,6 +45,9 @@
 
 /*a:hover { color: var(--pp-red-alt-2) !important; }*/
 
+/* IF USING SVGs INSIDE ANCHOR LINKS */
+/*svg { pointer-events: none }*/
+
 .display-none, .d-none { display: none !important; }
 
 .font-weight-bold { font-weight: bold; }
