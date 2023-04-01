@@ -1,6 +1,6 @@
 # `Plugin Name`
 
-#### _Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")_
+#### _Plugin for [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software")_
 
 `Brief intro`
 
@@ -29,7 +29,7 @@ Go to `Settings` &#10562;
 Compatibility
 -------------
 
-- Requires [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
+- Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
 
 #### Other Plugins & Action Plugins
 - _No known issues_
@@ -47,7 +47,7 @@ Read the full [**Changelog**](../master/changelog.md "See changes")
 Installation
 ------------
 
-- **Install via the [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software") Plugin Directory**
+- **Install via the [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") Plugin Directory**
   - _Go to:_
     - Kanboard: `Plugins` &#10562; `Plugin Directory`
   - _or with [PluginManager](https://github.com/aljawaid/PluginManager) installed:_
