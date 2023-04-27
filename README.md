@@ -7,7 +7,6 @@
 
 Features
 -------------
-
 - `main features list`
 - `main features list`
 
@@ -22,13 +21,11 @@ Screenshots
 
 Usage
 -------------
-
 Go to `Settings` &#10562;
 
 
 Compatibility
 -------------
-
 - Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
 
 #### Other Plugins & Action Plugins
@@ -40,24 +37,21 @@ Compatibility
 
 Changelog
 ---------
-
 Read the full [**Changelog**](../master/changelog.md "See changes")
  
 
 Installation
 ------------
-
 - Install via the **[Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") Plugin Directory** or see [INSTALL.md](../master/INSTALL.md)
 
 
 Translations
 ------------
-
 - _Starter template available_
+
 
 Authors & Contributors
 ----------------------
-
 - [@](https://github.com/url) - Author
 - _Contributors welcome_
 
