@@ -53,7 +53,6 @@ Installation
 Translations
 ------------
 
-- _Contributors welcome_
 - _Starter template available_
 
 Authors & Contributors
