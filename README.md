@@ -54,7 +54,7 @@ Go to `Settings` &#10562;
   - _No known issues_
 - **Core Files & Templates**
   - `01` Template override
-    - _No database changes_
+  - _No database changes_
 
 </details>
 <details>
