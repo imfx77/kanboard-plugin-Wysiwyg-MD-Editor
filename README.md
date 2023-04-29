@@ -4,8 +4,21 @@ ADJUST THIS PAGE TO YOUR REQUIREMENTS. REMEMBER TO DELETE THIS SECTION.
 -->
 ```
 <h1 name="readme-top">`Plugin Name`</h1>
-
-![GitHub All Releases](https://img.shields.io/github/downloads/user_name/repo_name/total?style=for-the-badge "GitHub All Downloads") - **_A plugin for [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software")_**
+<p align="center">
+    <img src="https://img.shields.io/github/v/release/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=brightgreen" alt="GitHub Latest Release (by date)" title="GitHub Latest Release (by date)">
+    <img src="https://img.shields.io/github/downloads/aljawaid/KanboardSkeletonPlugin/total?style=for-the-badge&color=orange" alt="GitHub All Releases" title="GitHub All Downloads">
+    <img src="https://img.shields.io/github/directory-file-count/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=orange" alt="GitHub Repository File Count" title="GitHub Repository File Count">
+    <img src="https://img.shields.io/github/repo-size/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=orange" alt="GitHub Repository Size" title="GitHub Repository Size">
+    <img src="https://img.shields.io/github/languages/code-size/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=orange" alt="GitHub Code Size" title="GitHub Code Size">
+</p>
+<p align="center">
+    <img src="https://img.shields.io/github/discussions/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=blue" alt="GitHub Discussions" title="GitHub Discussions">
+    <img src="https://img.shields.io/github/commits-since/aljawaid/KanboardSkeletonPlugin/latest?include_prereleases&style=for-the-badge&color=blue" alt="GitHub Commits Since Last Release" title="GitHub Commits Since Last Release">
+    <img src="https://img.shields.io/github/commit-activity/m/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=blue" alt="GitHub Commit Monthly Activity" title="GitHub Commit Monthly Activity">
+</p>
+<p align="center">
+    <strong align="left"><i>A plugin for <a href="https://github.com/kanboard/kanboard" title="Kanban Project Management Software">Kanboard</a></i></strong>
+</p>
 
 ```html
 <!--
