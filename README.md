@@ -1,10 +1,10 @@
-<a name="readme-top"></a>
 ```html
 <!--
 ADJUST THIS PAGE TO YOUR REQUIREMENTS. REMEMBER TO DELETE THIS SECTION.
 -->
 ```
-# `Plugin Name`
+<h1 name="readme-top">`Plugin Name`</h1>
+
 ![GitHub All Releases](https://img.shields.io/github/downloads/user_name/repo_name/total?style=for-the-badge "GitHub All Downloads") - **_A plugin for [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software")_**
 
 ```html
