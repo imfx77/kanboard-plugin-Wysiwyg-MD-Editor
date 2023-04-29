@@ -1,3 +1,4 @@
+<a name="readme-top"></a>
 ```html
 <!--
 ADJUST THIS PAGE TO YOUR REQUIREMENTS. REMEMBER TO DELETE THIS SECTION.
@@ -19,6 +20,7 @@ Brief intro
 - `main features list`
 - `main features list`
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Screenshots
 
@@ -26,6 +28,8 @@ Brief intro
 
 ![Screenshot Name](../master/Screenshots/screenshot-name.png "Read Screenshot Name")
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
 
@@ -35,7 +39,8 @@ REMOVE BLOCK
 Go to `Settings` &#10562;
 -->
 ```
- 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p> 
 
 ## Installation & Compatibility
 
@@ -64,11 +69,14 @@ Go to `Settings` &#10562;
 
 </details>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Authors & Contributors
 
 - [@](https://github.com/url) - Author
 - _Contributors welcome_
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
