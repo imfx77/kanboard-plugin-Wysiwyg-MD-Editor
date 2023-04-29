@@ -83,3 +83,4 @@ Go to `Settings` &#10562;
 - This project is distributed under the [MIT License](../master/LICENSE "Read The MIT license")
 
 <a name="readme-bottom"></a>
+<p align="right">[<a href="#readme-top">&#8593; Top</a>]</p>
