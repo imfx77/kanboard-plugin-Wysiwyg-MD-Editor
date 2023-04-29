@@ -16,10 +16,9 @@ TO KEEP THE README BADGES FUNCTIONAL, REPLACE THE USERNAME AND REPO NAME ACCORDI
     <img src="https://img.shields.io/github/discussions/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=blue" alt="GitHub Discussions" title="GitHub Discussions">
     <img src="https://img.shields.io/github/commits-since/aljawaid/KanboardSkeletonPlugin/latest?include_prereleases&style=for-the-badge&color=blue" alt="GitHub Commits Since Last Release" title="GitHub Commits Since Last Release">
     <img src="https://img.shields.io/github/commit-activity/m/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=blue" alt="GitHub Commit Monthly Activity" title="GitHub Commit Monthly Activity">
+    <a href="https://github.com/kanboard/kanboard" title="Kanban Project Management Software"><img src="https://img.shields.io/badge/A%20plugin%20for-kanboard-D40000?style=for-the-badge" alt="Kanboard"></a>
 </p>
-<p align="center">
-    <strong align="left"><i>A plugin for <a href="https://github.com/kanboard/kanboard" title="Kanban Project Management Software">Kanboard</a></i></strong>
-</p>
+
 
 ```html
 <!--
