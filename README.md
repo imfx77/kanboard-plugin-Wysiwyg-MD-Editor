@@ -4,7 +4,7 @@ ADJUST THIS PAGE TO YOUR REQUIREMENTS. REMEMBER TO DELETE THIS SECTION.
 TO KEEP THE README BADGES FUNCTIONAL, REPLACE THE USERNAME AND REPO NAME ACCORDINGLY
 -->
 ```
-<h1 name="readme-top">`Plugin Name`</h1>
+<h1 name="user-content-readme-top">`Plugin Name`</h1>
 <p align="center">
     <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/releases">
         <img src="https://img.shields.io/github/v/release/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=brightgreen" alt="GitHub Latest Release (by date)" title="GitHub Latest Release (by date)">
@@ -44,14 +44,14 @@ REMOVE BLOCK
 Brief intro
 -->
 ```
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
 - `main features list`
 - `main features list`
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Screenshots
 
@@ -60,7 +60,7 @@ Brief intro
 ![Screenshot Name](../master/Screenshots/screenshot-name.png "Read Screenshot Name")
 
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Usage
 
@@ -71,7 +71,7 @@ Go to `Settings` &#10562;
 -->
 ```
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Installation & Compatibility
 
@@ -100,14 +100,14 @@ Go to `Settings` &#10562;
 
 </details>
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#usage">&#8592; Previous</a>] [<a href="#license">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#usage">&#8592; Previous</a>] [<a href="#license">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Authors & Contributors
 
 - [@](https://github.com/url) - Author
 - _Contributors welcome_
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## License
 
@@ -115,7 +115,7 @@ Go to `Settings` &#10562;
 
 ---
 
-<h3 align="center">
+<p align="center">
     <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/stargazers" title="View Stargazers">
         <img src="https://img.shields.io/github/stars/aljawaid/KanboardSkeletonPlugin?logo=github&style=flat-square" alt="KanboardSkeletonPlugin">
     </a>
@@ -137,6 +137,6 @@ Go to `Settings` &#10562;
     <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/compare/" title="Latest Commits">
         <img alt="GitHub commits since latest release (by date)" src="https://img.shields.io/github/commits-since/aljawaid/KanboardSkeletonPlugin/latest?style=flat-square">
     </a>
-</h3>
-<p align="right">[<a href="#readme-top">&#8593; Top</a>]</p>
-<a name="readme-bottom"></a>
+</p>
+<p align="right">[<a href="#user-content-readme-top">&#8593; Top</a>]</p>
+<a name="user-content-readme-bottom"></a>
