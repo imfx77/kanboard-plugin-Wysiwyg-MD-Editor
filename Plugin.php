@@ -70,8 +70,8 @@ class Plugin extends Base
 
     public function getCompatibleVersion()
     {
-        return '>=1.2.20';
         // Examples: '>=1.0.37' '<1.0.37' '<=1.0.37'
+        return '>=1.2.32';
     }
 
     public function getPluginHomepage()
