@@ -7,8 +7,9 @@ use Kanboard\Core\Plugin\Directory;
 
 /**
  * Plugin PluginNameExampleStudlyCaps
- * Class myController
  *
+ * Class MyController
+ * @package  Kanboard\Controller
  * @author
  */
 
@@ -28,7 +29,7 @@ class MyController extends \Kanboard\Controller\PluginController
     public function show()
     {
         $this->response->html($this->helper->layout->config('pluginNameExampleCamelCase:folder/filename', array(
-            'title' => t('PluginNameExampleStudlyCaps') . ' &#10562; ' . t('Settings'),
+            'title' => e('Settings %s PluginNameExampleStudlyCaps', ' &#10562; '),
         )));
     }
 }
