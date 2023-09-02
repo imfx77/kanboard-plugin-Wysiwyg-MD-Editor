@@ -4,7 +4,7 @@ namespace Kanboard\Plugin\PluginNameExampleStudlyCaps;
 
 use Kanboard\Core\Plugin\Base;
 use Kanboard\Core\Translator;
-// use Kanboard\Plugin\PluginNameExampleStudlyCaps\Helper\AgeHelper;  // Helper Class and Filename should be exact
+// use Kanboard\Plugin\PluginNameExampleStudlyCaps\Helper\MyHelper;  // Helper Class and Filename should be exact
 // use Kanboard\Helper;  // Add core Helper for using forms etc. inside external templates
 
 class Plugin extends Base
@@ -39,7 +39,7 @@ class Plugin extends Base
         // Helper
         //  - Example: $this->helper->register('helperClassNameCamelCase', '\Kanboard\Plugin\PluginNameExampleStudlyCaps\Helper\HelperNameExampleStudlyCaps');
         //  - Add each Helper in the 'use' section at the top of this file
-        $this->helper->register(' ', '\Kanboard\Plugin\  \Helper\  ');
+        $this->helper->register('myHelper', '\Kanboard\Plugin\PluginNameExampleStudlyCaps\Helper\MyHelper');
     }
 
     public function onStartup()
