@@ -12,7 +12,6 @@ use Kanboard\Core\Plugin\Directory;
  * @package  Kanboard\Controller
  * @author
  */
-
 class MyController extends \Kanboard\Controller\PluginController
 {
     /**
@@ -25,7 +24,6 @@ class MyController extends \Kanboard\Controller\PluginController
      *
      * @access public
      */
-
     public function show()
     {
         $this->response->html($this->helper->layout->config('pluginNameExampleCamelCase:folder/filename', array(
