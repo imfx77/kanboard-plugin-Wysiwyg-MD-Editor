@@ -19,7 +19,7 @@ class MyHelper extends Base
      * @see      core-template.php
      * @author 
      */
-    function testFunction()
+    public function testFunction()
     {
         return true;
     }
