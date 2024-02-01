@@ -1,18 +1,18 @@
 <?php
 
-namespace Kanboard\Plugin\PluginNameExampleStudlyCaps\Controller;
+namespace Kanboard\Plugin\WysiwygMDEditor\Controller;
 
 use Kanboard\Controller\BaseController;
 use Kanboard\Core\Plugin\Directory;
 
 /**
- * Plugin PluginNameExampleStudlyCaps
+ * Plugin WysiwygMDEditor
  *
- * Class MyController
+ * Class WysiwygMDEditorController
  * @package  Kanboard\Controller
- * @author
+ * @author   imfx77
  */
-class MyController extends \Kanboard\Controller\PluginController
+class WysiwygMDEditorController extends \Kanboard\Controller\PluginController
 {
     /**
      * Display the Settings Page
@@ -26,8 +26,8 @@ class MyController extends \Kanboard\Controller\PluginController
      */
     public function show()
     {
-        $this->response->html($this->helper->layout->config('pluginNameExampleCamelCase:folder/filename', array(
-            'title' => e('Settings %s PluginNameExampleStudlyCaps', ' &#10562; '),
+        $this->response->html($this->helper->layout->config('wysiwygMDEditor:folder/filename', array(
+            'title' => e('Settings %s WysiwygMDEditor', ' &#10562; '),
         )));
     }
 }

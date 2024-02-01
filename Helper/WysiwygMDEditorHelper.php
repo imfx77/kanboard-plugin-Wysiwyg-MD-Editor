@@ -1,17 +1,17 @@
 <?php
 
-namespace Kanboard\Plugin\PluginNameExampleStudlyCaps\Helper;
+namespace Kanboard\Plugin\WysiwygMDEditor\Helper;
 
 use Kanboard\Core\Base;
 
 /**
  * Plugin PluginNameExampleStudlyCaps
- * Class MyHelper
+ * Class WysiwygMDEditorHelper
  *
- * @package  Plugin\PluginNameExampleStudlyCaps\Helper
- * @author   
+ * @package  Plugin\WysiwygMDEditor\Helper
+ * @author   imfx77
  */
-class MyHelper extends Base
+class WysiwygMDEditorHelper extends Base
 {
     /**
      * Get SVG Icons for Inline Markup and CSS Styling (Embed SVG Fly Method)
@@ -32,7 +32,7 @@ class MyHelper extends Base
             return file_get_contents('plugins/' . $this->helper->app->getPluginName() . '/Assets/icons/' . $icon_filename . '.svg');
         } else {
             // For core templates
-            return file_get_contents('plugins/PluginNameExampleStudlyCaps/Assets/icons/' . $icon_filename . '.svg');
+            return file_get_contents('plugins/WysiwygMDEditor/Assets/icons/' . $icon_filename . '.svg');
         }
     }
 
@@ -41,7 +41,7 @@ class MyHelper extends Base
      *
      * @return   void
      * @see      core-template.php
-     * @author 
+     * @author   imfx77
      */
     public function testFunction()
     {

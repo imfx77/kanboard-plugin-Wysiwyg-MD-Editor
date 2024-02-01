@@ -1,36 +1,30 @@
-```html
-<!--
-ADJUST THIS PAGE TO YOUR REQUIREMENTS. REMEMBER TO DELETE THIS SECTION.
-TO KEEP THE README BADGES FUNCTIONAL, REPLACE THE USERNAME AND REPO NAME ACCORDINGLY
--->
-```
-<h1 name="user-content-readme-top">`Plugin Name`</h1>
+<h1 name="user-content-readme-top">WysiwygMDEditor</h1>
 <p align="center">
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/releases">
-        <img src="https://img.shields.io/github/v/release/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=brightgreen" alt="GitHub Latest Release (by date)" title="GitHub Latest Release (by date)">
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/releases">
+        <img src="https://img.shields.io/github/v/release/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?style=for-the-badge&color=brightgreen" alt="GitHub Latest Release (by date)" title="GitHub Latest Release (by date)">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/releases">
-        <img src="https://img.shields.io/github/downloads/aljawaid/KanboardSkeletonPlugin/total?style=for-the-badge&color=orange" alt="GitHub All Releases" title="GitHub All Downloads">
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/releases">
+        <img src="https://img.shields.io/github/downloads/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/total?style=for-the-badge&color=orange" alt="GitHub All Releases" title="GitHub All Downloads">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/releases">
-        <img src="https://img.shields.io/github/directory-file-count/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=orange" alt="GitHub Repository File Count" title="GitHub Repository File Count">
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/releases">
+        <img src="https://img.shields.io/github/directory-file-count/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?style=for-the-badge&color=orange" alt="GitHub Repository File Count" title="GitHub Repository File Count">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/releases">
-        <img src="https://img.shields.io/github/repo-size/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=orange" alt="GitHub Repository Size" title="GitHub Repository Size">
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/releases">
+        <img src="https://img.shields.io/github/repo-size/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?style=for-the-badge&color=orange" alt="GitHub Repository Size" title="GitHub Repository Size">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/releases">
-        <img src="https://img.shields.io/github/languages/code-size/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=orange" alt="GitHub Code Size" title="GitHub Code Size">
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/releases">
+        <img src="https://img.shields.io/github/languages/code-size/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?style=for-the-badge&color=orange" alt="GitHub Code Size" title="GitHub Code Size">
     </a>
 </p>
 <p align="center">
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/discussions">
-        <img src="https://img.shields.io/github/discussions/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=blue" alt="GitHub Discussions" title="Read Discussions">
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/discussions">
+        <img src="https://img.shields.io/github/discussions/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?style=for-the-badge&color=blue" alt="GitHub Discussions" title="Read Discussions">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/compare">
-        <img src="https://img.shields.io/github/commits-since/aljawaid/KanboardSkeletonPlugin/latest?include_prereleases&style=for-the-badge&color=blue" alt="GitHub Commits Since Last Release" title="GitHub Commits Since Last Release">
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/compare">
+        <img src="https://img.shields.io/github/commits-since/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/latest?include_prereleases&style=for-the-badge&color=blue" alt="GitHub Commits Since Last Release" title="GitHub Commits Since Last Release">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/compare">
-        <img src="https://img.shields.io/github/commit-activity/m/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=blue" alt="GitHub Commit Monthly Activity" title="GitHub Commit Monthly Activity">
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/compare">
+        <img src="https://img.shields.io/github/commit-activity/m/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?style=for-the-badge&color=blue" alt="GitHub Commit Monthly Activity" title="GitHub Commit Monthly Activity">
     </a>
     <a href="https://github.com/kanboard/kanboard" title="Kanboard - Kanban Project Management Software">
         <img src="https://img.shields.io/badge/Plugin%20for-kanboard-D40000?style=for-the-badge&labelColor=000000" alt="Kanboard">
@@ -85,7 +79,7 @@ Go to `Settings` &#10562;
 <details>
     <summary><strong>Compatibility</strong></summary>
 
-- Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
+- Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.33`
 - **Other Plugins & Action Plugins**
   - _No known issues_
 - **Core Files & Templates**
@@ -104,8 +98,8 @@ Go to `Settings` &#10562;
 
 ## Authors & Contributors
 
-- [@](https://github.com/url) - Author
-- _Contributors welcome_
+- [imfx77](https://github.com/imfx77) - Author
+- _Contributors welcome_ for translations
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
@@ -116,26 +110,26 @@ Go to `Settings` &#10562;
 ---
 
 <p align="center">
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/stargazers" title="View Stargazers">
-        <img src="https://img.shields.io/github/stars/aljawaid/KanboardSkeletonPlugin?logo=github&style=flat-square" alt="KanboardSkeletonPlugin">
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/stargazers" title="View Stargazers">
+        <img src="https://img.shields.io/github/stars/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?logo=github&style=flat-square" alt="kanboard-plugin-Wysiwyg-MD-Editor">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/forks" title="See Forks">
-        <img src="https://img.shields.io/github/forks/aljawaid/KanboardSkeletonPlugin?logo=github&style=flat-square" alt="KanboardSkeletonPlugin">
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/forks" title="See Forks">
+        <img src="https://img.shields.io/github/forks/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?logo=github&style=flat-square" alt="kanboard-plugin-Wysiwyg-MD-Editor">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/blob/master/LICENSE" title="Read License">
-        <img src="https://img.shields.io/github/license/aljawaid/KanboardSkeletonPlugin?style=flat-square" alt="KanboardSkeletonPlugin">
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/blob/master/LICENSE" title="Read License">
+        <img src="https://img.shields.io/github/license/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?style=flat-square" alt="kanboard-plugin-Wysiwyg-MD-Editor">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/issues" title="Open Issues">
-        <img src="https://img.shields.io/github/issues-raw/aljawaid/KanboardSkeletonPlugin?style=flat-square" alt="KanboardSkeletonPlugin">
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/issues" title="Open Issues">
+        <img src="https://img.shields.io/github/issues-raw/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?style=flat-square" alt="kanboard-plugin-Wysiwyg-MD-Editor">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/issues?q=is%3Aissue+is%3Aclosed" title="Closed Issues">
-        <img src="https://img.shields.io/github/issues-closed/aljawaid/KanboardSkeletonPlugin?style=flat-square" alt="KanboardSkeletonPlugin">
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/issues?q=is%3Aissue+is%3Aclosed" title="Closed Issues">
+        <img src="https://img.shields.io/github/issues-closed/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?style=flat-square" alt="kanboard-plugin-Wysiwyg-MD-Editor">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/discussions" title="Read Discussions">
-        <img src="https://img.shields.io/github/discussions/aljawaid/KanboardSkeletonPlugin?style=flat-square" alt="KanboardSkeletonPlugin">
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/discussions" title="Read Discussions">
+        <img src="https://img.shields.io/github/discussions/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?style=flat-square" alt="kanboard-plugin-Wysiwyg-MD-Editor">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/compare/" title="Latest Commits">
-        <img alt="GitHub commits since latest release (by date)" src="https://img.shields.io/github/commits-since/aljawaid/KanboardSkeletonPlugin/latest?style=flat-square">
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/compare/" title="Latest Commits">
+        <img alt="GitHub commits since latest release (by date)" src="https://img.shields.io/github/commits-since/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/latest?style=flat-square">
     </a>
 </p>
 <p align="right">[<a href="#user-content-readme-top">&#8593; Top</a>]</p>
