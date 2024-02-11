@@ -1,32 +1,38 @@
 $(function() {
-    const span = document.createElement('span');
-    span.className = 'stackedit-button-wrapper';
-    span.title = 'Edit with StackEdit+';
-    span.innerHTML = '<img height="24" width="24" src="plugins/WysiwygMDEditor/AssetsMDE/stackedit/icon.svg">';
 
-    const textareaEl = document.querySelector( "#txtarea-edit" );
-    textareaEl.parentNode.insertBefore(span, textareaEl.nextSibling);
+    $('.text-editor-write-mode').each(function() {
+        const buttonWrapper = document.createElement('span');
+        buttonWrapper.className = 'stackedit-button-wrapper';
+        buttonWrapper.title = 'Edit with StackEdit+';
+        buttonWrapper.innerHTML = '<img height="24" width="24" src="'+ location.origin +'/plugins/WysiwygMDEditor/AssetsMDE/stackedit/icon.svg">';
 
-    $( ".stackedit-button-wrapper" ).click(function() {
-        const stackedit = new Stackedit({ url: 'https://stackedit.net/app' }); // redirect to StackEdit+
+        const textareaElement = this.querySelector('textarea');
+        textareaElement.parentNode.insertBefore(buttonWrapper, textareaElement.nextSibling);
 
-        stackedit.on('fileChange', function onFileChange(file) {
-          textareaEl.value = file.content.text;
-        });
+        $( buttonWrapper ).click(function() {
+            const stackedit = new Stackedit({ url: 'https://stackedit.net/app' }); // redirect to StackEdit+
 
-        stackedit.openFile({
-          name: 'Markdown with StackEdit+',
-          content: {
-            text: textareaEl.value,
-            properties: {
-                extensions: {
-                    preset: 'default',
-                    markdown: {
-                        breaks: false
+            stackedit.on('fileChange', function onFileChange(file) {
+              textareaElement.value = file.content.text;
+            });
+
+            stackedit.openFile({
+                name: 'Markdown with StackEdit+',
+                content: {
+                    text: textareaElement.value,
+                    properties: {
+                        extensions: {
+                            preset: 'default',
+                            markdown: {
+                                breaks: false
+                            }
+                        }
                     }
                 }
-            }
-          }
+            });
+
         });
+
     });
+
 });

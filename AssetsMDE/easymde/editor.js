@@ -72,130 +72,148 @@ const containerHtml = `
 `;
 
 $(function() {
-    const span = document.createElement('span');
-    span.className = 'easymde-button-wrapper';
-    span.title = 'Edit with EasyMDE';
-    span.innerHTML = '<img height="24" width="24" src="plugins/WysiwygMDEditor/AssetsMDE/easymde/icon.svg">';
 
-    const textareaEl = document.querySelector( "#txtarea-edit" );
-    textareaEl.parentNode.insertBefore(span, textareaEl.nextSibling);
+    $('.text-editor-write-mode').each(function() {
 
-    $( ".easymde-button-wrapper" ).click(function() {
-        createStyle();
+        const buttonWrapper = document.createElement('buttonWrapper');
+        buttonWrapper.className = 'easymde-button-wrapper';
+        buttonWrapper.title = 'Edit with EasyMDE';
+        buttonWrapper.innerHTML = '<img height="24" width="24" src="'+ location.origin +'/plugins/WysiwygMDEditor/AssetsMDE/easymde/icon.svg">';
 
-        var containerEl = document.createElement('div');
-        containerEl.className = 'easymde-container';
-        containerEl.innerHTML = containerHtml;
-        document.body.appendChild(containerEl);
-        document.body.className += ' easymde-no-overflow';
+        const textareaElement = this.querySelector('textarea');
+        textareaElement.parentNode.insertBefore(buttonWrapper, textareaElement.nextSibling);
 
-        var textedit = null;
-        var easymde = null;
+        $( buttonWrapper ).click(function() {
+            createStyle();
 
-        $(".easymde-iframe").on("load", function() {
-            var innerDoc = this.contentDocument || this.contentWindow.document;
-            textedit = innerDoc.querySelector('#easymde-textarea');
-            textedit.value = textareaEl.value;
+            var containerEl = document.createElement('div');
+            containerEl.className = 'easymde-container';
+            containerEl.innerHTML = containerHtml;
+            document.body.appendChild(containerEl);
+            document.body.className += ' easymde-no-overflow';
 
-            function CreateEasyMDE() {
-                easymde = new EasyMDE({
-                    element: textedit,
-                    spellChecker: false,
-                    forceSync: true,
-                    autofocus: true,
-                    previewImagesInEditor: true,
-                    maxHeight: (0.9 * containerEl.offsetHeight - 80) + 'px',
-                    sideBySideFullscreen : false,
-                    //lineNumbers: true,
-                    insertTexts: {
-                        horizontalRule: ["", "\n\n---\n\n"],
-                        image: ["![](http://", ")"],
-                        link: ["[", "](http://)"],
-                        table: ["", "\n\n| Column 1 | Column 2 | Column 3 |\n| -------- | -------- | -------- |\n| Text     | Text      | Text     |\n\n"],
-                    },
-                    renderingConfig: {
-                        singleLineBreaks: false,
-                        codeSyntaxHighlighting: true,
-                    },
-                    styleSelectedText: false,
-                    toolbar: [
-                        "undo",
-                        "redo",
-                        "|",
-                        "bold",
-                        "italic",
-                        "strikethrough",
-                        "heading",
-                        "|",
-                        "code",
-                        "quote",
-                        "unordered-list",
-                        "ordered-list",
-                        "|",
-                        "link",
-                        "image",
-                        "table",
-                        "horizontal-rule",
-                        "|",
-                        {
-                            name: "themeLight",
-                            action: function themLight(editor){
-                                innerDoc.getElementById("theme-link").setAttribute('href', "theme-light.css");
-                            },
-                            className: "fa fa-circle-o",
-                            title: "Theme Light",
+            var textedit = null;
+            var easymde = null;
+
+            $(".easymde-iframe").on("load", function() {
+                var innerDoc = this.contentDocument || this.contentWindow.document;
+                textedit = innerDoc.querySelector('#easymde-textarea');
+                textedit.value = textareaElement.value;
+
+                function CreateEasyMDE() {
+                    easymde = new EasyMDE({
+                        element: textedit,
+                        spellChecker: false,
+                        forceSync: true,
+                        autofocus: true,
+                        previewImagesInEditor: true,
+                        maxHeight: (0.9 * containerEl.offsetHeight - 80) + 'px',
+                        sideBySideFullscreen : false,
+                        //lineNumbers: true,
+                        insertTexts: {
+                            horizontalRule: ["", "\n\n---\n\n"],
+                            image: ["![](http://", ")"],
+                            link: ["[", "](http://)"],
+                            table: ["", "\n\n| Column 1 | Column 2 | Column 3 |\n| -------- | -------- | -------- |\n| Text     | Text      | Text     |\n\n"],
                         },
-                        {
-                            name: "themeGrey",
-                            action: function themeGrey(editor){
-                                innerDoc.getElementById("theme-link").setAttribute('href', "theme-grey.css");
-                            },
-                            className: "fa fa-dot-circle-o",
-                            title: "Theme Grey",
+                        renderingConfig: {
+                            singleLineBreaks: false,
+                            codeSyntaxHighlighting: true,
                         },
-                        {
-                            name: "themeDark",
-                            action: function themeDark(editor){
-                                innerDoc.getElementById("theme-link").setAttribute('href', "theme-dark.css");
+                        styleSelectedText: false,
+                        toolbar: [
+                            "undo",
+                            "redo",
+                            "|",
+                            "bold",
+                            "italic",
+                            "strikethrough",
+                            "heading",
+                            "|",
+                            "code",
+                            "quote",
+                            "unordered-list",
+                            "ordered-list",
+                            "|",
+                            "link",
+                            "image",
+                            "table",
+                            "horizontal-rule",
+                            "|",
+                            {
+                                name: "themeLight",
+                                action: function themLight(editor){
+                                    innerDoc.getElementById("theme-link").setAttribute('href', "theme-light.css");
+                                },
+                                className: "fa fa-circle-o",
+                                title: "Theme Light",
                             },
-                            className: "fa fa-circle",
-                            title: "Theme Dark",
+                            {
+                                name: "themeGrey",
+                                action: function themeGrey(editor){
+                                    innerDoc.getElementById("theme-link").setAttribute('href', "theme-grey.css");
+                                },
+                                className: "fa fa-dot-circle-o",
+                                title: "Theme Grey",
+                            },
+                            {
+                                name: "themeDark",
+                                action: function themeDark(editor){
+                                    innerDoc.getElementById("theme-link").setAttribute('href', "theme-dark.css");
+                                },
+                                className: "fa fa-circle",
+                                title: "Theme Dark",
+                            },
+                            "|",
+                            "preview",
+                            "side-by-side",
+                            //"fullscreen",
+                            "|",
+                            "guide",
+                        ],
+                        shortcuts: {
+                            toggleStrikethrough: "Cmd-Alt-S",
+                            drawTable: "Cmd-Alt-T",
+                            themeLight: "Cmd-Alt-1",
+                            themeGrey: "Cmd-Alt-2",
+                            themeDark: "Cmd-Alt-3",
                         },
-                        "|",
-                        "preview",
-                        "side-by-side",
-                        //"fullscreen",
-                        "|",
-                        "guide",
-                    ],
-                    shortcuts: {
-                        toggleStrikethrough: "Cmd-Alt-S",
-                        drawTable: "Cmd-Alt-T",
-                        themeLight: "Cmd-Alt-1",
-                        themeGrey: "Cmd-Alt-2",
-                        themeDark: "Cmd-Alt-3",
-                    },
-                });
+                    });
 
-                easymde.toggleSideBySide();
-            }
-
-            CreateEasyMDE();
-
-            $(this.contentWindow).on("resize", function() {
-                if (!easymde) return;
-
-                easymde.toTextArea();
-                easymde = null;
+                    easymde.toggleSideBySide();
+                }
 
                 CreateEasyMDE();
+
+                $(this.contentWindow).on("resize", function() {
+                    if (!easymde) return;
+
+                    easymde.toTextArea();
+                    easymde = null;
+
+                    CreateEasyMDE();
+                });
+
+                $(innerDoc).keydown(function(event) {
+                  if (event.keyCode != 27) return;
+
+                  easymde.toTextArea();
+                  textareaElement.value = textedit.value;
+
+                  document.body.className = document.body.className.replace(/\seasymde-no-overflow\b/, '');
+                  document.body.removeChild(containerEl);
+
+                  containerEl = null;
+                  easymde = null;
+                });
+
             });
 
-            $(innerDoc).keydown(function(event) {
-              if (event.keyCode != 27) return;
+            $(".easymde-iframe").attr('src', location.origin + '/plugins/WysiwygMDEditor/AssetsMDE/easymde/wrapper.html');
 
+            $( ".easymde-close-button" ).click(function() {
               easymde.toTextArea();
-              textareaEl.value = textedit.value;
+              textareaElement.value = textedit.value;
 
               document.body.className = document.body.className.replace(/\seasymde-no-overflow\b/, '');
               document.body.removeChild(containerEl);
@@ -203,19 +221,7 @@ $(function() {
               containerEl = null;
               easymde = null;
             });
-        });
 
-        $(".easymde-iframe").attr('src', 'plugins/WysiwygMDEditor/AssetsMDE/easymde/wrapper.html');
-
-        $( ".easymde-close-button" ).click(function() {
-          easymde.toTextArea();
-          textareaEl.value = textedit.value;
-
-          document.body.className = document.body.className.replace(/\seasymde-no-overflow\b/, '');
-          document.body.removeChild(containerEl);
-
-          containerEl = null;
-          easymde = null;
         });
 
     });
