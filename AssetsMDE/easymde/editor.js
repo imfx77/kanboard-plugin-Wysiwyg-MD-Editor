@@ -143,23 +143,26 @@ $(function() {
                             {
                                 name: "themeLight",
                                 action: function themLight(editor){
-                                    innerDoc.getElementById("theme-link").setAttribute('href', "theme-light.css");
+                                    innerDoc.getElementById("theme-link").setAttribute('href', "theme.light.css");
+                                    innerDoc.getElementById("highlight-link").setAttribute('href', "../highlight/min.light.css");
                                 },
                                 className: "fa fa-circle-o",
                                 title: "Theme Light",
                             },
                             {
-                                name: "themeGrey",
-                                action: function themeGrey(editor){
-                                    innerDoc.getElementById("theme-link").setAttribute('href', "theme-grey.css");
+                                name: "themeDimmed",
+                                action: function themeDimmed(editor){
+                                    innerDoc.getElementById("theme-link").setAttribute('href', "theme.dimmed.css");
+                                    innerDoc.getElementById("highlight-link").setAttribute('href', "../highlight/min.dimmed.css");
                                 },
                                 className: "fa fa-dot-circle-o",
-                                title: "Theme Grey",
+                                title: "Theme Dimmed",
                             },
                             {
                                 name: "themeDark",
                                 action: function themeDark(editor){
-                                    innerDoc.getElementById("theme-link").setAttribute('href', "theme-dark.css");
+                                    innerDoc.getElementById("theme-link").setAttribute('href', "theme.dark.css");
+                                    innerDoc.getElementById("highlight-link").setAttribute('href', "../highlight/min.dark.css");
                                 },
                                 className: "fa fa-circle",
                                 title: "Theme Dark",
@@ -175,7 +178,7 @@ $(function() {
                             toggleStrikethrough: "Cmd-Alt-S",
                             drawTable: "Cmd-Alt-T",
                             themeLight: "Cmd-Alt-1",
-                            themeGrey: "Cmd-Alt-2",
+                            themeDimmed: "Cmd-Alt-2",
                             themeDark: "Cmd-Alt-3",
                         },
                     });
