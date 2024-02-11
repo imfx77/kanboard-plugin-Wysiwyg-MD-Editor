@@ -3,11 +3,15 @@ $(function() {
     $('.text-editor-write-mode').each(function() {
         const buttonWrapper = document.createElement('span');
         buttonWrapper.className = 'stackedit-button-wrapper';
+        buttonWrapper.style = 'margin: 0px 0px 0px 15px;';
         buttonWrapper.title = 'Edit with StackEdit+';
-        buttonWrapper.innerHTML = '<img height="24" width="24" src="'+ location.origin +'/plugins/WysiwygMDEditor/AssetsMDE/stackedit/icon.svg">';
+        buttonWrapper.innerHTML = '<img height="24" width="24" style="vertical-align: bottom" '
+                                + 'src="'+ location.origin +'/plugins/WysiwygMDEditor/AssetsMDE/stackedit/icon.svg">';
+
+        const toolbarElement = this.querySelector('div');
+        toolbarElement.insertBefore(buttonWrapper, toolbarElement.lastElementChild.nextSibling);
 
         const textareaElement = this.querySelector('textarea');
-        textareaElement.parentNode.insertBefore(buttonWrapper, textareaElement.nextSibling);
 
         $( buttonWrapper ).click(function() {
             const stackedit = new Stackedit({ url: 'https://stackedit.net/app' }); // redirect to StackEdit+

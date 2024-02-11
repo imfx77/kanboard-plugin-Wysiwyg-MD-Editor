@@ -75,13 +75,17 @@ $(function() {
 
     $('.text-editor-write-mode').each(function() {
 
-        const buttonWrapper = document.createElement('buttonWrapper');
+        const buttonWrapper = document.createElement('span');
         buttonWrapper.className = 'easymde-button-wrapper';
         buttonWrapper.title = 'Edit with EasyMDE';
-        buttonWrapper.innerHTML = '<img height="24" width="24" src="'+ location.origin +'/plugins/WysiwygMDEditor/AssetsMDE/easymde/icon.svg">';
+        buttonWrapper.style = 'margin: 0px 0px 0px 15px;';
+        buttonWrapper.innerHTML = '<img height="24" width="24" style="vertical-align: bottom" '
+                                + 'src="'+ location.origin +'/plugins/WysiwygMDEditor/AssetsMDE/easymde/icon.svg">';
+
+        const toolbarElement = this.querySelector('div');
+        toolbarElement.insertBefore(buttonWrapper, toolbarElement.lastElementChild.nextSibling);
 
         const textareaElement = this.querySelector('textarea');
-        textareaElement.parentNode.insertBefore(buttonWrapper, textareaElement.nextSibling);
 
         $( buttonWrapper ).click(function() {
             createStyle();
@@ -96,7 +100,7 @@ $(function() {
             var easymde = null;
 
             $(".easymde-iframe").on("load", function() {
-                var innerDoc = this.contentDocument || this.contentWindow.document;
+                const innerDoc = this.contentDocument || this.contentWindow.document;
                 textedit = innerDoc.querySelector('#easymde-textarea');
                 textedit.value = textareaElement.value;
 
@@ -106,7 +110,6 @@ $(function() {
                         spellChecker: false,
                         forceSync: true,
                         autofocus: true,
-                        previewImagesInEditor: true,
                         maxHeight: (0.9 * containerEl.offsetHeight - 80) + 'px',
                         sideBySideFullscreen : false,
                         //lineNumbers: true,
@@ -198,16 +201,16 @@ $(function() {
                 });
 
                 $(innerDoc).keydown(function(event) {
-                  if (event.keyCode != 27) return;
+                    if (event.keyCode != 27) return;
 
-                  easymde.toTextArea();
-                  textareaElement.value = textedit.value;
+                    easymde.toTextArea();
+                    textareaElement.value = textedit.value;
 
-                  document.body.className = document.body.className.replace(/\seasymde-no-overflow\b/, '');
-                  document.body.removeChild(containerEl);
+                    document.body.className = document.body.className.replace(/\seasymde-no-overflow\b/, '');
+                    document.body.removeChild(containerEl);
 
-                  containerEl = null;
-                  easymde = null;
+                    containerEl = null;
+                    easymde = null;
                 });
 
             });
@@ -215,14 +218,14 @@ $(function() {
             $(".easymde-iframe").attr('src', location.origin + '/plugins/WysiwygMDEditor/AssetsMDE/easymde/wrapper.html');
 
             $( ".easymde-close-button" ).click(function() {
-              easymde.toTextArea();
-              textareaElement.value = textedit.value;
+                easymde.toTextArea();
+                textareaElement.value = textedit.value;
 
-              document.body.className = document.body.className.replace(/\seasymde-no-overflow\b/, '');
-              document.body.removeChild(containerEl);
+                document.body.className = document.body.className.replace(/\seasymde-no-overflow\b/, '');
+                document.body.removeChild(containerEl);
 
-              containerEl = null;
-              easymde = null;
+                containerEl = null;
+                easymde = null;
             });
 
         });
