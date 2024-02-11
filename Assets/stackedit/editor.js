@@ -6,7 +6,7 @@ $(function() {
         buttonWrapper.style = 'margin: 0px 0px 0px 15px;';
         buttonWrapper.title = 'Edit with StackEdit+';
         buttonWrapper.innerHTML = '<img height="24" width="24" style="vertical-align: bottom" '
-                                + 'src="'+ location.origin +'/plugins/WysiwygMDEditor/AssetsMDE/stackedit/icon.svg">';
+                                + 'src="'+ location.origin +'/plugins/WysiwygMDEditor/Assets/stackedit/icon.svg">';
 
         const toolbarElement = this.querySelector('div');
         toolbarElement.insertBefore(buttonWrapper, toolbarElement.lastElementChild.nextSibling);

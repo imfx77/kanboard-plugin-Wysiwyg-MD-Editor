@@ -80,7 +80,7 @@ $(function() {
         buttonWrapper.title = 'Edit with EasyMDE';
         buttonWrapper.style = 'margin: 0px 0px 0px 15px;';
         buttonWrapper.innerHTML = '<img height="24" width="24" style="vertical-align: bottom" '
-                                + 'src="'+ location.origin +'/plugins/WysiwygMDEditor/AssetsMDE/easymde/icon.svg">';
+                                + 'src="'+ location.origin +'/plugins/WysiwygMDEditor/Assets/easymde/icon.svg">';
 
         const toolbarElement = this.querySelector('div');
         toolbarElement.insertBefore(buttonWrapper, toolbarElement.lastElementChild.nextSibling);
@@ -215,7 +215,7 @@ $(function() {
 
             });
 
-            $(".easymde-iframe").attr('src', location.origin + '/plugins/WysiwygMDEditor/AssetsMDE/easymde/wrapper.html');
+            $(".easymde-iframe").attr('src', location.origin + '/plugins/WysiwygMDEditor/Assets/easymde/wrapper.html');
 
             $( ".easymde-close-button" ).click(function() {
                 easymde.toTextArea();

@@ -9,11 +9,11 @@ class Plugin extends Base
 {
     public function initialize()
     {
-        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/AssetsMDE/highlight/min.js'));
-        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/AssetsMDE/easymde/min.js'));
-        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/AssetsMDE/easymde/editor.js'));
-        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/AssetsMDE/stackedit/min.js'));
-        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/AssetsMDE/stackedit/editor.js'));
+        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/highlight/min.js'));
+        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/min.js'));
+        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/editor.js'));
+        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/stackedit/min.js'));
+        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/stackedit/editor.js'));
 
         $this->template->hook->attach('template:config:sidebar', 'WysiwygMDEditor:config/sidebar');
 
