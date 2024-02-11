@@ -1,8 +1,9 @@
-<h1 name="user-content-readme-top">WysiwygMDEditor</h1>
 <p align="center">
     <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/releases">
         <img src="https://img.shields.io/github/v/release/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?style=for-the-badge&color=brightgreen" alt="GitHub Latest Release (by date)" title="GitHub Latest Release (by date)">
     </a>
+</p>
+<p align="center">
     <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/releases">
         <img src="https://img.shields.io/github/downloads/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/total?style=for-the-badge&color=orange" alt="GitHub All Releases" title="GitHub All Downloads">
     </a>
@@ -26,11 +27,17 @@
     <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/compare">
         <img src="https://img.shields.io/github/commit-activity/m/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?style=for-the-badge&color=blue" alt="GitHub Commit Monthly Activity" title="GitHub Commit Monthly Activity">
     </a>
+</p>
+<p align="center">
     <a href="https://github.com/kanboard/kanboard" title="Kanboard - Kanban Project Management Software">
         <img src="https://img.shields.io/badge/Plugin%20for-kanboard-D40000?style=for-the-badge&labelColor=000000" alt="Kanboard">
     </a>
 </p>
 
+---
+
+<h4 name="user-content-readme-top">(work in progress ...)</h4>
+<h1 name="user-content-readme-top">Wysiwyg MD Editor plugin for Kanboard</h1>
 
 ```html
 <!--
