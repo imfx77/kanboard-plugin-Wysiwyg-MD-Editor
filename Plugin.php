@@ -4,18 +4,16 @@ namespace Kanboard\Plugin\WysiwygMDEditor;
 
 use Kanboard\Core\Plugin\Base;
 use Kanboard\Core\Translator;
-use Kanboard\Plugin\WysiwygMDEditor\Helper\WysiwygMDEditorHelper;
-// use Kanboard\Helper;  // Add core Helper for using forms etc. inside external templates
 
 class Plugin extends Base
 {
     public function initialize()
     {
-        //$this->template->setTemplateOverride('action/index', 'wysiwygMDEditor:action/index');
-
-        $this->hook->on('template:layout:css', array('template' => 'plugins/WysiwygMDEditor/Assets/css/wysiwyg-mde-editor.css'));
-
-        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/js/wysiwyg-mde-editor.js'));
+        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/AssetsMDE/highlight/min.js'));
+        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/AssetsMDE/easymde/min.js'));
+        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/AssetsMDE/easymde/editor.js'));
+        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/AssetsMDE/stackedit/min.js'));
+        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/AssetsMDE/stackedit/editor.js'));
 
         $this->template->hook->attach('template:config:sidebar', 'WysiwygMDEditor:config/sidebar');
 
