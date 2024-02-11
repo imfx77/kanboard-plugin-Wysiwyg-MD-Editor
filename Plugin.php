@@ -11,22 +11,16 @@ class Plugin extends Base
 {
     public function initialize()
     {
-        $this->template->setTemplateOverride('action/index', 'wysiwygMDEditor:action/index');
+        //$this->template->setTemplateOverride('action/index', 'wysiwygMDEditor:action/index');
 
         $this->hook->on('template:layout:css', array('template' => 'plugins/WysiwygMDEditor/Assets/css/wysiwyg-mde-editor.css'));
 
         $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/js/wysiwyg-mde-editor.js'));
 
-        $this->template->hook->attach('template:project-header:view-switcher-before-project-overview', 'wysiwygMDEditor:project_header/actions');
+        $this->template->hook->attach('template:config:sidebar', 'WysiwygMDEditor:config/sidebar');
 
-        // Views - Add Menu Item - Template Hook
-        //  - Override name should start lowercase e.g. wysiwygMDEditor
-        //  - Example for menu item in kanboard settings page: $this->template->hook->attach('template:config:sidebar', 'wysiwygMDEditor:config/sidebar');
-
-        // Extra Page - Routes
-        //  - Example: $this->route->addRoute('/my/custom/route', 'MyController', 'show', 'WysiwygMDEditor');
-        //  - Must have the corresponding action in the matching controller
-        $this->route->addRoute('/ / ', ' ', ' ', 'WysiwygMDEditor');
+        $this->route->addRoute('settings/wysiwygmdeditor', 'ConfigController', 'show', 'WysiwygMDEditor');
+        $this->route->addRoute('settings/wysiwygmdeditor/preview', 'ConfigController', 'preview', 'WysiwygMDEditor');
 
         $this->helper->register('wysiwygMDEditorHelper', '\Kanboard\Plugin\WysiwygMDEditor\Helper\WysiwygMDEditorHelper');
     }
@@ -43,9 +37,7 @@ class Plugin extends Base
 
     public function getPluginDescription()
     {
-        return t('Integrates external MD editors into Kanboard in order to conveniently edit/preview
-                (and eventually render) the rich text enabled fields in the interface.
-                Every editor may allow for different customizations of functionality, MD features, and UI themes.');
+        return t('WysiwygMDEditor_PLUGIN_DESCRIPTION');
     }
 
     public function getPluginAuthor()
