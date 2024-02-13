@@ -1,4 +1,4 @@
-$(function() {
+function injectButtonWrapperStackEdit() {
 
     $('.text-editor-write-mode').each(function() {
         const buttonWrapper = document.createElement('span');
@@ -39,4 +39,12 @@ $(function() {
 
     });
 
+}
+
+$(function() {
+    injectButtonWrapperStackEdit();
+});
+
+KB.on('modal.afterRender', function () {
+    injectButtonWrapperStackEdit();
 });

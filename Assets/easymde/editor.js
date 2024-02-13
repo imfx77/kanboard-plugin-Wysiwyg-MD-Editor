@@ -71,7 +71,7 @@ const containerHtml = `
 </div>
 `;
 
-$(function() {
+function injectButtonWrapperEasyMDE() {
 
     $('.text-editor-write-mode').each(function() {
 
@@ -232,4 +232,12 @@ $(function() {
 
     });
 
+}
+
+$(function() {
+    injectButtonWrapperEasyMDE();
+});
+
+KB.on('modal.afterRender', function () {
+    injectButtonWrapperEasyMDE();
 });
