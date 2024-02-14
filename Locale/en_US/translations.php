@@ -5,7 +5,7 @@ return array(
     // GENERAL
     //
     'WysiwygMDEditor_PLUGIN_DESCRIPTION' => 'Integrates external MD editors into Kanboard in order to conveniently edit/preview
-                                            (and eventually render) the rich text enabled fields in the interface.
+                                            (and eventually render) the rich-text-enabled fields in the KB interface.
                                             Every editor may allow for different customizations of functionality, MD features, and UI themes.',
     'WysiwygMDEditor_NAME' => 'Wysiwyg MD Editor',
     //

@@ -39,38 +39,36 @@
 <h4 name="user-content-readme-top">(work in progress ...)</h4>
 <h1 name="user-content-readme-top">Wysiwyg MD Editor plugin for Kanboard</h1>
 
-```html
-<!--
-REMOVE BLOCK
-Brief intro
--->
-```
+Integrates external MD editors into Kanboard in order to conveniently edit/preview
+(and eventually render) the rich-text-enabled fields in the KB interface.
+Every editor may allow for different customizations of functionality, MD features, and UI themes.
+
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
-- `main features list`
-- `main features list`
+- `Currently integrates EasyMDE and StackEdit+ markdown editors`
+- `Both editors are configured to be GFM compatible`
+- `Side preview is available, themes and various convenience options`
+- `Configurable buttons to inject into the KB editing toolbar of markdown textareas`
+
+For a better feel of the actual editors visit their corresponding site or demo:
+- refer `EasyMDE` [@GitHub](https://github.com/Ionaru/easy-markdown-editor) or the [Live Demo](https://stackblitz.com/edit/easymde/?file=index.html)
+- refer `StackEdit+` [@GitHub](https://github.com/mafgwo/stackedit-plus) or the [Online App](https://stackedit.net/app#) 
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Screenshots
 
-**title**  
+**Configurable buttons of MD editors injected into the textarea editing toolbar.**  
 
-![Screenshot Name](../master/Screenshots/screenshot-name.png "Read Screenshot Name")
-
+![textarea editing toolbar injected buttons](Screenshots/textarea-editing-toolbar-injected-buttons.png "textarea editing toolbar with injected MD editors buttons")
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Usage
 
-```html
-<!--
-REMOVE BLOCK
-Go to `Settings` &#10562;
--->
-```
+Go to `Settings` &#10562; `Wysiwyg MD Editor`, follow the explanations, configure and preview the MD editor(s) of your preference.
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
@@ -90,14 +88,15 @@ Go to `Settings` &#10562;
 - **Other Plugins & Action Plugins**
   - _No known issues_
 - **Core Files & Templates**
-  - `01` Template override
+  - `0` Template override
   - _No database changes_
 
 </details>
 <details>
     <summary><strong>Translations</strong></summary>
 
-- _Starter template available_
+- _`en_US` translation available ONLY_
+- some more translations might be mechanically added in the future using Google Translate
 
 </details>
 
@@ -105,8 +104,8 @@ Go to `Settings` &#10562;
 
 ## Authors & Contributors
 
-- [imfx77](https://github.com/imfx77) - Author
-- _Contributors welcome_ for translations
+- [@imfx77](https://github.com/imfx77) - Author
+- Contributors welcome _for translations_ !
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 

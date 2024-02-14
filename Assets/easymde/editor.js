@@ -78,7 +78,7 @@ function injectButtonWrapperEasyMDE() {
         const buttonWrapper = document.createElement('span');
         buttonWrapper.className = 'easymde-button-wrapper';
         buttonWrapper.title = 'Edit with EasyMDE';
-        buttonWrapper.style = 'margin: 0px 0px 0px 15px;';
+        buttonWrapper.style = 'margin: 0px 0px 0px 20px;';
         buttonWrapper.innerHTML = '<img height="24" width="24" style="vertical-align: bottom" '
                                 + 'src="'+ location.origin +'/plugins/WysiwygMDEditor/Assets/easymde/icon.svg">';
 

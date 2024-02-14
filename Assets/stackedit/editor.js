@@ -3,7 +3,7 @@ function injectButtonWrapperStackEdit() {
     $('.text-editor-write-mode').each(function() {
         const buttonWrapper = document.createElement('span');
         buttonWrapper.className = 'stackedit-button-wrapper';
-        buttonWrapper.style = 'margin: 0px 0px 0px 15px;';
+        buttonWrapper.style = 'margin: 0px 0px 0px 20px;';
         buttonWrapper.title = 'Edit with StackEdit+';
         buttonWrapper.innerHTML = '<img height="24" width="24" style="vertical-align: bottom" '
                                 + 'src="'+ location.origin +'/plugins/WysiwygMDEditor/Assets/stackedit/icon.svg">';
