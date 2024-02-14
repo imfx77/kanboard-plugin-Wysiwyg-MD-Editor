@@ -3,11 +3,11 @@
 namespace Kanboard\Plugin\WysiwygMDEditor\Controller;
 
 /**
- * Class ConfigController
+ * Class WysiwygMDEditorConfigController
  * @package Kanboard\Plugin\WysiwygMDEditor\Controller
  * @author  imfx77
  */
-class ConfigController extends \Kanboard\Controller\ConfigController
+class WysiwygMDEditorConfigController extends \Kanboard\Controller\ConfigController
 {
     public function show()
     {
@@ -42,7 +42,7 @@ class ConfigController extends \Kanboard\Controller\ConfigController
             $this->flash->failure(t('Unable to save your settings.'));
         }
 
-        $this->response->redirect($this->helper->url->to('ConfigController', 'show', array('plugin' => 'WysiwygMDEditor')));
+        $this->response->redirect($this->helper->url->to('WysiwygMDEditorConfigController', 'show', array('plugin' => 'WysiwygMDEditor')));
     }
 
     public function getEasyMDEDefaultTheme()

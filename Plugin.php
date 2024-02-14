@@ -21,8 +21,8 @@ class Plugin extends Base
 
         $this->template->hook->attach('template:config:sidebar', 'WysiwygMDEditor:config/sidebar');
 
-        $this->route->addRoute('settings/wysiwygmdeditor', 'ConfigController', 'show', 'WysiwygMDEditor');
-        $this->route->addRoute('settings/wysiwygmdeditor/preview', 'ConfigController', 'preview', 'WysiwygMDEditor');
+        $this->route->addRoute('settings/wysiwygmdeditor', 'WysiwygMDEditorConfigController', 'show', 'WysiwygMDEditor');
+        $this->route->addRoute('settings/wysiwygmdeditor/preview', 'WysiwygMDEditorConfigController', 'preview', 'WysiwygMDEditor');
 
         $this->helper->register('wysiwygMDEditorHelper', '\Kanboard\Plugin\WysiwygMDEditor\Helper\WysiwygMDEditorHelper');
     }
@@ -49,7 +49,7 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
-        return '1.0.0';
+        return '0.5.0';
     }
 
     public function getCompatibleVersion()

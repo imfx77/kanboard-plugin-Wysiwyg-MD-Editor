@@ -2,7 +2,7 @@
     <h2><?= t('WysiwygMDEditor_TITLE_PREVIEW') ?></h2>
 </div>
 
-<?= $this->url->icon('wrench', t('WysiwygMDEditor_LINK_SETTINGS_CHANGE'), 'ConfigController', 'show', array('plugin' => 'WysiwygMDEditor')) ?>
+<?= $this->url->icon('wrench', t('WysiwygMDEditor_LINK_SETTINGS_CHANGE'), 'WysiwygMDEditorConfigController', 'show', array('plugin' => 'WysiwygMDEditor')) ?>
 
 <form autocomplete="off">
     <br>

@@ -8,9 +8,9 @@
     <h2><?= t('WysiwygMDEditor_TITLE_SETTINGS') ?></h2>
 </div>
 
-<?= $this->url->icon('desktop', t('WysiwygMDEditor_LINK_SETTINGS_PREVIEW'), 'ConfigController', 'preview', array('plugin' => 'WysiwygMDEditor')) ?>
+<?= $this->url->icon('desktop', t('WysiwygMDEditor_LINK_SETTINGS_PREVIEW'), 'WysiwygMDEditorConfigController', 'preview', array('plugin' => 'WysiwygMDEditor')) ?>
 
-<form method="post" action="<?= $this->url->href('ConfigController', 'save', array('plugin' => 'WysiwygMDEditor')) ?>" autocomplete="off">
+<form method="post" action="<?= $this->url->href('WysiwygMDEditorConfigController', 'save', array('plugin' => 'WysiwygMDEditor')) ?>" autocomplete="off">
     <?= $this->form->csrf() ?>
 
     <fieldset class="fieldset-WysiwygMDEditor">
@@ -35,11 +35,11 @@
                             $values['WysiwygMDEditor_easymde_default_theme'] = 'dimmed';
                         }
                     ?>
-                    <br><?= $this->form->label(t('_PREVIEWWysiwygMDEditor_SETTINGS_EASYMDE_THEME_SELECT'), 'WysiwygMDEditor_easymde_default_theme') ?>
+                    <br><?= $this->form->label(t('WysiwygMDEditor_SETTINGS_EASYMDE_THEME_SELECT'), 'WysiwygMDEditor_easymde_default_theme') ?>
                     <?= $this->form->select('WysiwygMDEditor_easymde_default_theme', array(
-                        'light'  => t('_PREVIEWWysiwygMDEditor_SETTINGS_EASYMDE_THEME_LIGHT'),
-                        'dimmed' => t('_PREVIEWWysiwygMDEditor_SETTINGS_EASYMDE_THEME_DIMMED'),
-                        'dark'   => t('_PREVIEWWysiwygMDEditor_SETTINGS_EASYMDE_THEME_DARK'),
+                        'light'  => t('WysiwygMDEditor_SETTINGS_EASYMDE_THEME_LIGHT'),
+                        'dimmed' => t('WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DIMMED'),
+                        'dark'   => t('WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DARK'),
                     ), $values) ?>
                 </td>
             </tr></table>

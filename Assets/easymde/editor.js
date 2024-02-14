@@ -205,7 +205,7 @@ function injectButtonWrapperEasyMDE() {
                     $.ajax({
                         cache: false,
                         type: "POST",
-                        url: '/?controller=ConfigController&action=getEasyMDEDefaultTheme&plugin=WysiwygMDEditor',
+                        url: '/?controller=WysiwygMDEditorConfigController&action=getEasyMDEDefaultTheme&plugin=WysiwygMDEditor',
                         success: function(response) {
                             innerDoc.getElementById("theme-link").setAttribute('href', "theme." + response + ".css");
                             innerDoc.getElementById("highlight-link").setAttribute('href', "../highlight/min." + response + ".css");

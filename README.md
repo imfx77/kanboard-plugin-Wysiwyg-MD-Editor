@@ -110,6 +110,15 @@ Go to `Settings` &#10562;
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
+## Credits & References
+
+- [EasyMDE](https://github.com/Ionaru/easy-markdown-editor)
+- [Highlight JS](https://github.com/highlightjs/highlight.js)
+- [StackEdit+](https://github.com/mafgwo/stackedit-plus)
+- [StackEdit JS](https://github.com/benweet/stackedit.js)
+
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
+
 ## License
 
 - This project is distributed under the [MIT License](../master/LICENSE "Read The MIT license")

@@ -8,6 +8,9 @@ return array(
                                             (and eventually render) the rich text enabled fields in the interface.
                                             Every editor may allow for different customizations of functionality, MD features, and UI themes.',
     'WysiwygMDEditor_NAME' => 'Wysiwyg MD Editor',
+    //
+    // Template/config/settings
+    //
     'WysiwygMDEditor_TITLE_SETTINGS' => 'Wysiwyg MD Editor settings',
     'WysiwygMDEditor_TITLE_PREVIEW' => 'Wysiwyg MD Editor preview',
     'WysiwygMDEditor_LINK_SETTINGS_PREVIEW' => 'Preview with Saved Settings',
@@ -26,10 +29,10 @@ return array(
                                                 Implements code syntax highlight through HighlightJS for about 40 most common languages.
                                                 No support for images upload, drag or paste, only trough URLs.
                                                 No support for emoji syntax, only through OS emoji shortcuts (e.g. "WIN + .").',
-    '_PREVIEWWysiwygMDEditor_SETTINGS_EASYMDE_THEME_SELECT' => 'Select the default theme for EasyMDE :',
-    '_PREVIEWWysiwygMDEditor_SETTINGS_EASYMDE_THEME_LIGHT' => 'Light Theme',
-    '_PREVIEWWysiwygMDEditor_SETTINGS_EASYMDE_THEME_DIMMED' => 'Dimmed Theme',
-    '_PREVIEWWysiwygMDEditor_SETTINGS_EASYMDE_THEME_DARK' => 'Dark Theme',
+    'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_SELECT' => 'Select the default theme for EasyMDE :',
+    'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_LIGHT' => 'Light Theme',
+    'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DIMMED' => 'Dimmed Theme',
+    'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DARK' => 'Dark Theme',
     'WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR' => 'An online service based markdown editor and note taking tool.
                                                 Covers wide range of MD syntax variations but configured to comply with GFM.
                                                 Supports side preview, multiple tools, rich options and customizations.
