@@ -104,6 +104,7 @@ function injectButtonWrapperEasyMDE() {
                 textedit = innerDoc.querySelector('#easymde-textarea');
                 textedit.value = textareaElement.value;
 
+                // create the editor
                 function CreateEasyMDE() {
                     easymde = new EasyMDE({
                         element: textedit,
@@ -148,6 +149,10 @@ function injectButtonWrapperEasyMDE() {
                                 action: function themLight(editor){
                                     innerDoc.getElementById("theme-link").setAttribute('href', "theme.light.css");
                                     innerDoc.getElementById("highlight-link").setAttribute('href', "../highlight/min.light.css");
+                                    // Update toolbar buttons
+                                    editor.toolbarElements.themeLight.classList.add('active');
+                                    editor.toolbarElements.themeDimmed.classList.remove('active');
+                                    editor.toolbarElements.themeDark.classList.remove('active');
                                 },
                                 className: "fa fa-circle-o",
                                 title: "Theme Light",
@@ -157,6 +162,10 @@ function injectButtonWrapperEasyMDE() {
                                 action: function themeDimmed(editor){
                                     innerDoc.getElementById("theme-link").setAttribute('href', "theme.dimmed.css");
                                     innerDoc.getElementById("highlight-link").setAttribute('href', "../highlight/min.dimmed.css");
+                                    // Update toolbar buttons
+                                    editor.toolbarElements.themeLight.classList.remove('active');
+                                    editor.toolbarElements.themeDimmed.classList.add('active');
+                                    editor.toolbarElements.themeDark.classList.remove('active');
                                 },
                                 className: "fa fa-dot-circle-o",
                                 title: "Theme Dimmed",
@@ -166,6 +175,10 @@ function injectButtonWrapperEasyMDE() {
                                 action: function themeDark(editor){
                                     innerDoc.getElementById("theme-link").setAttribute('href', "theme.dark.css");
                                     innerDoc.getElementById("highlight-link").setAttribute('href', "../highlight/min.dark.css");
+                                    // Update toolbar buttons
+                                    editor.toolbarElements.themeLight.classList.remove('active');
+                                    editor.toolbarElements.themeDimmed.classList.remove('active');
+                                    editor.toolbarElements.themeDark.classList.add('active');
                                 },
                                 className: "fa fa-circle",
                                 title: "Theme Dark",
@@ -187,6 +200,33 @@ function injectButtonWrapperEasyMDE() {
                     });
 
                     easymde.toggleSideBySide();
+
+                    // set the default theme
+                    $.ajax({
+                        cache: false,
+                        type: "POST",
+                        url: '/?controller=ConfigController&action=getEasyMDEDefaultTheme&plugin=WysiwygMDEditor',
+                        success: function(response) {
+                            innerDoc.getElementById("theme-link").setAttribute('href', "theme." + response + ".css");
+                            innerDoc.getElementById("highlight-link").setAttribute('href', "../highlight/min." + response + ".css");
+                            // Update toolbar buttons
+                            switch (response) {
+                                case 'light':
+                                    easymde.toolbarElements.themeLight.classList.add('active');
+                                    break;
+                                case 'dimmed':
+                                    easymde.toolbarElements.themeDimmed.classList.add('active');
+                                    break;
+                                case 'dark':
+                                    easymde.toolbarElements.themeDark.classList.add('active');
+                                    break;
+                            }
+                        },
+                        error: function(xhr,textStatus,e) {
+                            alert('getEasyMDEDefaultTheme');
+                            alert(e);
+                        }
+                    });
                 }
 
                 CreateEasyMDE();

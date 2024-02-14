@@ -16,7 +16,8 @@ return array(
     'WysiwygMDEditor_SETTINGS_EDITING_OPTIONS' => 'Setup Editing Options',
     'WysiwygMDEditor_SETTINGS_EDITING_DESCR' => 'Choose which MD editors to use.
                                                 Enabling an editor will inject a corresponding button in the editing toolbar of each markdown textarea.
-                                                All editors open independently of each other in a fullscreen overlay mode so that they don\'t mess with Kanboard UI.',
+                                                All editors open independently of each other in a fullscreen overlay mode so that they don\'t mess with Kanboard UI.
+                                                The actual UI of the editors is in English, no translations are available for them.',
     'WysiwygMDEditor_SETTINGS_EDITING_ENABLE_BUTTON' => 'Enable a button for',
     'WysiwygMDEditor_SETTINGS_EASYMDE_DESCR' => 'A fully offline drop-in JavaScript markdown editor.
                                                 Configured to cover all MD syntax and preview features GFM compatible.
@@ -25,13 +26,17 @@ return array(
                                                 Implements code syntax highlight through HighlightJS for about 40 most common languages.
                                                 No support for images upload, drag or paste, only trough URLs.
                                                 No support for emoji syntax, only through OS emoji shortcuts (e.g. "WIN + .").',
+    '_PREVIEWWysiwygMDEditor_SETTINGS_EASYMDE_THEME_SELECT' => 'Select the default theme for EasyMDE :',
+    '_PREVIEWWysiwygMDEditor_SETTINGS_EASYMDE_THEME_LIGHT' => 'Light Theme',
+    '_PREVIEWWysiwygMDEditor_SETTINGS_EASYMDE_THEME_DIMMED' => 'Dimmed Theme',
+    '_PREVIEWWysiwygMDEditor_SETTINGS_EASYMDE_THEME_DARK' => 'Dark Theme',
     'WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR' => 'An online service based markdown editor and note taking tool.
                                                 Covers wide range of MD syntax variations but configured to comply with GFM.
                                                 Supports side preview, multiple tools, rich options and customizations.
                                                 Basic switch for light/dark theme, there are multiple colorful themes via options for each pane - editing or preview.
-                                                Selected preferences are remembered through browser cookies, on reopening the editor last view will be restored.
+                                                Selected preferences are remembered locally by the  browser, on reopening the editor last view will be restored.
                                                 Supports code syntax highlight for a myriad of languages.
-                                                Support for images upload, drag and paste BUT BE AWARE those are using the browser storage, not the Kanboard DB!
+                                                Support for images upload, drag and paste BUT BE AWARE those are using the local browser storage, not the Kanboard DB!
                                                 Fully supports emoji syntax and input through OS emoji shortcuts (e.g. "WIN + .").
                                                 There are extra features like KaTeX math expressions, Mermaid UML diagrams and other extensions that are
                                                 supported by default BUT ARE NOT COMPATIBLE with the standard MD feature set that is supported by Kanboard!',

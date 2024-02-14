@@ -13,7 +13,6 @@
 <form method="post" action="<?= $this->url->href('ConfigController', 'save', array('plugin' => 'WysiwygMDEditor')) ?>" autocomplete="off">
     <?= $this->form->csrf() ?>
 
-    <?= $this->modal->submitButtons() ?>
     <fieldset class="fieldset-WysiwygMDEditor">
         <legend><?= t('WysiwygMDEditor_SETTINGS_EDITING_OPTIONS') ?></legend>
         <div><?= t('WysiwygMDEditor_SETTINGS_EDITING_DESCR') ?></div>
@@ -30,6 +29,18 @@
                 <td class="descr-WysiwygMDEditor">
                     <a href="https://github.com/Ionaru/easy-markdown-editor" target="_blank" title="<?= t('Opens in a new window') ?>"> EasyMDE <i class="fa fa-external-link"></i></a>
                     <br><?= t('WysiwygMDEditor_SETTINGS_EASYMDE_DESCR') ?>
+
+                    <?php
+                        if (!isset($values['WysiwygMDEditor_easymde_default_theme'])) {
+                            $values['WysiwygMDEditor_easymde_default_theme'] = 'dimmed';
+                        }
+                    ?>
+                    <br><?= $this->form->label(t('_PREVIEWWysiwygMDEditor_SETTINGS_EASYMDE_THEME_SELECT'), 'WysiwygMDEditor_easymde_default_theme') ?>
+                    <?= $this->form->select('WysiwygMDEditor_easymde_default_theme', array(
+                        'light'  => t('_PREVIEWWysiwygMDEditor_SETTINGS_EASYMDE_THEME_LIGHT'),
+                        'dimmed' => t('_PREVIEWWysiwygMDEditor_SETTINGS_EASYMDE_THEME_DIMMED'),
+                        'dark'   => t('_PREVIEWWysiwygMDEditor_SETTINGS_EASYMDE_THEME_DARK'),
+                    ), $values) ?>
                 </td>
             </tr></table>
         </div>
