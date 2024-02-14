@@ -44,7 +44,7 @@ class Plugin extends Base
 
     public function getPluginAuthor()
     {
-        return 'imfx77';
+        return 'Im[F(x)]';
     }
 
     public function getPluginVersion()

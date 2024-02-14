@@ -1,3 +1,7 @@
+/**
+ * @author  Im[F(x)]
+ */
+
 const styleContent = `
 .easymde-no-overflow {
   overflow: hidden;

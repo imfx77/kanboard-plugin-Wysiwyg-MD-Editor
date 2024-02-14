@@ -5,7 +5,7 @@ namespace Kanboard\Plugin\WysiwygMDEditor\Controller;
 /**
  * Class WysiwygMDEditorConfigController
  * @package Kanboard\Plugin\WysiwygMDEditor\Controller
- * @author  imfx77
+ * @author  Im[F(x)]
  */
 class WysiwygMDEditorConfigController extends \Kanboard\Controller\ConfigController
 {

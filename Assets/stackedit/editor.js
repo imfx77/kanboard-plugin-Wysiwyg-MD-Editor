@@ -1,3 +1,7 @@
+/**
+ * @author  Im[F(x)]
+ */
+
 function injectButtonWrapperStackEdit() {
 
     $('.text-editor-write-mode').each(function() {

@@ -104,7 +104,7 @@ Go to `Settings` &#10562; `Wysiwyg MD Editor`, follow the explanations, configur
 
 ## Authors & Contributors
 
-- [@imfx77](https://github.com/imfx77) - Author
+- [Im[F(x)]](https://github.com/imfx77) - Author
 - Contributors welcome _for translations_ !
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
