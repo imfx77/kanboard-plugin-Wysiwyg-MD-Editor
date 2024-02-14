@@ -9,11 +9,15 @@ class Plugin extends Base
 {
     public function initialize()
     {
-        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/highlight/min.js'));
-        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/min.js'));
-        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/editor.js'));
-        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/stackedit/min.js'));
-        $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/stackedit/editor.js'));
+    	if ($this->configModel->get('WysiwygMDEditor_enable_easymde', '0') == '1') {
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/highlight/min.js'));
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/min.js'));
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/editor.js'));
+        }
+    	if ($this->configModel->get('WysiwygMDEditor_enable_stackedit', '0') == '1') {
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/stackedit/min.js'));
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/stackedit/editor.js'));
+        }
 
         $this->template->hook->attach('template:config:sidebar', 'WysiwygMDEditor:config/sidebar');
 
