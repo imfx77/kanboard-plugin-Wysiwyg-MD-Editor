@@ -1,7 +1,7 @@
 # Changelog
 
 
-## v0.5.0
+## v0.5.1
 
 _(most recent changes are listed on top):_
 - Preliminary release for troubleshooting purposes
@@ -11,4 +11,4 @@ _(most recent changes are listed on top):_
 
 ---
 
-Read the full [**Changelog**](../master/changelog.md "See changes") or view the [**README**](../master/README.md "View README")
+Read the full [**Changelog**](changelog.md "See changes") or view the [**README**](README.md "View README")

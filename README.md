@@ -87,8 +87,8 @@ Follow the explanations to configure and preview the MD editor(s) of your prefer
 <details>
     <summary><strong>Installation</strong></summary>
 
-- Install via the **[Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") Plugin Directory** or see [INSTALL.md](../master/INSTALL.md)
-- Read the full [**Changelog**](../master/changelog.md "See changes") to see the latest updates
+- Install via the **Kanboard Plugin Directory** or see [INSTALL.md](INSTALL.md)
+- Read the full [**Changelog**](changelog.md "See changes") to see the latest updates
 
 </details>
 <details>
@@ -106,7 +106,7 @@ Follow the explanations to configure and preview the MD editor(s) of your prefer
     <summary><strong>Translations</strong></summary>
 
 - _`en_US` translation available ONLY_
-- some more translations might be mechanically added in the future using Google Translate
+- More translations might be mechanically added in the future using Google Translate
 
 </details>
 

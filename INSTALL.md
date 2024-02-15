@@ -1,21 +1,20 @@
 # Plugin Installation
 
-- **Install via the [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") Plugin Directory**
+- **Install via the Kanboard Plugin Directory**
   - _Go to:_
     - Kanboard: `Plugins` &#10562; `Plugin Directory`
   - _or with [PluginManager](https://github.com/aljawaid/PluginManager "A Kanboard plugin") installed:_
-    - Kanboard: `Settings` &#10562; `Plugins` &#10562; `Plugin Directory`
-- **Install via the [Releases](../master/Releases/ "A copy of each release is saved in the folder") folder**
-  - A copy of each release is saved in the `/Releases` folder of the repository
-  - Simply extract the `.zip` file into the `/plugins` directory
-- **Install via [GitHub](https://github.com/ "Find the correct plugin from the list of repositories")**
-  - Download the `.zip` file and decompress everything under the directory `/plugins`
-  - The folder inside the `.zip` must not contain any branch names and must be exact case (matching the plugin name)
+    - Kanboard: `Settings` &#10562; `Plugin Manager` &#10562; `Plugin Directory`
+- **Install via repository [Releases](https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/releases)**
+  - A copy of each release is available under the `Releases` section of the repository
+  - Download the `.zip` file for the desired release
+  - Extract the `.zip` file into the `/plugins` directory of your **Kanboard** instance
+- **Install via repository [Code](https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor)**
+  - Click the `<> Code` button &#10562; `Download ZIP` to obtain the entire source
+  - Decompress everything under the `/plugins` directory of your **Kanboard** instance
+  - Rename the extracted folder from the `.zip` to be exactly `WysiwygMDEditor` (_must not contain branch name or version!_)
 
 _Note: The `/plugins` folder is case-sensitive._
-
-- **Install using Git CLI**
-  - `git clone` (_or ftp upload_) and extract the `.zip` file into this folder: `.\plugins\` (must be exact case)
 
 ---
 
