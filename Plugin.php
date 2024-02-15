@@ -10,12 +10,12 @@ class Plugin extends Base
     public function initialize()
     {
     	if ($this->configModel->get('WysiwygMDEditor_enable_easymde', '0') == '1') {
-            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/highlight/min.js'));
-            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/min.js'));
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/highlightjs/highlight.js/highlight.min.js'));
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/Ionaru/easy-markdown-editor/easymde.min.js'));
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/editor.js'));
         }
     	if ($this->configModel->get('WysiwygMDEditor_enable_stackedit', '0') == '1') {
-            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/stackedit/min.js'));
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/benweet/stackedit.js/stackedit.min.js'));
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/stackedit/editor.js'));
         }
 
@@ -47,7 +47,7 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
-        return '0.5.1';
+        return '0.5.2';
     }
 
     public function getCompatibleVersion()
