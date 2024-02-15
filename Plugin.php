@@ -23,8 +23,6 @@ class Plugin extends Base
 
         $this->route->addRoute('settings/wysiwygmdeditor', 'WysiwygMDEditorConfigController', 'show', 'WysiwygMDEditor');
         $this->route->addRoute('settings/wysiwygmdeditor/preview', 'WysiwygMDEditorConfigController', 'preview', 'WysiwygMDEditor');
-
-        $this->helper->register('wysiwygMDEditorHelper', '\Kanboard\Plugin\WysiwygMDEditor\Helper\WysiwygMDEditorHelper');
     }
 
     public function onStartup()
@@ -49,7 +47,7 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
-        return '0.5.0';
+        return '0.5.1';
     }
 
     public function getCompatibleVersion()
