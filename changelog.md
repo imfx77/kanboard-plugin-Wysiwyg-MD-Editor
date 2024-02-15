@@ -1,7 +1,18 @@
 # Changelog
 
 
+## v0.5.2
+
+_(most recent changes are listed on top):_
+- Multiple corrections to README, INSTALL, changelog and Screenshots
+- Refactoring for vendors and correct attributing of their licences
+
 ## v0.5.1
+
+_(most recent changes are listed on top):_
+- README, changelog and author fixes
+
+## v0.5.0
 
 _(most recent changes are listed on top):_
 - Preliminary release for troubleshooting purposes
