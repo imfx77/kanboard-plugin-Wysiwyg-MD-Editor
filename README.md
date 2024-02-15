@@ -64,6 +64,14 @@ For a better preview and feel of the actual editors visit:
 
 ![textarea editing toolbar injected buttons](Screenshots/textarea-editing-toolbar-injected-buttons.png "textarea editing toolbar with injected MD editors buttons")
 
+**EasyMDE with side preview using the dimmed theme.**  
+
+![easymde preview](Screenshots/easymde-preview.png "easymde preview")
+
+**StackEdit+ with side preview using the default dark theme.**  
+
+![stackedit plus preview](Screenshots/stackedit-plus-preview.png "stackedit plus preview")
+
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Usage
