@@ -36,14 +36,14 @@
 
 ---
 
-<h4 name="user-content-readme-top">(work in progress ...)</h4>
+<h4>(work in progress ...)</h4>
 <h1 name="user-content-readme-top">Wysiwyg MD Editor plugin for Kanboard</h1>
 
 Integrates external MD editors into Kanboard in order to conveniently edit/preview
 (and eventually render) the markdown textareas in the Kanboard interface.
 Each editor may allow for different customizations of functionality, MD features, and UI themes.
 
-<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
@@ -56,7 +56,7 @@ For a better preview and feel of the actual editors visit:
 - `EasyMDE` [Live Demo](https://stackblitz.com/edit/easymde/?file=index.html)
 - `StackEdit+` [Online App](https://stackedit.net/app#) 
 
-<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Screenshots
 
@@ -72,7 +72,7 @@ For a better preview and feel of the actual editors visit:
 
 ![stackedit plus preview](Screenshots/stackedit-plus-preview.png "stackedit plus preview")
 
-<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Usage
 
@@ -80,7 +80,7 @@ Go to `Settings` &#10562; `Wysiwyg MD Editor`
 
 Follow the explanations to configure and preview the MD editor(s) of your preference.
 
-<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Installation & Compatibility
 
@@ -110,14 +110,14 @@ Follow the explanations to configure and preview the MD editor(s) of your prefer
 
 </details>
 
-<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#usage">&#8592; Previous</a>] [<a href="#license">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Authors & Contributors
 
 - [Im[F(x)]](https://github.com/imfx77) - Author
 - Contributors welcome _for translations_ !
 
-<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Credits & References
 
@@ -126,11 +126,13 @@ Follow the explanations to configure and preview the MD editor(s) of your prefer
 - [StackEdit+](https://github.com/mafgwo/stackedit-plus)
 - [stackedit.js](https://github.com/benweet/stackedit.js)
 
-<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## License
 
 - This project is distributed under the [MIT License](LICENSE "Read The MIT license")
+
+<p align="right">[<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ---
 
@@ -157,5 +159,5 @@ Follow the explanations to configure and preview the MD editor(s) of your prefer
         <img alt="GitHub commits since latest release (by date)" src="https://img.shields.io/github/commits-since/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/latest?style=flat-square">
     </a>
 </p>
-<p align="right">[<a href="#user-content-readme-top">&#8593; Top</a>]</p>
+
 <a name="user-content-readme-bottom"></a>
