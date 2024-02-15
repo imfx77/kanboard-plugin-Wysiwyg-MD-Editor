@@ -40,21 +40,21 @@
 <h1 name="user-content-readme-top">Wysiwyg MD Editor plugin for Kanboard</h1>
 
 Integrates external MD editors into Kanboard in order to conveniently edit/preview
-(and eventually render) the rich-text-enabled fields in the KB interface.
-Every editor may allow for different customizations of functionality, MD features, and UI themes.
+(and eventually render) the markdown textareas in the Kanboard interface.
+Each editor may allow for different customizations of functionality, MD features, and UI themes.
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
-- `Currently integrates EasyMDE and StackEdit+ markdown editors`
-- `Both editors are configured to be GFM compatible`
-- `Side preview is available, themes and various convenience options`
-- `Configurable buttons to inject into the KB editing toolbar of markdown textareas`
+- Currently integrates the [EasyMDE](https://github.com/Ionaru/easy-markdown-editor) and [StackEdit+](https://github.com/mafgwo/stackedit-plus) markdown editors
+- Both editors are configured to be [GFM](https://github.github.com/gfm/) compatible
+- Side preview is available, themes and various convenience options
+- Configurable buttons to inject into the KB editing toolbar of markdown textareas
 
-For a better feel of the actual editors visit their corresponding site or demo:
-- refer `EasyMDE` [@GitHub](https://github.com/Ionaru/easy-markdown-editor) or the [Live Demo](https://stackblitz.com/edit/easymde/?file=index.html)
-- refer `StackEdit+` [@GitHub](https://github.com/mafgwo/stackedit-plus) or the [Online App](https://stackedit.net/app#) 
+For a better preview and feel of the actual editors visit:
+- `EasyMDE` [Live Demo](https://stackblitz.com/edit/easymde/?file=index.html)
+- `StackEdit+` [Online App](https://stackedit.net/app#) 
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
@@ -68,7 +68,9 @@ For a better feel of the actual editors visit their corresponding site or demo:
 
 ## Usage
 
-Go to `Settings` &#10562; `Wysiwyg MD Editor`, follow the explanations, configure and preview the MD editor(s) of your preference.
+Go to `Settings` &#10562; `Wysiwyg MD Editor`
+
+Follow the explanations to configure and preview the MD editor(s) of your preference.
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
@@ -112,15 +114,15 @@ Go to `Settings` &#10562; `Wysiwyg MD Editor`, follow the explanations, configur
 ## Credits & References
 
 - [EasyMDE](https://github.com/Ionaru/easy-markdown-editor)
-- [Highlight JS](https://github.com/highlightjs/highlight.js)
+- [Highlight.js](https://github.com/highlightjs/highlight.js)
 - [StackEdit+](https://github.com/mafgwo/stackedit-plus)
-- [StackEdit JS](https://github.com/benweet/stackedit.js)
+- [stackedit.js](https://github.com/benweet/stackedit.js)
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## License
 
-- This project is distributed under the [MIT License](../master/LICENSE "Read The MIT license")
+- This project is distributed under the [MIT License](LICENSE "Read The MIT license")
 
 ---
 
