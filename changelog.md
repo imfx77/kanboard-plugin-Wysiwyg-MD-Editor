@@ -1,6 +1,13 @@
 # Changelog
 
 
+## v0.5.3
+
+_(most recent changes are listed on top):_
+* Added translations for common languages DE, ES, FR, IT, PT, RU (using Google Translate)
+* Translation for "en_US" is set to default if a language pack is missing
+* Hiding rendering options until rendering is actually implemented 
+
 ## v0.5.2
 
 _(most recent changes are listed on top):_
