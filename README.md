@@ -43,6 +43,9 @@ Integrates external MD editors into Kanboard in order to conveniently edit/previ
 (and eventually render) the markdown textareas in the Kanboard interface.
 Each editor may allow for different customizations of functionality, MD features, and UI themes.
 
+- [x] If you like it and use it, please, give a :star: !
+- [x] If you want a new language pack added or an existing one corrected, please, post a PR !
+
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
@@ -105,8 +108,8 @@ Follow the explanations to configure and preview the MD editor(s) of your prefer
 <details>
     <summary><strong>Translations</strong></summary>
 
-- _`en_US` translation available ONLY_
-- More translations might be mechanically added in the future using Google Translate
+- Available translations for some common languages `DE`, `ES`, `FR`, `IT`, `PT`, `RU` - yet, they are _mechanically translated using Google Translate_ !
+- _`en_US` translation is the default_ if there is no translation for the user selected language in KB.
 
 </details>
 

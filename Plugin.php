@@ -27,7 +27,16 @@ class Plugin extends Base
 
     public function onStartup()
     {
-        Translator::load($this->languageModel->getCurrentLanguage(), __DIR__ . '/Locale');
+        $path = __DIR__ . '/Locale';
+        $language = $this->languageModel->getCurrentLanguage();
+        $filename = implode(DIRECTORY_SEPARATOR, array($path, $language, 'translations.php'));
+
+        if (file_exists($filename)) {
+            Translator::load($language, $path);
+        }
+        else {
+            Translator::load('en_US', $path);
+        }
     }
 
     public function getPluginName()
@@ -47,7 +56,7 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
-        return '0.5.2';
+        return '0.5.3';
     }
 
     public function getCompatibleVersion()

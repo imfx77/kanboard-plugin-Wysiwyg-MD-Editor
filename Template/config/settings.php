@@ -62,11 +62,13 @@
         <?= $this->modal->submitButtons() ?>
     </fieldset>
 
+<!--
     <fieldset class="fieldset-WysiwygMDEditor">
         <legend><?= t('WysiwygMDEditor_SETTINGS_RENDERING_OPTIONS') ?></legend>
         <div><?= t('WysiwygMDEditor_SETTINGS_RENDERING_DESCR') ?></h3><div>
 
         <?= $this->modal->submitButtons() ?>
     </fieldset>
+-->
 
 </form>
