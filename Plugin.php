@@ -16,7 +16,7 @@ class Plugin extends Base
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/Ionaru/easy-markdown-editor/easymde.min.js'));
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/editor.js'));
 
-            // add a 'self' frame-src CSP for StackEdit+, ONLY if not already present
+            // add a 'self' frame-src CSP for EasyMDE, ONLY if not already present
             if (!array_key_exists('frame-src', $cspRules)) {
                 $cspRules['frame-src'] = "'self'";
             }
