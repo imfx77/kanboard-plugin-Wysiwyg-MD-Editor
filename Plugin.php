@@ -9,14 +9,34 @@ class Plugin extends Base
 {
     public function initialize()
     {
+        $cspRules = $this->container['cspRules'];
+
     	if ($this->configModel->get('WysiwygMDEditor_enable_easymde', '0') == '1') {
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/highlightjs/highlight.js/highlight.min.js'));
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/Ionaru/easy-markdown-editor/easymde.min.js'));
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/editor.js'));
+
+            // add a 'self' frame-src CSP for StackEdit+, ONLY if not already present
+            if (!array_key_exists('frame-src', $cspRules)) {
+                $cspRules['frame-src'] = "'self'";
+            }
+            else if (!str_contains($cspRules['frame-src'], "'self'")) {
+                $cspRules['frame-src'] .= " 'self'";
+            }
         }
+
     	if ($this->configModel->get('WysiwygMDEditor_enable_stackedit', '0') == '1') {
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/benweet/stackedit.js/stackedit.min.js'));
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/stackedit/editor.js'));
+
+            // add a specific frame-src CSP for StackEdit+, ONLY if not already present
+            if (!array_key_exists('frame-src', $cspRules)) {
+                $cspRules['frame-src'] = "https://stackedit.net/";
+            }
+            else if (!str_contains($cspRules['frame-src'], "https://stackedit.net/")) {
+                $cspRules['frame-src'] .= " https://stackedit.net/";
+            }
+            $this->setContentSecurityPolicy($cspRules);
         }
 
         $this->template->hook->attach('template:config:sidebar', 'WysiwygMDEditor:config/sidebar');
@@ -56,7 +76,7 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
-        return '0.5.3';
+        return '0.5.4';
     }
 
     public function getCompatibleVersion()

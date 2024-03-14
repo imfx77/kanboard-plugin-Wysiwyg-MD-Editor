@@ -36,7 +36,6 @@
 
 ---
 
-<h4>(work in progress ...)</h4>
 <h1 name="user-content-readme-top">Wysiwyg MD Editor plugin for Kanboard</h1>
 
 Integrates external MD editors into Kanboard in order to conveniently edit/preview
@@ -109,7 +108,7 @@ Follow the explanations to configure and preview the MD editor(s) of your prefer
     <summary><strong>Translations</strong></summary>
 
 - Available translations for some common languages `DE`, `ES`, `FR`, `IT`, `PT`, `RU` - yet, they are _mechanically translated using Google Translate_ !
-- _`en_US` translation is the default_ if there is no translation for the user selected language in KB.
+- _Translation for `en_US` is the default_ if there is no translation pack for the user selected language in KB.
 
 </details>
 
