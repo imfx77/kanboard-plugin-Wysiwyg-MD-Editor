@@ -36,8 +36,9 @@ class Plugin extends Base
             else if (!str_contains($cspRules['frame-src'], "https://stackedit.net/")) {
                 $cspRules['frame-src'] .= " https://stackedit.net/";
             }
-            $this->setContentSecurityPolicy($cspRules);
         }
+
+        $this->setContentSecurityPolicy($cspRules);
 
         $this->template->hook->attach('template:config:sidebar', 'WysiwygMDEditor:config/sidebar');
 
