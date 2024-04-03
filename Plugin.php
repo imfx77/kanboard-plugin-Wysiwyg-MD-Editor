@@ -12,6 +12,10 @@ class Plugin extends Base
         $cspRules = $this->container['cspRules'];
 
     	if ($this->configModel->get('WysiwygMDEditor_enable_easymde', '0') == '1') {
+            //CSS
+            $this->hook->on('template:layout:css', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/container.css'));
+
+            //JS
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/highlightjs/highlight.js/highlight.min.js'));
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/Ionaru/easy-markdown-editor/easymde.min.js'));
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/editor.js'));
@@ -26,6 +30,7 @@ class Plugin extends Base
         }
 
     	if ($this->configModel->get('WysiwygMDEditor_enable_stackedit', '0') == '1') {
+            //JS
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/benweet/stackedit.js/stackedit.min.js'));
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/stackedit/editor.js'));
 
@@ -38,10 +43,13 @@ class Plugin extends Base
             }
         }
 
+        // CSP
         $this->setContentSecurityPolicy($cspRules);
 
+        //CONFIG HOOK
         $this->template->hook->attach('template:config:sidebar', 'WysiwygMDEditor:config/sidebar');
 
+        // ROUTES
         $this->route->addRoute('settings/wysiwygmdeditor', 'WysiwygMDEditorConfigController', 'show', 'WysiwygMDEditor');
         $this->route->addRoute('settings/wysiwygmdeditor/preview', 'WysiwygMDEditorConfigController', 'preview', 'WysiwygMDEditor');
     }

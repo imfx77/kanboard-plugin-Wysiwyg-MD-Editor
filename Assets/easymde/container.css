@@ -1,0 +1,57 @@
+.easymde-no-overflow {
+  overflow: hidden;
+}
+
+.easymde-container {
+  background-color: rgba(160, 160, 160, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.easymde-iframe-container {
+  background-color: transparent;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 98%;
+  width: 98%;
+  max-width: 1920px;
+  border-radius: 2px;
+}
+
+.easymde-iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  border-radius: 2px;
+}
+
+.easymde-iframe-embedded {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-style: none;
+}
+
+.easymde-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  box-sizing: border-box !important;
+  width: 38px !important;
+  height: 36px !important;
+  margin: 4px !important;
+  padding: 0 4px !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  text-decoration: none !important;
+}

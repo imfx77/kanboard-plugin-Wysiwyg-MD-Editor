@@ -2,69 +2,7 @@
  * @author  Im[F(x)]
  */
 
-const styleContent = `
-.easymde-no-overflow {
-  overflow: hidden;
-}
-
-.easymde-container {
-  background-color: rgba(160, 160, 160, 0.5);
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 9999;
-}
-
-.easymde-iframe-container {
-  background-color: transparent;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 98%;
-  width: 98%;
-  max-width: 1920px;
-  border-radius: 2px;
-}
-
-.easymde-iframe {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border: 0;
-  border-radius: 2px;
-}
-
-.easymde-close-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 10000;
-  box-sizing: border-box !important;
-  width: 38px !important;
-  height: 36px !important;
-  margin: 4px !important;
-  padding: 0 4px !important;
-  text-align: center !important;
-  vertical-align: middle !important;
-  text-decoration: none !important;
-}
-
-`;
-
-let createStyle = () => {
-  const styleEl = document.createElement('style');
-  styleEl.type = 'text/css';
-  styleEl.innerHTML = styleContent;
-  document.head.appendChild(styleEl);
-  createStyle = () => {}; // Create style only once
-};
-
-const containerHtml = `
+const easymdeHtmlContainer = `
 <div class="easymde-iframe-container">
   <button class="easymde-close-button" title="Close">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%">
@@ -92,12 +30,10 @@ function injectButtonWrapperEasyMDE() {
         const textareaElement = this.querySelector('textarea');
 
         $( buttonWrapper ).click(function() {
-            createStyle();
-
-            var containerEl = document.createElement('div');
-            containerEl.className = 'easymde-container';
-            containerEl.innerHTML = containerHtml;
-            document.body.appendChild(containerEl);
+            var containerElement = document.createElement('div');
+            containerElement.className = 'easymde-container';
+            containerElement.innerHTML = easymdeHtmlContainer;
+            document.body.appendChild(containerElement);
             document.body.className += ' easymde-no-overflow';
 
             var textedit = null;
@@ -112,10 +48,11 @@ function injectButtonWrapperEasyMDE() {
                 function CreateEasyMDE() {
                     easymde = new EasyMDE({
                         element: textedit,
+                        autoDownloadFontAwesome: false,
                         spellChecker: false,
                         forceSync: true,
                         autofocus: true,
-                        maxHeight: (0.9 * containerEl.offsetHeight - 80) + 'px',
+                        maxHeight: (0.9 * containerElement.offsetHeight - 80) + 'px',
                         sideBySideFullscreen : false,
                         //lineNumbers: true,
                         insertTexts: {
@@ -255,9 +192,9 @@ function injectButtonWrapperEasyMDE() {
                     textareaElement.value = textedit.value;
 
                     document.body.className = document.body.className.replace(/\seasymde-no-overflow\b/, '');
-                    document.body.removeChild(containerEl);
+                    document.body.removeChild(containerElement);
 
-                    containerEl = null;
+                    containerElement = null;
                     easymde = null;
                 });
 
@@ -270,9 +207,9 @@ function injectButtonWrapperEasyMDE() {
                 textareaElement.value = textedit.value;
 
                 document.body.className = document.body.className.replace(/\seasymde-no-overflow\b/, '');
-                document.body.removeChild(containerEl);
+                document.body.removeChild(containerElement);
 
-                containerEl = null;
+                containerElement = null;
                 easymde = null;
             });
 
