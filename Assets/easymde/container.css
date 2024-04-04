@@ -1,5 +1,5 @@
 .easymde-no-overflow {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .easymde-container {
