@@ -64,13 +64,53 @@
         <?= $this->modal->submitButtons() ?>
     </fieldset>
 
-<!--
     <fieldset class="fieldset-WysiwygMDEditor">
         <legend><?= t('WysiwygMDEditor_SETTINGS_RENDERING_OPTIONS') ?></legend>
-        <div><?= t('WysiwygMDEditor_SETTINGS_RENDERING_DESCR') ?></h3><div>
+        <div class="descr-WysiwygMDEditor"><?= $this->helper->text->markdown(t('WysiwygMDEditor_SETTINGS_RENDERING_DESCR')) ?></h3></div>
+
+        <div>
+            <?= $this->form->checkbox('WysiwygMDEditor_enable_rendering_easymde', t('WysiwygMDEditor_SETTINGS_RENDERING_ENABLE'),
+             1, isset($values['WysiwygMDEditor_enable_rendering_easymde']) ? $values['WysiwygMDEditor_enable_rendering_easymde'] == 1 : 0) ?>
+            <table><tr>
+                <td class="icon-WysiwygMDEditor">
+                    <img height="48" width="48" src="<?= $this->helper->url->base() ?>plugins/WysiwygMDEditor/Assets/easymde/icon.svg">
+                </td>
+                <td class="descr-WysiwygMDEditor">
+                    <a href="https://github.com/Ionaru/easy-markdown-editor" target="_blank" title="<?= t('Opens in a new window') ?>"> EasyMDE <i class="fa fa-external-link"></i></a>
+                    <br>
+                    <div><?= $this->helper->text->markdown(t('WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR')) ?></div>
+
+                    <?php
+                        if (!isset($values['WysiwygMDEditor_easymde_render_theme'])) {
+                            $values['WysiwygMDEditor_easymde_render_theme'] = 'dimmed';
+                        }
+                    ?>
+                    <?= $this->form->label(t('WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_THEME_SELECT'), 'WysiwygMDEditor_easymde_render_theme') ?>
+                    <?= $this->form->select('WysiwygMDEditor_easymde_render_theme', array(
+                        'light'  => t('WysiwygMDEditor_SETTINGS_EASYMDE_THEME_LIGHT'),
+                        'dimmed' => t('WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DIMMED'),
+                        'dark'   => t('WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DARK'),
+                    ), $values) ?>
+
+                    <?php
+                        if (!isset($values['WysiwygMDEditor_easymde_render_code_highlight'])) {
+                            $values['WysiwygMDEditor_easymde_render_code_highlight'] = 1;
+                        }
+                    ?>
+                    <br><?= $this->form->label(t('WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_SELECT'), 'WysiwygMDEditor_easymde_render_code_highlight') ?>
+                    <?= $this->form->select('WysiwygMDEditor_easymde_render_code_highlight', array(
+                        0 => t('WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_NONE'),
+                        1 => t('WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLJS'),
+                        2 => t('WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN'),
+                    ), $values) ?>
+
+                    <br><?= $this->form->checkbox('WysiwygMDEditor_easymde_render_transparent_background', t('WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_TRANSPARENT_BACKGROUND_ENABLE'),
+                     1, isset($values['WysiwygMDEditor_easymde_render_transparent_background']) ? $values['WysiwygMDEditor_easymde_render_transparent_background'] == 1 : 0) ?>
+                </td>
+            </tr></table>
+        </div>
 
         <?= $this->modal->submitButtons() ?>
     </fieldset>
--->
 
 </form>
