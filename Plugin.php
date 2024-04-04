@@ -43,6 +43,29 @@ class Plugin extends Base
             }
         }
 
+    	if ($this->configModel->get('WysiwygMDEditor_enable_rendering_easymde', '0') == '1') {
+            //CSS
+            $this->hook->on('template:layout:css', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/container.css'));
+
+            //JS
+            if ($this->configModel->get('WysiwygMDEditor_easymde_render_code_highlight', '1') == '2') {
+                $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/highlightjs/highlight.js/highlight.min.js'));
+            }
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/Ionaru/easy-markdown-editor/easymde.min.js'));
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/render.js'));
+
+            //HELPER
+            $this->helper->register('text', '\Kanboard\Plugin\WysiwygMDEditor\Helper\WysiwygMDEditorHelper');
+
+            // add a 'self' frame-src CSP for EasyMDE, ONLY if not already present
+            if (!array_key_exists('frame-src', $cspRules)) {
+                $cspRules['frame-src'] = "'self'";
+            }
+            else if (!str_contains($cspRules['frame-src'], "'self'")) {
+                $cspRules['frame-src'] .= " 'self'";
+            }
+        }
+
         // CSP
         $this->setContentSecurityPolicy($cspRules);
 
