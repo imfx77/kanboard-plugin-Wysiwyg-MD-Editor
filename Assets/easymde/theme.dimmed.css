@@ -25,7 +25,7 @@
     color: #999;
 }
 
-.EasyMDEContainer .editor-toolbar > .active, .editor-toolbar > button:hover, .editor-preview pre, .cm-s-easymde .cm-comment {
+.EasyMDEContainer .editor-toolbar > .active, .editor-toolbar > button:hover, .editor-preview pre, .editor-preview code, .cm-s-easymde .cm-comment {
     background-color: #555;
 }
 
