@@ -16,8 +16,8 @@ function injectRenderEasyMDE() {
         valueMarkdown = valueMarkdown.replaceAll('&gt;', '>');
 
         const valueRenderTheme = markdownElement.attr("renderTheme");
-        const valueRenderCodeHighlight = markdownElement.attr("renderCodeHighlight");
         const valueRenderTransparentBackground = (markdownElement.attr("renderTransparentBackground") == "1");
+        const valueRenderCodeHighlight = markdownElement.attr("renderCodeHighlight");
 
         containerElement.html('<iframe class="easymde-iframe-embedded" style="display: none"></iframe>');
 
@@ -112,8 +112,8 @@ function injectRenderEasyMDE() {
         $(".easymde-iframe-embedded", containerElement).attr('src', location.origin
             + '/plugins/WysiwygMDEditor/Template/render/easymde.php'
             + '?renderTheme=' + valueRenderTheme
-            + '&renderCodeHighlight=' + valueRenderCodeHighlight
             + '&renderTransparentBackground=' + valueRenderTransparentBackground
+            + '&renderCodeHighlight=' + valueRenderCodeHighlight
         );
 
     });

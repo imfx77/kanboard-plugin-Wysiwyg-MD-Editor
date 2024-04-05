@@ -82,13 +82,13 @@ class WysiwygMDEditorConfigController extends \Kanboard\Controller\ConfigControl
         print $this->configModel->get('WysiwygMDEditor_easymde_render_theme', 'dimmed');
     }
 
-    public function getEasyMDERenderCodeHighlight()
-    {
-        print $this->configModel->get('WysiwygMDEditor_easymde_render_code_highlight', 1);
-    }
-
     public function getEasyMDERenderTransparentBackground()
     {
         print $this->configModel->get('WysiwygMDEditor_easymde_render_transparent_background', 0);
+    }
+
+    public function getEasyMDERenderCodeHighlight()
+    {
+        print $this->configModel->get('WysiwygMDEditor_easymde_render_code_highlight', 1);
     }
 }

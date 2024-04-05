@@ -92,6 +92,9 @@
                         'dark'   => t('WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DARK'),
                     ), $values) ?>
 
+                    <br><?= $this->form->checkbox('WysiwygMDEditor_easymde_render_transparent_background', t('WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_TRANSPARENT_BACKGROUND_ENABLE'),
+                     1, isset($values['WysiwygMDEditor_easymde_render_transparent_background']) ? $values['WysiwygMDEditor_easymde_render_transparent_background'] == 1 : 0) ?>
+
                     <?php
                         if (!isset($values['WysiwygMDEditor_easymde_render_code_highlight'])) {
                             $values['WysiwygMDEditor_easymde_render_code_highlight'] = 1;
@@ -103,9 +106,6 @@
                         1 => t('WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLJS'),
                         2 => t('WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN'),
                     ), $values) ?>
-
-                    <br><?= $this->form->checkbox('WysiwygMDEditor_easymde_render_transparent_background', t('WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_TRANSPARENT_BACKGROUND_ENABLE'),
-                     1, isset($values['WysiwygMDEditor_easymde_render_transparent_background']) ? $values['WysiwygMDEditor_easymde_render_transparent_background'] == 1 : 0) ?>
                 </td>
             </tr></table>
         </div>

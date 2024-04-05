@@ -18,7 +18,7 @@
     print '<link rel="stylesheet" href="../../Assets/easymde/container.css">';
 
     if ($_GET['renderCodeHighlight'] == 1) {
-        // Highlight JS
+        // Highlight.js
         print '<link rel="stylesheet" href="../../vendor/highlightjs/highlight.js/github-' . $_GET['renderTheme'] . '.min.css">';
     }
     if ($_GET['renderCodeHighlight'] == 2) {
