@@ -15,7 +15,7 @@
 
     <fieldset class="fieldset-WysiwygMDEditor">
         <legend><?= t('WysiwygMDEditor_SETTINGS_EDITING_OPTIONS') ?></legend>
-        <div class="descr-WysiwygMDEditor"><?= $this->helper->text->markdown(t('WysiwygMDEditor_SETTINGS_EDITING_DESCR')) ?></div>
+        <div class="descr-WysiwygMDEditor"><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_EDITING_DESCR')) ?></div>
         <br>
         <div class="icon-WysiwygMDEditor"><img src="<?= $this->helper->url->base() ?>plugins/WysiwygMDEditor/Screenshots/textarea-editing-toolbar-injected-buttons.png"></div>
 
@@ -29,7 +29,7 @@
                 <td class="descr-WysiwygMDEditor">
                     <a href="https://github.com/Ionaru/easy-markdown-editor" target="_blank" title="<?= t('Opens in a new window') ?>"> EasyMDE <i class="fa fa-external-link"></i></a>
                     <br>
-                    <div><?= $this->helper->text->markdown(t('WysiwygMDEditor_SETTINGS_EASYMDE_DESCR')) ?></div>
+                    <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_EASYMDE_DESCR')) ?></div>
 
                     <?php
                         if (!isset($values['WysiwygMDEditor_easymde_default_theme'])) {
@@ -56,7 +56,7 @@
                 <td class="descr-WysiwygMDEditor">
                     <a href="https://github.com/mafgwo/stackedit-plus" target="_blank" title="<?= t('Opens in a new window') ?>"> StackEdit+ <i class="fa fa-external-link"></i></a>
                     <br>
-                    <div><?= $this->helper->text->markdown(t('WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR')) ?></div>
+                    <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR')) ?></div>
                 </td>
             </tr></table>
         </div>
@@ -66,7 +66,7 @@
 
     <fieldset class="fieldset-WysiwygMDEditor">
         <legend><?= t('WysiwygMDEditor_SETTINGS_RENDERING_OPTIONS') ?></legend>
-        <div class="descr-WysiwygMDEditor"><?= $this->helper->text->markdown(t('WysiwygMDEditor_SETTINGS_RENDERING_DESCR')) ?></h3></div>
+        <div class="descr-WysiwygMDEditor"><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_RENDERING_DESCR')) ?></h3></div>
 
         <div>
             <?= $this->form->checkbox('WysiwygMDEditor_enable_easymde_rendering', t('WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE'),
@@ -78,7 +78,7 @@
                 <td class="descr-WysiwygMDEditor">
                     <a href="https://github.com/Ionaru/easy-markdown-editor" target="_blank" title="<?= t('Opens in a new window') ?>"> EasyMDE <i class="fa fa-external-link"></i></a>
                     <br>
-                    <div><?= $this->helper->text->markdown(t('WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR')) ?></div>
+                    <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR')) ?></div>
 
                     <?php
                         if (!isset($values['WysiwygMDEditor_easymde_render_theme'])) {

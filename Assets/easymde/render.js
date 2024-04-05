@@ -11,7 +11,10 @@ function injectRenderEasyMDE() {
         containerElement.addClass("easymde-no-overflow");
         const containerHeight = containerElement.height();
 
-        const valueMarkdown = markdownElement.html();
+        var valueMarkdown = markdownElement.html();
+        valueMarkdown = valueMarkdown.replaceAll('&lt;', '<');
+        valueMarkdown = valueMarkdown.replaceAll('&gt;', '>');
+
         const valueRenderTheme = markdownElement.attr("renderTheme");
         const valueRenderCodeHighlight = markdownElement.attr("renderCodeHighlight");
         const valueRenderTransparentBackground = (markdownElement.attr("renderTransparentBackground") == "1");
@@ -36,6 +39,7 @@ function injectRenderEasyMDE() {
                 toolbar: false,
                 status: false,
             });
+
             easymde.togglePreview();
 
             if (valueRenderCodeHighlight == 2) {
