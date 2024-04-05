@@ -69,8 +69,8 @@
         <div class="descr-WysiwygMDEditor"><?= $this->helper->text->markdown(t('WysiwygMDEditor_SETTINGS_RENDERING_DESCR')) ?></h3></div>
 
         <div>
-            <?= $this->form->checkbox('WysiwygMDEditor_enable_rendering_easymde', t('WysiwygMDEditor_SETTINGS_RENDERING_ENABLE'),
-             1, isset($values['WysiwygMDEditor_enable_rendering_easymde']) ? $values['WysiwygMDEditor_enable_rendering_easymde'] == 1 : 0) ?>
+            <?= $this->form->checkbox('WysiwygMDEditor_enable_easymde_rendering', t('WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE'),
+             1, isset($values['WysiwygMDEditor_enable_easymde_rendering']) ? $values['WysiwygMDEditor_enable_easymde_rendering'] == 1 : 0) ?>
             <table><tr>
                 <td class="icon-WysiwygMDEditor">
                     <img height="48" width="48" src="<?= $this->helper->url->base() ?>plugins/WysiwygMDEditor/Assets/easymde/icon.svg">

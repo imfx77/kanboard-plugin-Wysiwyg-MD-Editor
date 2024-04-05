@@ -36,8 +36,8 @@ class WysiwygMDEditorConfigController extends \Kanboard\Controller\ConfigControl
           $values['WysiwygMDEditor_enable_stackedit'] = 0;
         }
 
-        if (!isset($values['WysiwygMDEditor_enable_rendering_easymde'])) {
-          $values['WysiwygMDEditor_enable_rendering_easymde'] = 0;
+        if (!isset($values['WysiwygMDEditor_enable_easymde_rendering'])) {
+          $values['WysiwygMDEditor_enable_easymde_rendering'] = 0;
         }
         if (!isset($values['WysiwygMDEditor_easymde_render_transparent_background'])) {
           $values['WysiwygMDEditor_easymde_render_transparent_background'] = 0;
@@ -58,7 +58,7 @@ class WysiwygMDEditorConfigController extends \Kanboard\Controller\ConfigControl
         } else {
             // actual save attempt
             if ($this->configModel->save($values)) {
-                if ($values['WysiwygMDEditor_enable_rendering_easymde'] == 1 && $is_MarkdownPlus_Installed) {
+                if ($values['WysiwygMDEditor_enable_easymde_rendering'] == 1 && $is_MarkdownPlus_Installed) {
                     // WARNING about MarkdownPlus plugin override
                     $this->flash->success(t('Settings saved successfully.' . ' ' . t('MDPLUS_PLUGIN_OVERRIDE_CONFLICT')));
                 } else {
