@@ -29,6 +29,13 @@
     background-color: #444;
 }
 
+.editor-preview blockquote {
+    margin-left: 1em;
+    padding-left: 1em;
+    border-left: 5px solid #444;
+    background-color: #000;
+}
+
 .EasyMDEContainer .editor-statusbar {
     color: #ccc;
     background: #000;
