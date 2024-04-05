@@ -53,7 +53,8 @@ supported by default **`BUT ARE NOT COMPATIBLE`** with the standard **MD** featu
     'WysiwygMDEditor_SETTINGS_RENDERING_DESCR' => 'Choose whether to use custom rendering for markdown fields.
 * Rendering feature is implemented entirely client side, it uses JavaScript and utilizes a specific editor visualization.
 * All markdown fields on the page will be processed, including those that are dynamically created or changed. Loading the page might be a bit slow if there are many of them.
-* <span style="border: 2px solid red; padding: 2px">If you have the **`MarkdownPlus`** plugin installed, then enabling this rendering feature will **`CONFLICT or OVERRIDE`** it\'s functionality, depending on the order in which the plugins are loaded !</span>',
+* <span style="border: 2px solid red; padding: 2px">If you have the **`MarkdownPlus`** plugin installed, then enabling this rendering feature will **`CONFLICT or OVERRIDE`** it\'s functionality,
+depending on the order in which the plugins are loaded !</span><br>⚠ So, **make up your mind** which one you prefer to use ! ⚠',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Enable markdown rendering with EasyMDE',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'Rendered markdown fields will look like the preview pane of the EasyMDE editor.
 * The render theme can is configured independently of the selected theme for the EasyMDE editor.

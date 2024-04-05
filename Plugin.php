@@ -43,7 +43,7 @@ class Plugin extends Base
             }
         }
 
-    	if ($this->configModel->get('WysiwygMDEditor_enable_rendering_easymde', '0') == '1') {
+    	if ($this->configModel->get('WysiwygMDEditor_enable_easymde_rendering', '0') == '1') {
             //CSS
             $this->hook->on('template:layout:css', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/container.css'));
 
