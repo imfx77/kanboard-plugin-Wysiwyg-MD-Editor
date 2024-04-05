@@ -1,6 +1,14 @@
 # Changelog
 
 
+## v0.9.0
+
+_(most recent changes are listed on top):_
+* Option for custom rendering of markdown fields (using `EasyMDE` locally with JavaScript).
+* Rendering can be parametrized with theme, code highlight, and background transparency.
+* Style fixes for EasyMDE preview and rendering.
+* Updates for locale texts.
+
 ## v0.5.4
 
 _(most recent changes are listed on top):_

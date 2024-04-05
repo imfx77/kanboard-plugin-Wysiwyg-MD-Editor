@@ -38,21 +38,27 @@
 
 <h1 name="user-content-readme-top">Wysiwyg MD Editor plugin for Kanboard</h1>
 
-Integrates external MD editors into Kanboard in order to conveniently edit/preview
-(and eventually render) the markdown textareas in the Kanboard interface.
+Integrates external MD editors into Kanboard in order to conveniently edit and preview
+the markdown textareas, as well as render the markdown fields in the Kanboard interface.
 Each editor may allow for different customizations of functionality, MD features, and UI themes.
+Rendering can parametrize theme, code highlight, and background transparency.
 
-- [x] If you like it and use it, please, give a :star: !
-- [x] If you want a new language pack added or an existing one corrected, please, post a PR !
+✅ If you want a new language pack added or an existing one corrected, please, post a PR !
+
+✅ If you like and use the plugin, please, give a ⭐ to this repository !
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
+### ✨ Rendering options are available as of v.0.9.0 ! ✨
+
 - Currently integrates the [EasyMDE](https://github.com/Ionaru/easy-markdown-editor) and [StackEdit+](https://github.com/mafgwo/stackedit-plus) markdown editors
 - Both editors are configured to be [GFM](https://github.github.com/gfm/) compatible
 - Side preview is available, themes and various convenience options
 - Configurable buttons to inject into the KB editing toolbar of markdown textareas
+- ✨ Option for custom rendering of markdown fields (using `EasyMDE` locally with JavaScript). ✨
+- ✨ Rendering can be parametrized with theme, code highlight, and background transparency. ✨
 
 For a better preview and feel of the actual editors visit:
 - `EasyMDE` [Live Demo](https://stackblitz.com/edit/easymde/?file=index.html)
@@ -62,17 +68,21 @@ For a better preview and feel of the actual editors visit:
 
 ## Screenshots
 
-**Configurable buttons of MD editors injected into the textarea editing toolbar.**  
+#### Configurable buttons of MD editors injected into the textarea editing toolbar.  
 
 ![textarea editing toolbar injected buttons](Screenshots/textarea-editing-toolbar-injected-buttons.png "textarea editing toolbar with injected MD editors buttons")
 
-**EasyMDE with side preview using the dimmed theme.**  
+#### EasyMDE with side preview using the dimmed theme.  
 
-![easymde preview](Screenshots/easymde-preview.png "easymde preview")
+![preview easymde](Screenshots/preview-easymde.png "preview easymde")
 
-**StackEdit+ with side preview using the default dark theme.**  
+#### StackEdit+ with side preview using the default dark theme.  
 
-![stackedit plus preview](Screenshots/stackedit-plus-preview.png "stackedit plus preview")
+![preview stackedit plus](Screenshots/preview-stackedit-plus.png "preview stackedit plus")
+
+#### Example of task description tooltip rendered with EasyMDE.
+
+![preview tooltip render](Screenshots/preview-tootip-render.png "preview tooltip render")
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
@@ -80,7 +90,13 @@ For a better preview and feel of the actual editors visit:
 
 Go to `Settings` &#10562; `Wysiwyg MD Editor`
 
-Follow the explanations to configure and preview the MD editor(s) of your preference.
+Follow the explanations in `Setup Editing Options` to configure and preview the MD editor(s) of your preference.
+
+![setup editing options](Screenshots/setup-editing-options.png "setup editing options")
+
+The section `Setup Rendering Options` allows you to enable and parametrize custom rendering of markdown fields that will override the original KB display.
+
+![setup rendering options](Screenshots/setup-rendering-options.png "setup rendering options")
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
@@ -98,7 +114,8 @@ Follow the explanations to configure and preview the MD editor(s) of your prefer
 
 - Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.33`
 - **Other Plugins & Action Plugins**
-  - _No known issues_
+  - Can utilize the `HighlightCodeSyntax` plugin (if installed) for rendering purposes.
+  - May conflict with or override the functionality of the `MarkdownPlus` plugin when the rendering option is turned on.  
 - **Core Files & Templates**
   - `0` Template override
   - _No database changes_
