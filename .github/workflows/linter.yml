@@ -15,6 +15,9 @@ name: Code Scan
 # Start the job on all push #
 #############################
 on:
+  workflow_dispatch:
+    # branches-ignore: [master, main]
+    # Remove the line above to run when pushing to master
   push:
     # branches-ignore: [master, main]
     # Remove the line above to run when pushing to master
