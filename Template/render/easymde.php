@@ -9,12 +9,11 @@
 <title>EasyMDE</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="../../../../assets/css/vendor.min.css">
-
 <?php
 
+print '<link rel="stylesheet" href="../../../../assets/css/vendor.min.css">';
 print '<link rel="stylesheet" href="../../vendor/Ionaru/easy-markdown-editor/easymde.min.css">';
-print '<link rel="stylesheet" href="../../Assets/easymde/stylesheet.css">';
+print '<link rel="stylesheet" href="../../vendor/Ionaru/easy-markdown-editor/stylesheet.min.css">';
 print '<link rel="stylesheet" href="../../Assets/easymde/theme.' . $_GET['renderTheme'] . '.css">';
 print '<link rel="stylesheet" href="../../Assets/easymde/container.css">';
 
