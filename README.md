@@ -1,8 +1,4 @@
-# Wysiwyg MD Editor plugin for Kanboard
-
-<a name="user-content-readme-top"></a>
-
----
+<h1 name="user-content-readme-top" align="center">Wysiwyg MD Editor plugin for Kanboard</h1>
 
 <p align="center">
     <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/releases">
