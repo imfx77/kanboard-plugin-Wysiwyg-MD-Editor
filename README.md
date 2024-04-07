@@ -1,6 +1,15 @@
+# Wysiwyg MD Editor plugin for Kanboard
+
+<a name="user-content-readme-top"></a>
+
+---
+
 <p align="center">
     <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/releases">
         <img src="https://img.shields.io/github/v/release/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?style=for-the-badge&color=brightgreen" alt="GitHub Latest Release (by date)" title="GitHub Latest Release (by date)">
+    </a>
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/blob/master/LICENSE" title="Read License">
+        <img src="https://img.shields.io/github/license/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?style=for-the-badge" alt="kanboard-plugin-Wysiwyg-MD-Editor">
     </a>
 </p>
 <p align="center">
@@ -18,6 +27,9 @@
     </a>
 </p>
 <p align="center">
+    <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/stargazers" title="View Stargazers">
+        <img src="https://img.shields.io/github/stars/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?logo=github&style=for-the-badge" alt="kanboard-plugin-Wysiwyg-MD-Editor">
+    </a>
     <a href="https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/discussions">
         <img src="https://img.shields.io/github/discussions/imfx77/kanboard-plugin-Wysiwyg-MD-Editor?style=for-the-badge&color=blue" alt="GitHub Discussions" title="Read Discussions">
     </a>
@@ -35,10 +47,6 @@
 </p>
 
 ---
-
-<a name="user-content-readme-top"></a>
-
-# Wysiwyg MD Editor plugin for Kanboard
 
 Integrates external MD editors into Kanboard in order to conveniently edit and preview
 the markdown textareas, as well as render the markdown fields in the Kanboard interface.

@@ -4,13 +4,13 @@
 
 .EasyMDEContainer .CodeMirror {
     color: #000;
-    border-color: #aaa;
-    background-color: #ddd;
+    border-color: #AAA;
+    background-color: #DDD;
 }
 
 .EasyMDEContainer .CodeMirror-fullscreen {
     color: #000;
-    background: #ddd;
+    background: #DDD;
 }
 
 .EasyMDEContainer .CodeMirror-focused .CodeMirror-selected, .EasyMDEContainer .CodeMirror-selected {
@@ -26,41 +26,41 @@
 }
 
 .EasyMDEContainer .editor-toolbar > .active, .editor-toolbar > button:hover, .editor-preview pre, .editor-preview code, .cm-s-easymde .cm-comment {
-    background-color: #bbb;
+    background-color: #BBB;
 }
 
 .editor-preview blockquote {
     margin-left: 1em;
     padding-left: 1em;
-    border-left: 5px solid #bbb;
-    background-color: #ddd;
+    border-left: 5px solid #BBB;
+    background-color: #DDD;
 }
 
 .EasyMDEContainer .editor-statusbar {
     color: #000;
-    background: #ddd;
+    background: #DDD;
 }
 
 .EasyMDEContainer .editor-toolbar {
-    border-top: 1px solid #aaa;
-    border-left: 1px solid #aaa;
-    border-right: 1px solid #aaa;
+    border-top: 1px solid #AAA;
+    border-left: 1px solid #AAA;
+    border-right: 1px solid #AAA;
     color: #000;
-    background: #ddd;
+    background: #DDD;
 }
 
 .EasyMDEContainer .editor-toolbar i.separator {
-    border-left: 1px solid #aaa;
+    border-left: 1px solid #AAA;
     border-right: 1px solid #000;
 }
 
 .EasyMDEContainer .editor-toolbar.fullscreen {
     color: #000;
-    background: #ddd;
+    background: #DDD;
 }
 
 .EasyMDEContainer .editor-preview {
     border: 1px solid #000;
     color: #000;
-    background: #cfcfcf;
+    background: #CFCFCF;
 }
