@@ -12,7 +12,7 @@ class WysiwygMDEditorConfigController extends \Kanboard\Controller\ConfigControl
     public function show()
     {
         $this->response->html($this->helper->layout->config('WysiwygMDEditor:config/settings', array(
-            'title' => t('Settings').' &gt; '.t('WysiwygMDEditor_TITLE_SETTINGS'),
+            'title' => t('Settings') . ' &gt; ' . t('WysiwygMDEditor_TITLE_SETTINGS'),
         )));
     }
 
@@ -21,34 +21,38 @@ class WysiwygMDEditorConfigController extends \Kanboard\Controller\ConfigControl
         $this->response->html($this->helper->layout->config('wysiwygMDEditor:config/preview', array(
             'values' => $values,
             'errors' => $errors,
-            'title' => t('Settings').' &gt; '.t('WysiwygMDEditor_TITLE_PREVIEW'),
+            'title' => t('Settings') . ' &gt; ' . t('WysiwygMDEditor_TITLE_PREVIEW'),
         )));
     }
 
     public function save()
     {
-        $values =  $this->request->getValues();
+        $values = $this->request->getValues();
 
         if (!isset($values['WysiwygMDEditor_enable_easymde'])) {
-          $values['WysiwygMDEditor_enable_easymde'] = 0;
+            $values['WysiwygMDEditor_enable_easymde'] = 0;
         }
         if (!isset($values['WysiwygMDEditor_enable_stackedit'])) {
-          $values['WysiwygMDEditor_enable_stackedit'] = 0;
+            $values['WysiwygMDEditor_enable_stackedit'] = 0;
         }
 
         if (!isset($values['WysiwygMDEditor_enable_easymde_rendering'])) {
-          $values['WysiwygMDEditor_enable_easymde_rendering'] = 0;
+            $values['WysiwygMDEditor_enable_easymde_rendering'] = 0;
         }
         if (!isset($values['WysiwygMDEditor_easymde_render_transparent_background'])) {
-          $values['WysiwygMDEditor_easymde_render_transparent_background'] = 0;
+            $values['WysiwygMDEditor_easymde_render_transparent_background'] = 0;
         }
 
         // check if HighlightCodeSyntax and/or MarkdownPlus plugins are installed
         $is_HighlightCodeSyntax_Installed = false;
         $is_MarkdownPlus_Installed = false;
         foreach ($this->pluginLoader->getPlugins() as $installedPlugin) {
-            if ($installedPlugin->getPluginName() == "HighlightCodeSyntax") $is_HighlightCodeSyntax_Installed = true;
-            if ($installedPlugin->getPluginName() == "MarkdownPlus") $is_MarkdownPlus_Installed = true;
+            if ($installedPlugin->getPluginName() == "HighlightCodeSyntax") {
+                $is_HighlightCodeSyntax_Installed = true;
+            }
+            if ($installedPlugin->getPluginName() == "MarkdownPlus") {
+                $is_MarkdownPlus_Installed = true;
+            }
         }
 
         // provide additional flash message details depending on settings and installed plugins

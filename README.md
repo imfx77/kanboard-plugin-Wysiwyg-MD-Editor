@@ -36,7 +36,9 @@
 
 ---
 
-<h1 name="user-content-readme-top">Wysiwyg MD Editor plugin for Kanboard</h1>
+<a name="user-content-readme-top"></a>
+
+# Wysiwyg MD Editor plugin for Kanboard
 
 Integrates external MD editors into Kanboard in order to conveniently edit and preview
 the markdown textareas, as well as render the markdown fields in the Kanboard interface.
@@ -62,25 +64,25 @@ Rendering can parametrize theme, code highlight, and background transparency.
 
 For a better preview and feel of the actual editors visit:
 - `EasyMDE` [Live Demo](https://stackblitz.com/edit/easymde/?file=index.html)
-- `StackEdit+` [Online App](https://stackedit.net/app#) 
+- `StackEdit+` [Online App](https://stackedit.net/app#)
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Screenshots
 
-#### Configurable buttons of MD editors injected into the textarea editing toolbar.  
+**Configurable buttons of MD editors injected into the textarea editing toolbar.**
 
 ![textarea editing toolbar injected buttons](Screenshots/textarea-editing-toolbar-injected-buttons.png "textarea editing toolbar with injected MD editors buttons")
 
-#### EasyMDE with side preview using the dimmed theme.  
+**EasyMDE with side preview using the dimmed theme.**
 
 ![preview easymde](Screenshots/preview-easymde.png "preview easymde")
 
-#### StackEdit+ with side preview using the default dark theme.  
+**StackEdit+ with side preview using the default dark theme.**
 
 ![preview stackedit plus](Screenshots/preview-stackedit-plus.png "preview stackedit plus")
 
-#### Example of task description tooltip rendered with EasyMDE.
+**Example of task description tooltip rendered with EasyMDE.**
 
 ![preview tooltip render](Screenshots/preview-tootip-render.png "preview tooltip render")
 

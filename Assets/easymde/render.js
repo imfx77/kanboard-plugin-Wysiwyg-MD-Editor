@@ -122,8 +122,7 @@ function injectRenderEasyMDE() {
 $(function() {
     injectRenderEasyMDE();
 
-    MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
-    var observerRenderEasyMDE = new MutationObserver(function(mutations, observer) {
+    var observerRenderEasyMDE = new MutationObserver(function() {
         injectRenderEasyMDE();
     });
     observerRenderEasyMDE.observe(document, { subtree: true, childList: true });
