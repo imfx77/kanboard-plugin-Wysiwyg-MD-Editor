@@ -3,7 +3,7 @@
         "browser": true,
         "commonjs": true,
         "jquery": true,
-        "es2021": true
+        "es2022": true
     },
     "root": true,
     "extends": "eslint:recommended",
