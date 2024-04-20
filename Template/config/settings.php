@@ -15,7 +15,7 @@
 
     <fieldset class="fieldset-WysiwygMDEditor">
         <legend><?= t('WysiwygMDEditor_SETTINGS_EDITING_OPTIONS') ?></legend>
-        <div class="descr-WysiwygMDEditor"><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_EDITING_DESCR')) ?></div>
+        <div class="descr-WysiwygMDEditor markdown"><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_EDITING_DESCR')) ?></div>
         <br>
         <div class="icon-WysiwygMDEditor"><img src="<?= $this->helper->url->base() ?>plugins/WysiwygMDEditor/Screenshots/textarea-editing-toolbar-injected-buttons.png"></div>
 
@@ -30,7 +30,7 @@
                 <td class="icon-WysiwygMDEditor">
                     <img height="48" width="48" src="<?= $this->helper->url->base() ?>plugins/WysiwygMDEditor/Assets/easymde/icon.svg">
                 </td>
-                <td class="descr-WysiwygMDEditor">
+                <td class="descr-WysiwygMDEditor markdown">
                     <a href="https://github.com/Ionaru/easy-markdown-editor" target="_blank" title="<?= t('Opens in a new window') ?>"> EasyMDE <i class="fa fa-external-link"></i></a>
                     <br>
                     <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_EASYMDE_DESCR')) ?></div>
@@ -62,7 +62,7 @@
                 <td class="icon-WysiwygMDEditor">
                     <img height="48" width="48" src="<?= $this->helper->url->base() ?>plugins/WysiwygMDEditor/Assets/stackedit/icon.svg">
                 </td>
-                <td class="descr-WysiwygMDEditor">
+                <td class="descr-WysiwygMDEditor markdown">
                     <a href="https://github.com/mafgwo/stackedit-plus" target="_blank" title="<?= t('Opens in a new window') ?>"> StackEdit+ <i class="fa fa-external-link"></i></a>
                     <br>
                     <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR')) ?></div>
@@ -75,7 +75,7 @@
 
     <fieldset class="fieldset-WysiwygMDEditor">
         <legend><?= t('WysiwygMDEditor_SETTINGS_RENDERING_OPTIONS') ?></legend>
-        <div class="descr-WysiwygMDEditor"><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_RENDERING_DESCR')) ?></h3></div>
+        <div class="descr-WysiwygMDEditor markdown"><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_RENDERING_DESCR')) ?></h3></div>
 
         <div>
             <?= $this->form->checkbox(
@@ -88,7 +88,7 @@
                 <td class="icon-WysiwygMDEditor">
                     <img height="48" width="48" src="<?= $this->helper->url->base() ?>plugins/WysiwygMDEditor/Assets/easymde/icon.svg">
                 </td>
-                <td class="descr-WysiwygMDEditor">
+                <td class="descr-WysiwygMDEditor markdown">
                     <a href="https://github.com/Ionaru/easy-markdown-editor" target="_blank" title="<?= t('Opens in a new window') ?>"> EasyMDE <i class="fa fa-external-link"></i></a>
                     <br>
                     <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR')) ?></div>
