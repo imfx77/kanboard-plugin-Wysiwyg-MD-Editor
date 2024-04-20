@@ -16,6 +16,8 @@ function injectButtonWrapperEasyMDE() {
     `;
 
     $('.text-editor-write-mode').each(function() {
+        // check if button already injected
+        if (this.querySelector('.easymde-button-wrapper')) return;
 
         const buttonWrapper = document.createElement('span');
         buttonWrapper.className = 'easymde-button-wrapper';
@@ -221,8 +223,9 @@ function injectButtonWrapperEasyMDE() {
 
 $(function() {
     injectButtonWrapperEasyMDE();
-});
 
-KB.on('modal.afterRender', function () {
-    injectButtonWrapperEasyMDE();
+    var observerRenderEasyMDE = new MutationObserver(function() {
+        injectButtonWrapperEasyMDE();
+    });
+    observerRenderEasyMDE.observe(document, { subtree: true, childList: true });
 });

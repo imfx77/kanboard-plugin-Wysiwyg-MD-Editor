@@ -5,6 +5,9 @@
 function injectButtonWrapperStackEdit() {
 
     $('.text-editor-write-mode').each(function() {
+        // check if button already injected
+        if (this.querySelector('.stackedit-button-wrapper')) return;
+
         const buttonWrapper = document.createElement('span');
         buttonWrapper.className = 'stackedit-button-wrapper';
         buttonWrapper.style = 'margin: 0px 0px 0px 20px; cursor: pointer;';
@@ -47,8 +50,9 @@ function injectButtonWrapperStackEdit() {
 
 $(function() {
     injectButtonWrapperStackEdit();
-});
 
-KB.on('modal.afterRender', function () {
-    injectButtonWrapperStackEdit();
+    var observerRenderEasyMDE = new MutationObserver(function() {
+        injectButtonWrapperStackEdit();
+    });
+    observerRenderEasyMDE.observe(document, { subtree: true, childList: true });
 });
