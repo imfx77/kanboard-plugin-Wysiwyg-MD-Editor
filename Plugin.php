@@ -104,7 +104,7 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
-        return '0.9.0';
+        return '0.9.1';
     }
 
     public function getCompatibleVersion()
