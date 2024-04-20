@@ -47,13 +47,13 @@ class WysiwygMDEditorHelper extends Base
     public function markdown($text, $isPublicLink = false)
     {
         $returnText = '';
-        $returnText .= '<div class="WysiwygMDEditor-MarkdownTextContainer" style="display: none" ';
+        $returnText .= '<textarea class="WysiwygMDEditor-MarkdownTextContainer" style="display: none" ';
         $returnText .= 'renderTheme="' . $this->configModel->get('WysiwygMDEditor_easymde_render_theme', 'dimmed') . '" ';
         $returnText .= 'renderTransparentBackground="' . $this->configModel->get('WysiwygMDEditor_easymde_render_transparent_background', 0) . '" ';
         $returnText .= 'renderCodeHighlight="' . $this->configModel->get('WysiwygMDEditor_easymde_render_code_highlight', 1) . '" ';
         $returnText .= '>';
         $returnText .= $text;
-        $returnText .= '</div>';
+        $returnText .= '</textarea>';
         return $returnText;
     }
 
