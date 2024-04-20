@@ -8,7 +8,7 @@ _(most recent changes are listed on top):_
 * Fixed proper viewing of the settings page with the normal markdown renderer.
 * Rearranged some assets, fixed some styles, encapsulated some globally visible code.
 * Configured GitHub Actions to perform automatic code checks.
- 
+
 ## v0.9.0
 
 _(most recent changes are listed on top):_
