@@ -6,6 +6,7 @@
 _(most recent changes are listed on top):_
 * Fixed a major bug that caused markdown text to be distorted when rendered with `EasyMDE`.
 * Fixed proper viewing of the settings page with the normal markdown renderer.
+* Automated the editors buttons to be injected on every DOM change rather than once only on document load.
 * Rearranged some assets, fixed some styles, encapsulated some globally visible code.
 * Configured GitHub Actions to perform automatic code checks.
 
