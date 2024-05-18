@@ -1,12 +1,13 @@
 <?php
 
-namespace Kanboard\Plugin\WysiwygMDEditor\Controller;
-
 /**
  * Class WysiwygMDEditorConfigController
  * @package Kanboard\Plugin\WysiwygMDEditor\Controller
  * @author  Im[F(x)]
  */
+
+namespace Kanboard\Plugin\WysiwygMDEditor\Controller;
+
 class WysiwygMDEditorConfigController extends \Kanboard\Controller\ConfigController
 {
     public function show()

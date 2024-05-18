@@ -1,14 +1,15 @@
 <?php
 
+/**
+ * Class WysiwygMDEditorHelper
+ * @package Kanboard\Plugin\WysiwygMDEditor\Helper
+ * @author  Im[F(x)]
+ */
+
 namespace Kanboard\Plugin\WysiwygMDEditor\Helper;
 
 use Kanboard\Core\Base;
 
-/**
- * Class WysiwygMDEditorHelper
- * @package Kanboard\Plugin\WysiwygMDEditor\Controller
- * @author  Im[F(x)]
- */
 class WysiwygMDEditorHelper extends Base
 {
     /**
