@@ -54,7 +54,7 @@ admitidos de forma predeterminada **`PERO NO SON COMPATIBLES`** con el conjunto 
 * La función de renderizado se implementa completamente en el lado del cliente, utiliza JavaScript y utiliza una visualización de editor específica.
 * Se procesarán todos los campos de rebajas de la página, incluidos aquellos que se crean o modifican dinámicamente. La carga de la página puede ser un poco lenta si hay muchas.
 * <span style="border-bottom: 2px solid red; padding: 2px">Si tiene el complemento **`MarkdownPlus`** instalado, habilitar esta función de renderizado **`CONFLICTO o ANULACIÓN`** es funcionalidad,
-¡dependiendo del orden en que se cargan los complementos!</span><br>⚠ Entonces, **¡decide** cuál prefieres usar !',
+¡dependiendo del orden en que se cargan los complementos!</span><br>⚠️ Entonces, **¡decide** cuál prefieres usar !',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Habilitar renderizado de rebajas con EasyMDE',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'Los campos de rebajas renderizados se verán como el panel de vista previa del editor EasyMDE.
 * El tema de renderizado se puede configurar independientemente del tema seleccionado para el editor EasyMDE.
@@ -65,4 +65,4 @@ admitidos de forma predeterminada **`PERO NO SON COMPATIBLES`** con el conjunto 
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_SELECT' => 'Seleccione la sintaxis del código resaltado para la representación de rebajas :',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_NONE' => 'NO utilice la sintaxis del código resaltado',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLJS' => 'Usar Highlight.js (incluido junto con EasyMDE)',
-    'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN' => 'Utilice el complemento HighlightCodeSyntax ( ⚠ ¡solo si está instalado ! )',);
+    'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN' => 'Utilice el complemento HighlightCodeSyntax ( ⚠️ ¡solo si está instalado ! )',);

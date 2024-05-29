@@ -54,7 +54,7 @@ return array(
 * Функцията за изобразяване е изпълнена изцяло от страна на клиента, тя използва JavaScript и специфичната визуализация на съответния редактор.
 * Всички markdown полета на страницата ще бъдат обработени, включително тези, които са динамично създадени или променени. Зареждането на страницата може да е малко бавно, ако има много такива полета.
 * <span style="border-bottom: 2px solid red; padding: 2px">Ако имате инсталиран плъгин **`MarkdownPlus`**, активирането на тази функция за изобразяване ще **`КОНФЛИКТИРА или ОБОРИ`** неговата функционалност,
-в зависимост от реда, в който се зареждат плъгините!</span><br>⚠ И така, **преценете** кой от двата предпочитате да използвате !',
+в зависимост от реда, в който се зареждат плъгините!</span><br>⚠️ И така, **преценете** кой от двата предпочитате да използвате !',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Активиране на markdown изобразяване с EasyMDE',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'Изобразените markdown полета ще изглеждат както в панела за преглед на редактора EasyMDE.
 * Темата за изобразяване може да се конфигурира независимо от избраната тема за редактора EasyMDE.
@@ -65,5 +65,5 @@ return array(
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_SELECT' => 'Избор на синтаксис за оцветяване на код при markdown изобразяване :',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_NONE' => 'НЕ използвай синтаксис за оцветяване на код',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLJS' => 'Използвай Highlight.js (включен заедно с EasyMDE)',
-    'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN' => 'Използвай плъгина HighlightCodeSyntax ( ⚠ само ако е инсталиран ! )',
+    'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN' => 'Използвай плъгина HighlightCodeSyntax ( ⚠️ само ако е инсталиран ! )',
 );

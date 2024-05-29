@@ -54,7 +54,7 @@ return array(
 * Функция рендеринга реализована полностью на стороне клиента, она использует JavaScript и использует специальный редактор визуализации.
 * Будут обработаны все поля уценки на странице, включая те, которые создаются или изменяются динамически. Загрузка страницы может быть немного медленной, если их много.
 * <span style="border-bottom: 2px solid red; padding: 2px">Если у вас установлен плагин **`MarkdownPlus`**, то включение этой функции рендеринга приведет к **`КОФЛИКТУ или ПЕРЕНАСТРОЙКЕ`** его функциональность,
-в зависимости от порядка загрузки плагинов !</span><br>⚠ Итак, **решайте**, какой из них вы предпочитаете использовать !',
+в зависимости от порядка загрузки плагинов !</span><br>⚠️ Итак, **решайте**, какой из них вы предпочитаете использовать !',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Включить рендеринг уценки с помощью EasyMDE',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'Отображаемые поля уценки будут выглядеть как панель предварительного просмотра редактора EasyMDE.
 * Тема рендеринга может настраиваться независимо от выбранной темы для редактора EasyMDE.
@@ -65,5 +65,5 @@ return array(
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_SELECT' => 'Выберите синтаксис кода выделения для рендеринга уценки :',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_NONE' => 'НЕ использовать синтаксис кода подсветки',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLJS' => 'Используйте Highlight.js (входит в состав EasyMDE)',
-    'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN' => 'Использовать плагин HighlightCodeSyntax ( ⚠ только если он установлен ! )',
+    'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN' => 'Использовать плагин HighlightCodeSyntax ( ⚠️ только если он установлен ! )',
 );

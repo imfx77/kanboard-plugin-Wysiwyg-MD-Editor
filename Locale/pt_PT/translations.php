@@ -54,7 +54,7 @@ suportado por padrão **`MAS NÃO SÃO COMPATÍVEIS`** com o conjunto de recurso
 * O recurso de renderização é implementado inteiramente no lado do cliente, usa JavaScript e utiliza uma visualização de editor específica.
 * Todos os campos de markdown na página serão processados, incluindo aqueles que são criados ou alterados dinamicamente. O carregamento da página pode ser um pouco lento se houver muitos deles.
 * <span style="border-bottom: 2px solid red; padding: 2px">Se você tiver o plug-in **`MarkdownPlus`** instalado, ativar esse recurso de renderização irá **`CONFLICTAR ou OVERRIDE`**. funcionalidade,
-dependendo da ordem em que os plugins são carregados !</span><br>⚠ Então, **decida** qual você prefere usar !',
+dependendo da ordem em que os plugins são carregados !</span><br>⚠️ Então, **decida** qual você prefere usar !',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Ativar renderização de markdown com EasyMDE',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'Os campos de markdown renderizados serão parecidos com o painel de visualização do editor EasyMDE.
 * O tema de renderização pode ser configurado independentemente do tema selecionado para o editor EasyMDE.
@@ -65,5 +65,5 @@ dependendo da ordem em que os plugins são carregados !</span><br>⚠ Então, **
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_SELECT' => 'Selecione a sintaxe do código de destaque para renderização de redução :',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_NONE' => 'NÃO use sintaxe de código de destaque',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLJS' => 'Use Highlight.js (incluído junto com EasyMDE)',
-    'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN' => 'Use o plugin HighlightCodeSyntax ( ⚠ somente se instalado ! )',
+    'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN' => 'Use o plugin HighlightCodeSyntax ( ⚠️ somente se instalado ! )',
 );

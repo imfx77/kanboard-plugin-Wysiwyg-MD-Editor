@@ -54,7 +54,7 @@ pris en charge par défaut **`MAIS NE SONT PAS COMPATIBLE`** avec l\'ensemble de
 * La fonctionnalité de rendu est entièrement implémentée côté client, elle utilise JavaScript et utilise une visualisation d\'éditeur spécifique.
 * Tous les champs de démarque de la page seront traités, y compris ceux qui sont créés ou modifiés dynamiquement. Le chargement de la page peut être un peu lent s\'il y en a beaucoup.
 * <span style="border-bottom: 2px solid red; padding: 2px">Si le plug-in **`MarkdownPlus`** est installé, l\'activation de cette fonctionnalité de rendu **`CONFLIT ou OVERRIDE`** sera Fonctionnalité,
-selon l\'ordre dans lequel les plugins sont chargés !</span><br>⚠ Alors, **décidez** lequel vous préférez utiliser !',
+selon l\'ordre dans lequel les plugins sont chargés !</span><br>⚠️ Alors, **décidez** lequel vous préférez utiliser !',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Activer le rendu markdown avec EasyMDE',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'Les champs de démarque rendus ressembleront au volet d\'aperçu de l\'éditeur EasyMDE.
 * Le thème de rendu peut être configuré indépendamment du thème sélectionné pour l\'éditeur EasyMDE.
@@ -65,5 +65,5 @@ selon l\'ordre dans lequel les plugins sont chargés !</span><br>⚠ Alors, **d�
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_SELECT' => 'Sélectionnez la syntaxe du code de surbrillance pour le rendu markdown :',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_NONE' => 'Ne PAS utiliser la syntaxe du code de surbrillance',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLJS' => 'Utiliser Highlight.js (inclus avec EasyMDE )',
-    'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN' => 'Utiliser le plugin HighlightCodeSyntax ( ⚠ uniquement s\'il est installé ! )',
+    'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN' => 'Utiliser le plugin HighlightCodeSyntax ( ⚠️ uniquement s\'il est installé ! )',
 );

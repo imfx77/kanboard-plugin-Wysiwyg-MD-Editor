@@ -54,7 +54,7 @@ standardmäßig unterstützt **`SIND ABER NICHT KOMPATIBEL`** mit dem standardm�
 * Die Rendering-Funktion ist vollständig clientseitig implementiert, verwendet JavaScript und nutzt eine spezielle Editor-Visualisierung.
 * Alle Markdown-Felder auf der Seite werden verarbeitet, einschließlich derjenigen, die dynamisch erstellt oder geändert werden. Das Laden der Seite kann etwas langsam sein, wenn es viele davon gibt.
 * <span style="border-bottom: 2px solid red; padding: 2px">Wenn Sie das **`MarkdownPlus`**-Plugin installiert haben, führt die Aktivierung dieser Rendering-Funktion zu einem **`KONFLIKT oder ÜBERSCHREIBEN`** Funktionalität,
-abhängig von der Reihenfolge, in der die Plugins geladen werden!</span><br>⚠ Also **entscheide**, welches du am liebsten verwendest !',
+abhängig von der Reihenfolge, in der die Plugins geladen werden!</span><br>⚠️ Also **entscheide**, welches du am liebsten verwendest !',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Markdown-Rendering mit EasyMDE aktivieren',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'gerenderte Markdown-Felder sehen aus wie das Vorschaufenster des EasyMDE-Editors.
 * Das Renderthema kann unabhängig vom ausgewählten Thema für den EasyMDE-Editor konfiguriert werden.
@@ -65,5 +65,5 @@ abhängig von der Reihenfolge, in der die Plugins geladen werden!</span><br>⚠ 
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_SELECT' => 'Wählen Sie die Syntax des Hervorhebungscodes für das Markdown-Rendering aus :',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_NONE' => 'KEINE Highlight-Code-Syntax verwenden',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLJS' => 'Highlight.js verwenden (neben EasyMDE enthalten)',
-    'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN' => 'HighlightCodeSyntax-Plugin verwenden ( ⚠ nur wenn installiert ! )',
+    'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN' => 'HighlightCodeSyntax-Plugin verwenden ( ⚠️ nur wenn installiert ! )',
  );
