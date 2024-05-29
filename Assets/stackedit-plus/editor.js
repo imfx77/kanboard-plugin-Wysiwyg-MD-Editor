@@ -2,18 +2,18 @@
  * @author  Im[F(x)]
  */
 
-function injectButtonWrapperStackEdit() {
+function injectButtonWrapperStackEditPlus() {
 
     $('.text-editor-write-mode').each(function() {
         // check if button already injected
-        if (this.querySelector('.stackedit-button-wrapper')) return;
+        if (this.querySelector('.stackeditplus-button-wrapper')) return;
 
         const buttonWrapper = document.createElement('span');
-        buttonWrapper.className = 'stackedit-button-wrapper';
+        buttonWrapper.className = 'stackeditplus-button-wrapper';
         buttonWrapper.style = 'margin: 0px 0px 0px 20px; cursor: pointer;';
-        buttonWrapper.title = 'Edit with StackEdit';
+        buttonWrapper.title = 'Edit with StackEdit+';
         buttonWrapper.innerHTML = '<img height="24" width="24" style="vertical-align: bottom" '
-                                + 'src="'+ location.origin +'/plugins/WysiwygMDEditor/Assets/stackedit/icon.svg">';
+                                + 'src="'+ location.origin +'/plugins/WysiwygMDEditor/Assets/stackedit-plus/icon.svg">';
 
         const toolbarElement = this.querySelector('div');
         toolbarElement.insertBefore(buttonWrapper, toolbarElement.lastElementChild.nextSibling);
@@ -21,14 +21,14 @@ function injectButtonWrapperStackEdit() {
         const textareaElement = this.querySelector('textarea');
 
         $( buttonWrapper ).click(function() {
-            const stackedit = new Stackedit({ url: 'https://stackedit.io/app' }); // redirect to StackEdit
+            const stackeditPlus = new Stackedit({ url: 'https://stackedit.cn/app' }); // redirect to StackEdit+
 
-            stackedit.on('fileChange', function onFileChange(file) {
+            stackeditPlus.on('fileChange', function onFileChange(file) {
               textareaElement.value = file.content.text;
             });
 
-            stackedit.openFile({
-                name: 'Markdown with StackEdit',
+            stackeditPlus.openFile({
+                name: 'Markdown with StackEdit+',
                 content: {
                     text: textareaElement.value,
                     properties: {
@@ -49,10 +49,10 @@ function injectButtonWrapperStackEdit() {
 }
 
 $(function() {
-    injectButtonWrapperStackEdit();
+    injectButtonWrapperStackEditPlus();
 
-    var observerStackEdit = new MutationObserver(function() {
-        injectButtonWrapperStackEdit();
+    var observerStackEditPlus = new MutationObserver(function() {
+        injectButtonWrapperStackEditPlus();
     });
-    observerStackEdit.observe(document, { subtree: true, childList: true });
+    observerStackEditPlus.observe(document, { subtree: true, childList: true });
 });

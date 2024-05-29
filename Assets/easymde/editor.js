@@ -224,8 +224,8 @@ function injectButtonWrapperEasyMDE() {
 $(function() {
     injectButtonWrapperEasyMDE();
 
-    var observerRenderEasyMDE = new MutationObserver(function() {
+    var observerEasyMDE = new MutationObserver(function() {
         injectButtonWrapperEasyMDE();
     });
-    observerRenderEasyMDE.observe(document, { subtree: true, childList: true });
+    observerEasyMDE.observe(document, { subtree: true, childList: true });
 });

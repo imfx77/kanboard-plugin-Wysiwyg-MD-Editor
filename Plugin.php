@@ -33,11 +33,24 @@ class Plugin extends Base
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/benweet/stackedit.js/stackedit.min.js'));
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/stackedit/editor.js'));
 
+            // add a specific frame-src CSP for StackEdit, ONLY if not already present
+            if (!array_key_exists('frame-src', $cspRules)) {
+                $cspRules['frame-src'] = "https://stackedit.io/";
+            } elseif (!str_contains($cspRules['frame-src'], "https://stackedit.io/")) {
+                $cspRules['frame-src'] .= " https://stackedit.io/";
+            }
+        }
+
+        if ($this->configModel->get('WysiwygMDEditor_enable_stackedit_plus', '0') == '1') {
+            //JS
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/benweet/stackedit.js/stackedit.min.js'));
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/stackedit-plus/editor.js'));
+
             // add a specific frame-src CSP for StackEdit+, ONLY if not already present
             if (!array_key_exists('frame-src', $cspRules)) {
-                $cspRules['frame-src'] = "https://stackedit.net/";
-            } elseif (!str_contains($cspRules['frame-src'], "https://stackedit.net/")) {
-                $cspRules['frame-src'] .= " https://stackedit.net/";
+                $cspRules['frame-src'] = "https://stackedit.cn/";
+            } elseif (!str_contains($cspRules['frame-src'], "https://stackedit.cn/")) {
+                $cspRules['frame-src'] .= " https://stackedit.cn/";
             }
         }
 

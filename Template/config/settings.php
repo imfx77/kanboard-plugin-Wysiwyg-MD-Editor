@@ -54,7 +54,7 @@
         <div>
             <?= $this->form->checkbox(
                 'WysiwygMDEditor_enable_stackedit',
-                t('WysiwygMDEditor_SETTINGS_EDITING_ENABLE_BUTTON') . ' StackEdit+ ',
+                t('WysiwygMDEditor_SETTINGS_EDITING_ENABLE_BUTTON') . ' StackEdit ',
                 1,
                 isset($values['WysiwygMDEditor_enable_stackedit']) ? $values['WysiwygMDEditor_enable_stackedit'] == 1 : 0
             ) ?>
@@ -63,9 +63,28 @@
                     <img height="48" width="48" src="<?= $this->helper->url->base() ?>plugins/WysiwygMDEditor/Assets/stackedit/icon.svg">
                 </td>
                 <td class="descr-WysiwygMDEditor markdown">
-                    <a href="https://github.com/mafgwo/stackedit-plus" target="_blank" title="<?= t('Opens in a new window') ?>"> StackEdit+ <i class="fa fa-external-link"></i></a>
+                    <a href="https://github.com/benweet/stackedit" target="_blank" title="<?= t('Opens in a new window') ?>"> StackEdit <i class="fa fa-external-link"></i></a>
                     <br>
                     <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR')) ?></div>
+                </td>
+            </tr></table>
+        </div>
+
+        <div>
+            <?= $this->form->checkbox(
+                'WysiwygMDEditor_enable_stackedit_plus',
+                t('WysiwygMDEditor_SETTINGS_EDITING_ENABLE_BUTTON') . ' StackEdit+ ',
+                1,
+                isset($values['WysiwygMDEditor_enable_stackedit_plus']) ? $values['WysiwygMDEditor_enable_stackedit_plus'] == 1 : 0
+            ) ?>
+            <table><tr>
+                <td class="icon-WysiwygMDEditor">
+                    <img height="48" width="48" src="<?= $this->helper->url->base() ?>plugins/WysiwygMDEditor/Assets/stackedit-plus/icon.svg">
+                </td>
+                <td class="descr-WysiwygMDEditor markdown">
+                    <a href="https://github.com/mafgwo/stackedit-plus" target="_blank" title="<?= t('Opens in a new window') ?>"> StackEdit+ <i class="fa fa-external-link"></i></a>
+                    <br>
+                    <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_STACKEDIT_PLUS_DESCR')) ?></div>
                 </td>
             </tr></table>
         </div>

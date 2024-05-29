@@ -36,6 +36,9 @@ class WysiwygMDEditorConfigController extends \Kanboard\Controller\ConfigControl
         if (!isset($values['WysiwygMDEditor_enable_stackedit'])) {
             $values['WysiwygMDEditor_enable_stackedit'] = 0;
         }
+        if (!isset($values['WysiwygMDEditor_enable_stackedit_plus'])) {
+            $values['WysiwygMDEditor_enable_stackedit'] = 0;
+        }
 
         if (!isset($values['WysiwygMDEditor_enable_easymde_rendering'])) {
             $values['WysiwygMDEditor_enable_easymde_rendering'] = 0;
