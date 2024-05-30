@@ -36,16 +36,20 @@ return array(
     'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_LIGHT' => 'Light Theme',
     'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DIMMED' => 'Dimmed Theme',
     'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DARK' => 'Dark Theme',
+    'WysiwygMDEditor_SETTINGS_STACKEDIT_ENGLISH_VERSION' => '⚠️English version !',
+    'WysiwygMDEditor_SETTINGS_STACKEDIT_CHINESE_VERSION' => '⚠️Chinese version !',
     'WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR' => 'An online service based markdown editor and note taking tool.
 * Covers wide range of **MD** syntax variations but configured to comply with **GFM**.
-* Supports side preview, multiple tools, rich options and customizations.
-* Basic switch for `light` / `dark` theme, there are multiple colorful themes via options for each pane - editing and preview.
-* Selected preferences are remembered locally by the  browser, on reopening the editor last view will be restored.
+* Supports side preview and multiple tools.
+* ⚠️Basic light theme only !
 * Supports code syntax highlight for a myriad of languages.
-* Support for images upload, drag and paste **`BUT BE AWARE`** those are using the local browser storage, not the Kanboard DB!
 * Fully supports emoji syntax and also input through OS shortcuts (e.g. « **Windows + .** » on Windows or « **Control + Command + Space** » on Mac).
 * There are extra features like **KaTeX** math expressions, **Mermaid** UML diagrams and other extensions that are
 supported by default **`BUT ARE NOT COMPATIBLE`** with the standard **MD** feature set that is supported by Kanboard!',
+    'WysiwygMDEditor_SETTINGS_STACKEDIT_PLUS_DESCR' => 'Adds themes and customizations on top of the standard **StackEdit** features.
+* Basic switch for `light` / `dark` theme, there are multiple colorful themes via options for each pane - editing and preview.
+* Selected preferences are remembered locally by the browser, on reopening the editor last view will be restored.
+* Support for images upload, drag and paste **`BUT BE AWARE`** those are using the local browser storage, not the Kanboard DB!',
     //
     // Template/config/settings/rendering
     //
@@ -57,7 +61,7 @@ supported by default **`BUT ARE NOT COMPATIBLE`** with the standard **MD** featu
 depending on the order in which the plugins are loaded !</span><br>⚠️ So, **make up your mind** which one you prefer to use !',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Enable markdown rendering with EasyMDE',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'Rendered markdown fields will look like the preview pane of the EasyMDE editor.
-* The render theme can is configured independently of the selected theme for the EasyMDE editor.
+* The render theme is configured independently of the selected theme for the EasyMDE editor.
 * Additionally, the theme background can be forced to be transparent.
 * And finally, the highlight code syntax can be changed or disabled (in the actual EasyMDE editor it is fixed to `Highlight.js`).',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_THEME_SELECT' => 'Select theme for markdown rendering :',

@@ -64,6 +64,7 @@
                 </td>
                 <td class="descr-WysiwygMDEditor markdown">
                     <a href="https://github.com/benweet/stackedit" target="_blank" title="<?= t('Opens in a new window') ?>"> StackEdit <i class="fa fa-external-link"></i></a>
+                    <b> <?= t('WysiwygMDEditor_SETTINGS_STACKEDIT_ENGLISH_VERSION') ?> </b>
                     <br>
                     <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR')) ?></div>
                 </td>
@@ -83,6 +84,7 @@
                 </td>
                 <td class="descr-WysiwygMDEditor markdown">
                     <a href="https://github.com/mafgwo/stackedit-plus" target="_blank" title="<?= t('Opens in a new window') ?>"> StackEdit+ <i class="fa fa-external-link"></i></a>
+                    <b> <?= t('WysiwygMDEditor_SETTINGS_STACKEDIT_CHINESE_VERSION') ?> </b>
                     <br>
                     <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_STACKEDIT_PLUS_DESCR')) ?></div>
                 </td>

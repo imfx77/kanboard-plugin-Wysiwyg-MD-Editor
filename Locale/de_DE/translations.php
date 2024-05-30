@@ -36,16 +36,20 @@ return array(
     'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_LIGHT' => 'Hell Theme',
     'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DIMMED' => 'Gedimmt Theme',
     'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DARK' => 'Dunkel Theme',
+    'WysiwygMDEditor_SETTINGS_STACKEDIT_ENGLISH_VERSION' => '⚠️Englische Version !',
+    'WysiwygMDEditor_SETTINGS_STACKEDIT_CHINESE_VERSION' => '⚠️Chinesische Version !',
     'WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR' => 'Ein auf einem Onlinedienst basierender Markdown-Editor und Notizentool.
 * Deckt ein breites Spektrum an **MD**-Syntaxvarianten ab, ist jedoch für die Einhaltung von **GFM** konfiguriert.
-* Unterstützt Seitenvorschau, mehrere Tools, umfangreiche Optionen und Anpassungen.
-* Grundlegender Wechsel für `Hell` / `Dunkel` Thema, es gibt mehrere farbenfrohe Themen über Optionen für jeden Bereich – Bearbeitung und Vorschau.
-* Ausgewählte Einstellungen werden lokal vom Browser gespeichert. Beim erneuten Öffnen des Editors wird die letzte Ansicht wiederhergestellt.
+* Unterstützt Seitenvorschau und mehrere Tools.
+* ⚠️Nur einfaches helles Design !
 * Unterstützt die Code-Syntax-Hervorhebung für eine Vielzahl von Sprachen.
-* Unterstützung für das Hochladen, Ziehen und Einfügen von Bildern **`ABER BEACHTEN`** Diese verwenden den lokalen Browserspeicher und nicht die Kanboard-Datenbank!
 * Unterstützt die Emoji-Syntax vollständig und auch die Eingabe über Betriebssystem-Verknüpfungen (z. B. « **Windows + .** » auf dem Windows oder « **Strg + Befehl + Leertaste** » auf dem Mac).
 * Es gibt zusätzliche Funktionen wie **KaTeX**-Matheausdrücke, **Mermaid**-UML-Diagramme und andere Erweiterungen
 standardmäßig unterstützt **`SIND ABER NICHT KOMPATIBEL`** mit dem standardmäßigen **MD**-Funktionssatz, der von Kanboard unterstützt wird!',
+    'WysiwygMDEditor_SETTINGS_STACKEDIT_PLUS_DESCR' => 'Fügt den standardmäßigen **StackEdit**-Funktionen Designs und Anpassungen hinzu.
+* Grundlegender Wechsel für `Hell` / `Dunkel` Thema, es gibt mehrere farbenfrohe Themen über Optionen für jeden Bereich – Bearbeitung und Vorschau.
+* Ausgewählte Einstellungen werden lokal vom Browser gespeichert. Beim erneuten Öffnen des Editors wird die letzte Ansicht wiederhergestellt.
+* Unterstützung für das Hochladen, Ziehen und Einfügen von Bildern **`ABER BEACHTEN`** Diese verwenden den lokalen Browserspeicher und nicht die Kanboard-Datenbank!',
     //
     // Template/config/settings/rendering
     //
@@ -57,7 +61,7 @@ standardmäßig unterstützt **`SIND ABER NICHT KOMPATIBEL`** mit dem standardm�
 abhängig von der Reihenfolge, in der die Plugins geladen werden!</span><br>⚠️ Also **entscheide**, welches du am liebsten verwendest !',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Markdown-Rendering mit EasyMDE aktivieren',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'gerenderte Markdown-Felder sehen aus wie das Vorschaufenster des EasyMDE-Editors.
-* Das Renderthema kann unabhängig vom ausgewählten Thema für den EasyMDE-Editor konfiguriert werden.
+* Das Renderthema wird unabhängig vom ausgewählten Thema für den EasyMDE-Editor konfiguriert.
 * Darüber hinaus kann der Designhintergrund transparent sein.
 * Und schließlich kann die Syntax des Hervorhebungscodes geändert oder deaktiviert werden (im eigentlichen EasyMDE-Editor ist sie auf `Highlight.js` festgelegt).',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_THEME_SELECT' => 'Theme für Markdown-Rendering auswählen :',

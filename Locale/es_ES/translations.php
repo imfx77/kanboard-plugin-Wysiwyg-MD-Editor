@@ -36,16 +36,20 @@ return array(
     'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_LIGHT' => 'Tema claro',
     'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DIMMED' => 'Tema atenuado',
     'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DARK' => 'Tema oscuro',
+    'WysiwygMDEditor_SETTINGS_STACKEDIT_ENGLISH_VERSION' => '⚠️¡Versión en inglés!',
+    'WysiwygMDEditor_SETTINGS_STACKEDIT_CHINESE_VERSION' => '⚠️¡Versión china!',
     'WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR' => 'Un editor de rebajas basado en un servicio en línea y una herramienta para tomar notas.
 * Cubre una amplia gama de variaciones de sintaxis de **MD** pero está configurado para cumplir con **GFM**.
-* Admite vista previa lateral, múltiples herramientas, opciones ricas y personalizaciones.
-* Cambio básico para el tema `claro` / `oscuro`, hay múltiples temas coloridos a través de opciones para cada panel: edición y vista previa.
-* El navegador recuerda localmente las preferencias seleccionadas; al volver a abrir el editor se restaurará la última vista.
+* Admite vista previa lateral y múltiples herramientas.
+* ⚠️¡Solo tema ligero básico!
 * Admite resaltado de sintaxis de código para una gran variedad de idiomas.
-* Soporte para cargar, arrastrar y pegar imágenes **`PERO TENGA EN CUENTA`** ¡esas usan el almacenamiento del navegador local, no la base de datos Kanboard!
 * Totalmente compatible con la sintaxis de emoji y también la entrada a través de atajos del sistema operativo (por ejemplo, « **Windows + .** » en Windows o « **Control + Comando + Espacio** » en Mac).
 * Hay características adicionales como expresiones matemáticas **KaTeX**, diagramas UML **Mermaid** y otras extensiones que son
 admitidos de forma predeterminada **`PERO NO SON COMPATIBLES`** con el conjunto de funciones estándar **MD** admitido por Kanboard!',
+    'WysiwygMDEditor_SETTINGS_STACKEDIT_PLUS_DESCR' => 'Agrega temas y personalizaciones además de las funciones estándar **StackEdit**.
+* Cambio básico para el tema `claro` / `oscuro`, hay múltiples temas coloridos a través de opciones para cada panel: edición y vista previa.
+* El navegador recuerda localmente las preferencias seleccionadas; al volver a abrir el editor se restaurará la última vista.
+* Soporte para cargar, arrastrar y pegar imágenes **`PERO TENGA EN CUENTA`** ¡esas usan el almacenamiento del navegador local, no la base de datos Kanboard!',
     //
     // Template/config/settings/rendering
     //
@@ -57,7 +61,7 @@ admitidos de forma predeterminada **`PERO NO SON COMPATIBLES`** con el conjunto 
 ¡dependiendo del orden en que se cargan los complementos!</span><br>⚠️ Entonces, **¡decide** cuál prefieres usar !',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Habilitar renderizado de rebajas con EasyMDE',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'Los campos de rebajas renderizados se verán como el panel de vista previa del editor EasyMDE.
-* El tema de renderizado se puede configurar independientemente del tema seleccionado para el editor EasyMDE.
+* El tema de renderizado se configura independientemente del tema seleccionado para el editor EasyMDE.
 * Además, se puede forzar que el fondo del tema sea transparente.
 * Y finalmente, la sintaxis del código resaltado se puede cambiar o deshabilitar (en el editor EasyMDE real está fijo en `Highlight.js`).',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_THEME_SELECT' => 'Seleccionar tema para renderizado de rebajas :',

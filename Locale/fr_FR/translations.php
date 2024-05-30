@@ -36,16 +36,20 @@ return array(
     'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_LIGHT' => 'Thème clair',
     'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DIMMED' => 'Thème grisé',
     'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DARK' => 'Thème sombre',
+    'WysiwygMDEditor_SETTINGS_STACKEDIT_ENGLISH_VERSION' => '⚠️Version anglaise !',
+    'WysiwygMDEditor_SETTINGS_STACKEDIT_CHINESE_VERSION' => '⚠️Version chinoise !',
     'WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR' => 'Un éditeur de démarques basé sur un service en ligne et un outil de prise de notes.
 * Couvre une large gamme de variations de syntaxe **MD** mais configuré pour se conformer à **GFM**.
-* Prend en charge l\'aperçu latéral, plusieurs outils, des options riches et des personnalisations.
-* Commutateur de base pour le thème `clair` / `sombre`, il existe plusieurs thèmes colorés via des options pour chaque volet - édition et aperçu.
-* Les préférences sélectionnées sont mémorisées localement par le navigateur, à la réouverture de l\'éditeur, la dernière vue sera restaurée.
+* Prend en charge l\'aperçu latéral et plusieurs outils.
+* ⚠️Thème lumineux de base uniquement !
 * Prend en charge la mise en évidence de la syntaxe du code pour une myriade de langues.
-* Prise en charge du téléchargement, du glisser-coller d\'images **`MAIS ATTENTION`** celles-ci utilisent le stockage du navigateur local, pas la base de données Kanboard!
 * Prend entièrement en charge la syntaxe emoji et également la saisie via les raccourcis du système d\'exploitation (par exemple « **Windows + .** » sur Windows ou « **Control + Command + Space** » sur Mac).
 * Il existe des fonctionnalités supplémentaires telles que les expressions mathématiques **KaTeX**, les diagrammes UML **Mermaid** et d\'autres extensions qui sont
 pris en charge par défaut **`MAIS NE SONT PAS COMPATIBLE`** avec l\'ensemble de fonctionnalités standard **MD** pris en charge par Kanboard !',
+    'WysiwygMDEditor_SETTINGS_STACKEDIT_PLUS_DESCR' => 'Ajoute des thèmes et des personnalisations en plus des fonctionnalités standard **StackEdit**.
+* Commutateur de base pour le thème `clair` / `sombre`, il existe plusieurs thèmes colorés via des options pour chaque volet - édition et aperçu.
+* Les préférences sélectionnées sont mémorisées localement par le navigateur, à la réouverture de l\'éditeur, la dernière vue sera restaurée.
+* Prise en charge du téléchargement, du glisser-coller d\'images **`MAIS ATTENTION`** celles-ci utilisent le stockage du navigateur local, pas la base de données Kanboard!',
     //
     // Template/config/settings/rendering
     //
@@ -57,7 +61,7 @@ pris en charge par défaut **`MAIS NE SONT PAS COMPATIBLE`** avec l\'ensemble de
 selon l\'ordre dans lequel les plugins sont chargés !</span><br>⚠️ Alors, **décidez** lequel vous préférez utiliser !',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Activer le rendu markdown avec EasyMDE',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'Les champs de démarque rendus ressembleront au volet d\'aperçu de l\'éditeur EasyMDE.
-* Le thème de rendu peut être configuré indépendamment du thème sélectionné pour l\'éditeur EasyMDE.
+* Le thème de rendu est configuré indépendamment du thème sélectionné pour l\'éditeur EasyMDE.
 * De plus, l\'arrière-plan du thème peut être forcé à être transparent.
 * Et enfin, la syntaxe du code de surbrillance peut être modifiée ou désactivée (dans l\'éditeur EasyMDE actuel, elle est fixée à `Highlight.js`).',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_THEME_SELECT' => 'Sélectionner le thème pour le rendu markdown :',

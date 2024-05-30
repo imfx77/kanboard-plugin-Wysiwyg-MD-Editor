@@ -36,16 +36,20 @@ return array(
     'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_LIGHT' => 'Tema chiaro',
     'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DIMMED' => 'Tema oscurato',
     'WysiwygMDEditor_SETTINGS_EASYMDE_THEME_DARK' => 'Tema scuro',
+    'WysiwygMDEditor_SETTINGS_STACKEDIT_ENGLISH_VERSION' => '⚠️Versione inglese !',
+    'WysiwygMDEditor_SETTINGS_STACKEDIT_CHINESE_VERSION' => '⚠️Versione cinese !',
     'WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR' => 'Un editor di markdown basato su un servizio online e uno strumento per prendere appunti.
 * Copre un\'ampia gamma di variazioni della sintassi **MD** ma configurato per essere conforme a **GFM**.
-* Supporta anteprima laterale, strumenti multipli, opzioni avanzate e personalizzazioni.
-* Interruttore di base per il tema `chiaro` / `scuro`, sono disponibili più temi colorati tramite opzioni per ciascun riquadro: modifica e anteprima.
-* Le preferenze selezionate vengono ricordate localmente dal browser, alla riapertura dell\'editor verrà ripristinata l\'ultima visualizzazione.
+* Supporta l\'anteprima laterale e più strumenti.
+* ⚠️Solo tema luce di base !
 * Supporta l\'evidenziazione della sintassi del codice per una miriade di lingue.
-* Supporto per il caricamento, il trascinamento e l\'incollaggio delle immagini **`MA ATTENZIONE`** queste utilizzano la memoria del browser locale, non il DB Kanboard!
 * Supporta completamente la sintassi delle emoji e anche l\'input tramite scorciatoie del sistema operativo (ad esempio « **Windows + .** » su Windows o « **Control + Comando + Spazio**» su Mac).
 * Sono presenti funzionalità extra come le espressioni matematiche **KaTeX**, i diagrammi UML **Mermaid** e altre estensioni che sono
 supportati per impostazione predefinita **`MA NON SONO COMPATIBILI`** con il set di funzionalità standard **MD** supportato da Kanboard!',
+    'WysiwygMDEditor_SETTINGS_STACKEDIT_PLUS_DESCR' => 'Aggiunge temi e personalizzazioni oltre alle funzionalità standard di **StackEdit**.
+* Interruttore di base per il tema `chiaro` / `scuro`, sono disponibili più temi colorati tramite opzioni per ciascun riquadro: modifica e anteprima.
+* Le preferenze selezionate vengono ricordate localmente dal browser, alla riapertura dell\'editor verrà ripristinata l\'ultima visualizzazione.
+* Supporto per il caricamento, il trascinamento e l\'incollaggio delle immagini **`MA ATTENZIONE`** queste utilizzano la memoria del browser locale, non il DB Kanboard!',
     //
     // Template/config/settings/rendering
     //
@@ -57,7 +61,7 @@ supportati per impostazione predefinita **`MA NON SONO COMPATIBILI`** con il set
 a seconda dell\'ordine in cui i plugin vengono caricati!</span><br>⚠️ Quindi, **decidi** quale preferisci utilizzare !',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Abilita rendering markdown con EasyMDE',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'I campi markdown visualizzati appariranno come il riquadro di anteprima dell\'editor EasyMDE.
-* Il tema di rendering può essere configurato indipendentemente dal tema selezionato per l\'editor EasyMDE.
+* Il tema di rendering viene configurato indipendentemente dal tema selezionato per l\'editor EasyMDE.
 * Inoltre, è possibile forzare lo sfondo del tema a essere trasparente.
 * Infine, la sintassi del codice evidenziato può essere modificata o disabilitata (nell\'attuale editor EasyMDE è fissata su `Highlight.js`).',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_THEME_SELECT' => 'Seleziona tema per il rendering markdown :',
