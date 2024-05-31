@@ -70,4 +70,9 @@ a seconda dell\'ordine in cui i plugin vengono caricati!</span><br>⚠️ Quindi
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_NONE' => 'NON utilizzare la sintassi del codice evidenziato',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLJS' => 'Utilizza Highlight.js (incluso insieme a EasyMDE)',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN' => 'Utilizza il plugin HighlightCodeSyntax ( ⚠️ solo se installato ! )',
- );
+    //
+    // Warnings
+    //
+    'WysiwygMDEditor_WARNING_HLCS_PLUGIN_NOT_INSTALLED' => '⚠️ Il plugin HighlightCodeSyntax NON è installato !',
+    'WysiwygMDEditor_WARNING_MDPLUS_PLUGIN_OVERRIDE_CONFLICT' => '⚠️ ATTENZIONE che le tue impostazioni attuali CONFLITTO o OVERRIDE la funzionalità del plugin MarkdownPlus !',
+);

@@ -62,13 +62,13 @@ class WysiwygMDEditorConfigController extends \Kanboard\Controller\ConfigControl
         // provide additional flash message details depending on settings and installed plugins
         if ($values['WysiwygMDEditor_easymde_render_code_highlight'] == 2 && !$is_HighlightCodeSyntax_Installed) {
             // DO NOT save settings if HighlightCodeSyntax plugin is missing
-            $this->flash->failure(t('Unable to save your settings.' . ' ' . t('HLCS_PLUGIN_NOT_INSTALLED')));
+            $this->flash->failure(t('Unable to save your settings.' . ' ' . t('WysiwygMDEditor_WARNING_HLCS_PLUGIN_NOT_INSTALLED')));
         } else {
             // actual save attempt
             if ($this->configModel->save($values)) {
                 if ($values['WysiwygMDEditor_enable_easymde_rendering'] == 1 && $is_MarkdownPlus_Installed) {
                     // WARNING about MarkdownPlus plugin override
-                    $this->flash->success(t('Settings saved successfully.' . ' ' . t('MDPLUS_PLUGIN_OVERRIDE_CONFLICT')));
+                    $this->flash->success(t('Settings saved successfully.' . ' ' . t('WysiwygMDEditor_WARNING_MDPLUS_PLUGIN_OVERRIDE_CONFLICT')));
                 } else {
                     $this->flash->success(t('Settings saved successfully.'));
                 }

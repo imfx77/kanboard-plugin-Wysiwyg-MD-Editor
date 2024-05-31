@@ -69,4 +69,10 @@ admitidos de forma predeterminada **`PERO NO SON COMPATIBLES`** con el conjunto 
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_SELECT' => 'Seleccione la sintaxis del código resaltado para la representación de rebajas :',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_NONE' => 'NO utilice la sintaxis del código resaltado',
     'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLJS' => 'Usar Highlight.js (incluido junto con EasyMDE)',
-    'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN' => 'Utilice el complemento HighlightCodeSyntax ( ⚠️ ¡solo si está instalado ! )',);
+    'WysiwygMDEditor_SETTINGS_EASYMDE_RENDER_CODE_HIGHLIGHT_HLCS_PLUGIN' => 'Utilice el complemento HighlightCodeSyntax ( ⚠️ ¡solo si está instalado! )',
+    //
+    // Warnings
+    //
+    'WysiwygMDEditor_WARNING_HLCS_PLUGIN_NOT_INSTALLED' => '⚠️ ¡El complemento HighlightCodeSyntax NO está instalado!',
+    'WysiwygMDEditor_WARNING_MDPLUS_PLUGIN_OVERRIDE_CONFLICT' => '⚠️ ¡TENGA EN CUENTA que su configuración actual ENTRA EN CONFLICTO o ANULA la funcionalidad del complemento MarkdownPlus!',
+);
