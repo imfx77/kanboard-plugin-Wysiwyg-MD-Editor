@@ -90,7 +90,7 @@ function injectButtonWrapperEasyMDE() {
                             {
                                 name: "themeLight",
                                 action: function themLight(editor){
-                                    innerDoc.getElementById("theme-link").setAttribute('href', "theme.light.css");
+                                    innerDoc.getElementById("theme-link").setAttribute('href', "../../Assets/easymde/theme.light.css");
                                     innerDoc.getElementById("highlight-link").setAttribute('href',
                                         "../../vendor/highlightjs/highlight.js/github-light.min.css");
                                     // Update toolbar buttons
@@ -104,7 +104,7 @@ function injectButtonWrapperEasyMDE() {
                             {
                                 name: "themeDimmed",
                                 action: function themeDimmed(editor){
-                                    innerDoc.getElementById("theme-link").setAttribute('href', "theme.dimmed.css");
+                                    innerDoc.getElementById("theme-link").setAttribute('href', "../../Assets/easymde/theme.dimmed.css");
                                     innerDoc.getElementById("highlight-link").setAttribute('href',
                                         "../../vendor/highlightjs/highlight.js/github-dimmed.min.css");
                                     // Update toolbar buttons
@@ -118,7 +118,7 @@ function injectButtonWrapperEasyMDE() {
                             {
                                 name: "themeDark",
                                 action: function themeDark(editor){
-                                    innerDoc.getElementById("theme-link").setAttribute('href', "theme.dark.css");
+                                    innerDoc.getElementById("theme-link").setAttribute('href', "../../Assets/easymde/theme.dark.css");
                                     innerDoc.getElementById("highlight-link").setAttribute('href',
                                         "../../vendor/highlightjs/highlight.js/github-dark.min.css");
                                     // Update toolbar buttons
@@ -153,7 +153,7 @@ function injectButtonWrapperEasyMDE() {
                         type: "POST",
                         url: '/?controller=WysiwygMDEditorConfigController&action=getEasyMDEDefaultTheme&plugin=WysiwygMDEditor',
                         success: function(response) {
-                            innerDoc.getElementById("theme-link").setAttribute('href', "theme." + response + ".css");
+                            innerDoc.getElementById("theme-link").setAttribute('href', "../../Assets/easymde/theme." + response + ".css");
                             innerDoc.getElementById("highlight-link").setAttribute('href',
                                 "../../vendor/highlightjs/highlight.js/github-" + response + ".min.css");
                             // Update toolbar buttons
@@ -202,7 +202,9 @@ function injectButtonWrapperEasyMDE() {
 
             });
 
-            $(".easymde-iframe").attr('src', location.origin + '/plugins/WysiwygMDEditor/Assets/easymde/wrapper.html');
+            $(".easymde-iframe").attr('src', location.origin
+                + '/plugins/WysiwygMDEditor/Template/editor/easymde.php'
+            );
 
             $( ".easymde-close-button" ).click(function() {
                 easymde.toTextArea();
