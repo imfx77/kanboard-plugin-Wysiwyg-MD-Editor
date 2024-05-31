@@ -9,13 +9,13 @@
 <title>EasyMDE</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<?php
+<link rel="stylesheet" href="../../../../assets/css/vendor.min.css">
+<link rel="stylesheet" href="../../vendor/Ionaru/easy-markdown-editor/easymde.min.css">
+<link rel="stylesheet" href="../../vendor/Ionaru/easy-markdown-editor/stylesheet.min.css">
+<link rel="stylesheet" href="../../Assets/easymde/theme.<?= $_GET['renderTheme'] ?>.css">
+<link rel="stylesheet" href="../../Assets/easymde/container.css">
 
-print '<link rel="stylesheet" href="../../../../assets/css/vendor.min.css">';
-print '<link rel="stylesheet" href="../../vendor/Ionaru/easy-markdown-editor/easymde.min.css">';
-print '<link rel="stylesheet" href="../../vendor/Ionaru/easy-markdown-editor/stylesheet.min.css">';
-print '<link rel="stylesheet" href="../../Assets/easymde/theme.' . $_GET['renderTheme'] . '.css">';
-print '<link rel="stylesheet" href="../../Assets/easymde/container.css">';
+<?php
 
 if ($_GET['renderCodeHighlight'] == 1) {
     // Highlight.js

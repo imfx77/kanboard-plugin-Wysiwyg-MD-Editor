@@ -109,8 +109,8 @@ function injectRenderEasyMDE() {
         });
 
         $(".easymde-iframe-embedded", containerElement).show();
-        $(".easymde-iframe-embedded", containerElement).attr('src', location.origin
-            + '/plugins/WysiwygMDEditor/Template/render/easymde.php'
+        $(".easymde-iframe-embedded", containerElement).attr('src',
+            '/plugins/WysiwygMDEditor/Template/render/easymde.php'
             + '?renderTheme=' + valueRenderTheme
             + '&renderTransparentBackground=' + valueRenderTransparentBackground
             + '&renderCodeHighlight=' + valueRenderCodeHighlight

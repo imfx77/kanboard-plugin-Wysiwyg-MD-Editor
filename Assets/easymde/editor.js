@@ -19,13 +19,15 @@ function injectButtonWrapperEasyMDE() {
         // check if button already injected
         if (this.querySelector('.easymde-button-wrapper')) return;
 
+        const urlAssetsEasyMDE = '/plugins/WysiwygMDEditor/Assets/easymde/';
+        const urlVendorHLJS = '/plugins/WysiwygMDEditor/vendor/highlightjs/highlight.js/';
+
         const buttonWrapper = document.createElement('span');
         buttonWrapper.className = 'easymde-button-wrapper';
         buttonWrapper.title = 'Edit with EasyMDE';
         buttonWrapper.style = 'margin: 0px 0px 0px 20px; cursor: pointer;';
         buttonWrapper.innerHTML = '<img height="24" width="24" style="vertical-align: bottom" '
-                                + 'src="'+ location.origin +'/plugins/WysiwygMDEditor/Assets/easymde/icon.svg">';
-
+                                + 'src="'+ urlAssetsEasyMDE + 'icon.svg">';
         const toolbarElement = this.querySelector('div');
         toolbarElement.insertBefore(buttonWrapper, toolbarElement.lastElementChild.nextSibling);
 
@@ -90,9 +92,8 @@ function injectButtonWrapperEasyMDE() {
                             {
                                 name: "themeLight",
                                 action: function themLight(editor){
-                                    innerDoc.getElementById("theme-link").setAttribute('href', "../../Assets/easymde/theme.light.css");
-                                    innerDoc.getElementById("highlight-link").setAttribute('href',
-                                        "../../vendor/highlightjs/highlight.js/github-light.min.css");
+                                    innerDoc.getElementById("theme-link").setAttribute('href', urlAssetsEasyMDE +  'theme.light.css');
+                                    innerDoc.getElementById("highlight-link").setAttribute('href', urlVendorHLJS + 'github-light.min.css');
                                     // Update toolbar buttons
                                     editor.toolbarElements.themeLight.classList.add('active');
                                     editor.toolbarElements.themeDimmed.classList.remove('active');
@@ -104,9 +105,8 @@ function injectButtonWrapperEasyMDE() {
                             {
                                 name: "themeDimmed",
                                 action: function themeDimmed(editor){
-                                    innerDoc.getElementById("theme-link").setAttribute('href', "../../Assets/easymde/theme.dimmed.css");
-                                    innerDoc.getElementById("highlight-link").setAttribute('href',
-                                        "../../vendor/highlightjs/highlight.js/github-dimmed.min.css");
+                                    innerDoc.getElementById("theme-link").setAttribute('href', urlAssetsEasyMDE + 'theme.dimmed.css');
+                                    innerDoc.getElementById("highlight-link").setAttribute('href', urlVendorHLJS + 'github-dimmed.min.css');
                                     // Update toolbar buttons
                                     editor.toolbarElements.themeLight.classList.remove('active');
                                     editor.toolbarElements.themeDimmed.classList.add('active');
@@ -118,9 +118,8 @@ function injectButtonWrapperEasyMDE() {
                             {
                                 name: "themeDark",
                                 action: function themeDark(editor){
-                                    innerDoc.getElementById("theme-link").setAttribute('href', "../../Assets/easymde/theme.dark.css");
-                                    innerDoc.getElementById("highlight-link").setAttribute('href',
-                                        "../../vendor/highlightjs/highlight.js/github-dark.min.css");
+                                    innerDoc.getElementById("theme-link").setAttribute('href', urlAssetsEasyMDE + 'theme.dark.css');
+                                    innerDoc.getElementById("highlight-link").setAttribute('href', urlVendorHLJS + 'github-dark.min.css');
                                     // Update toolbar buttons
                                     editor.toolbarElements.themeLight.classList.remove('active');
                                     editor.toolbarElements.themeDimmed.classList.remove('active');
@@ -153,9 +152,8 @@ function injectButtonWrapperEasyMDE() {
                         type: "POST",
                         url: '/?controller=WysiwygMDEditorConfigController&action=getEasyMDEDefaultTheme&plugin=WysiwygMDEditor',
                         success: function(response) {
-                            innerDoc.getElementById("theme-link").setAttribute('href', "../../Assets/easymde/theme." + response + ".css");
-                            innerDoc.getElementById("highlight-link").setAttribute('href',
-                                "../../vendor/highlightjs/highlight.js/github-" + response + ".min.css");
+                            innerDoc.getElementById("theme-link").setAttribute('href', urlAssetsEasyMDE + 'theme.' + response + '.css');
+                            innerDoc.getElementById("highlight-link").setAttribute('href', urlVendorHLJS + 'github-' + response + '.min.css');
                             // Update toolbar buttons
                             switch (response) {
                                 case 'light':
@@ -202,8 +200,8 @@ function injectButtonWrapperEasyMDE() {
 
             });
 
-            $(".easymde-iframe").attr('src', location.origin
-                + '/plugins/WysiwygMDEditor/Template/editor/easymde.php'
+            $(".easymde-iframe").attr('src',
+                '/plugins/WysiwygMDEditor/Template/editor/easymde.php'
             );
 
             $( ".easymde-close-button" ).click(function() {
