@@ -55,12 +55,37 @@ Rendering can parametrize theme, code highlight, and background transparency.
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
+## News
+
+**Unfortunately**, `stackedit.net` the **English** version of the `StackEdit+` online app, was eventually taken down and for good.
+Adopting this editor to embed in KB was an optimal choice I made amongst multiple editors, as it combined functionality flexibility and UI tweaks.
+So when it was gone I was seriously puzzled how to replace it.
+Actually, there are only 2 similar editors available, both with their respective pros and cons.
+
+Well, tough call 😏 I couldn't decide between them, so went for integrating both 😁  
+And left the choice to you, to consider which one fits you better.  
+See why in the section just below.
+
+### ✨ `Bad` news and `Good` news as of v.0.9.2 ! ✨
+- ❌ `stackedit.net` is gone, sad 🙁
+- ✔️ yet there are `stackedit.io` and `stackedit.cn` to replace it
+- ❌ `stackedit.io` has basic features only
+- ✔️ but `stackedit.io` is in **English**
+- ❌ `stackedit.net` is in **Chinese**
+- ✔️ but `stackedit.net` has extra features and themes
+
+Overall: 
+- ✅ `stackedit.io` is simple and minimalistic yet fully functional, and does the work just great if you don't need extras and a fixed light theme is fine !  
+- ✅ the **Chinese** texts of `stackedit.net` don't get too much in the way, as the UI has intuitive buttons and shortcuts, while being much more pleasant and caring on the eyes !  
+
+So, you really need to try each of the editors for yourself !
+
 ## Features
 
 ### ✨ Rendering options are available as of v.0.9.0 ! ✨
 
-- Currently integrates the [EasyMDE](https://github.com/Ionaru/easy-markdown-editor) and [StackEdit+](https://github.com/mafgwo/stackedit-plus) markdown editors
-- Both editors are configured to be [GFM](https://github.github.com/gfm/) compatible
+- Currently integrates the [EasyMDE](https://github.com/Ionaru/easy-markdown-editor), [StackEdit](https://github.com/benweet/stackedit) and [StackEdit+](https://github.com/mafgwo/stackedit-plus) markdown editors
+- All editors are configured to be [GFM](https://github.github.com/gfm/) compatible
 - Side preview is available, themes and various convenience options
 - Configurable buttons to inject into the KB editing toolbar of markdown textareas
 - ✨ Option for custom rendering of markdown fields (using `EasyMDE` locally with JavaScript). ✨
@@ -68,7 +93,8 @@ Rendering can parametrize theme, code highlight, and background transparency.
 
 For a better preview and feel of the actual editors visit:
 - `EasyMDE` [Live Demo](https://stackblitz.com/edit/easymde/?file=index.html)
-- `StackEdit+` [Online App](https://stackedit.net/app#)
+- `StackEdit` [Online App](https://stackedit.io/app#) (English)
+- `StackEdit+` [Online App](https://stackedit.cn/app#) (Chinese)
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
@@ -148,8 +174,9 @@ The section `Setup Rendering Options` allows you to enable and parametrize custo
 
 - [EasyMDE](https://github.com/Ionaru/easy-markdown-editor)
 - [Highlight.js](https://github.com/highlightjs/highlight.js)
-- [StackEdit+](https://github.com/mafgwo/stackedit-plus)
 - [stackedit.js](https://github.com/benweet/stackedit.js)
+- [StackEdit](https://github.com/benweet/stackedit)
+- [StackEdit+](https://github.com/mafgwo/stackedit-plus)
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 

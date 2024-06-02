@@ -1,6 +1,13 @@
 # Changelog
 
 
+## v0.9.2
+
+_(most recent changes are listed on top):_
+* The **English** version of `StackEdit+` is no longer available online, so removing it.
+* Adding the basic **English** version of `StackEdit` and the **Chinese** version of `StackEdit+` instead.
+* Thus, everyone can choose for himself which editor fits his needs better.
+
 ## v0.9.1
 
 _(most recent changes are listed on top):_
