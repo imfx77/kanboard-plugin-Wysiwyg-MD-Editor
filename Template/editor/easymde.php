@@ -18,6 +18,8 @@
 
 <body>
 <textarea id="easymde-textarea"></textarea>
+<button id="easymde-emoji-picker-btn" style="display:none"></button>
+<input id="easymde-emoji-input" type="text" style="display:none">
 </body>
 
 </html>

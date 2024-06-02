@@ -34,14 +34,15 @@ function injectButtonWrapperEasyMDE() {
         const textareaElement = this.querySelector('textarea');
 
         $( buttonWrapper ).click(function() {
-            var containerElement = document.createElement('div');
+            let containerElement = document.createElement('div');
             containerElement.className = 'easymde-container';
             containerElement.innerHTML = easymdeHtmlContainer;
             document.body.appendChild(containerElement);
             document.body.className += ' easymde-no-overflow';
 
-            var textedit = null;
-            var easymde = null;
+            let textedit = null;
+            let easymde = null;
+            let emojipicker = null;
 
             $(".easymde-iframe").on("load", function() {
                 const innerDoc = this.contentDocument || this.contentWindow.document;
@@ -90,40 +91,49 @@ function injectButtonWrapperEasyMDE() {
                             "horizontal-rule",
                             "|",
                             {
+                                name: "emojiPicker",
+                                action: function emojiPicker(){
+                                    innerDoc.getElementById("easymde-emoji-picker-btn").click();
+                                },
+                                className: "fa fa-smile-o",
+                                title: "Emoji Picker",
+                            },
+                            "|",
+                            {
                                 name: "themeLight",
-                                action: function themLight(editor){
+                                action: function themeLight(){
                                     innerDoc.getElementById("theme-link").setAttribute('href', urlAssetsEasyMDE +  'theme.light.css');
                                     innerDoc.getElementById("highlight-link").setAttribute('href', urlVendorHLJS + 'github-light.min.css');
                                     // Update toolbar buttons
-                                    editor.toolbarElements.themeLight.classList.add('active');
-                                    editor.toolbarElements.themeDimmed.classList.remove('active');
-                                    editor.toolbarElements.themeDark.classList.remove('active');
+                                    easymde.toolbarElements.themeLight.classList.add('active');
+                                    easymde.toolbarElements.themeDimmed.classList.remove('active');
+                                    easymde.toolbarElements.themeDark.classList.remove('active');
                                 },
                                 className: "fa fa-circle-o",
                                 title: "Theme Light",
                             },
                             {
                                 name: "themeDimmed",
-                                action: function themeDimmed(editor){
+                                action: function themeDimmed(){
                                     innerDoc.getElementById("theme-link").setAttribute('href', urlAssetsEasyMDE + 'theme.dimmed.css');
                                     innerDoc.getElementById("highlight-link").setAttribute('href', urlVendorHLJS + 'github-dimmed.min.css');
                                     // Update toolbar buttons
-                                    editor.toolbarElements.themeLight.classList.remove('active');
-                                    editor.toolbarElements.themeDimmed.classList.add('active');
-                                    editor.toolbarElements.themeDark.classList.remove('active');
+                                    easymde.toolbarElements.themeLight.classList.remove('active');
+                                    easymde.toolbarElements.themeDimmed.classList.add('active');
+                                    easymde.toolbarElements.themeDark.classList.remove('active');
                                 },
                                 className: "fa fa-dot-circle-o",
                                 title: "Theme Dimmed",
                             },
                             {
                                 name: "themeDark",
-                                action: function themeDark(editor){
+                                action: function themeDark(){
                                     innerDoc.getElementById("theme-link").setAttribute('href', urlAssetsEasyMDE + 'theme.dark.css');
                                     innerDoc.getElementById("highlight-link").setAttribute('href', urlVendorHLJS + 'github-dark.min.css');
                                     // Update toolbar buttons
-                                    editor.toolbarElements.themeLight.classList.remove('active');
-                                    editor.toolbarElements.themeDimmed.classList.remove('active');
-                                    editor.toolbarElements.themeDark.classList.add('active');
+                                    easymde.toolbarElements.themeLight.classList.remove('active');
+                                    easymde.toolbarElements.themeDimmed.classList.remove('active');
+                                    easymde.toolbarElements.themeDark.classList.add('active');
                                 },
                                 className: "fa fa-circle",
                                 title: "Theme Dark",
@@ -138,6 +148,7 @@ function injectButtonWrapperEasyMDE() {
                         shortcuts: {
                             toggleStrikethrough: "Cmd-Alt-S",
                             drawTable: "Cmd-Alt-T",
+                            emojiPicker: "Cmd-Alt-.",
                             themeLight: "Cmd-Alt-1",
                             themeDimmed: "Cmd-Alt-2",
                             themeDark: "Cmd-Alt-3",
@@ -174,19 +185,49 @@ function injectButtonWrapperEasyMDE() {
                     });
                 }
 
+                // create emoji picker
+                function CreateEmojiPicker() {
+                    emojipicker = new EmojiPicker({
+                        localDocument: innerDoc,
+                        trigger: [
+                            {
+                                selector: '.emojiPicker',
+                                insertInto: '#easymde-emoji-input'
+                            },
+                            {
+                                selector: '#easymde-emoji-picker-btn',
+                                insertInto: '#easymde-emoji-input'
+                            },
+                        ],
+                        closeButton: true,
+                    });
+
+                    $(innerDoc.querySelector('.fg-emoji-picker-move')).draggable();
+                }
+
                 CreateEasyMDE();
+                CreateEmojiPicker();
 
                 $(this.contentWindow).on("resize", function() {
                     if (!easymde) return;
 
                     easymde.toTextArea();
                     easymde = null;
+                    emojipicker = null;
 
                     CreateEasyMDE();
+                    CreateEmojiPicker();
                 });
 
                 $(innerDoc).keydown(function(event) {
                     if (event.keyCode != 27) return;
+
+                    // first hide the emojiPicker if open, rather than directly exit the editor
+                    emojiPicker = innerDoc.querySelector('.fg-emoji-container');
+                    if (emojiPicker && !$(emojiPicker).hasClass('fg-emoji-container-hidden')) {
+                        $(emojiPicker).addClass('fg-emoji-container-hidden');
+                        return;
+                    }
 
                     easymde.toTextArea();
                     textareaElement.value = textedit.value;
@@ -196,8 +237,22 @@ function injectButtonWrapperEasyMDE() {
 
                     containerElement = null;
                     easymde = null;
+                    emojipicker = null;
                 });
 
+                // handle emoji picker input
+                $(innerDoc).find("#easymde-emoji-input").on("input", function(){
+                    if(!easymde) return;
+                    let cm = easymde.codemirror;
+                    if (cm.getWrapperElement().lastChild.classList.contains('editor-preview-active')) return;
+
+                    let startPoint = {}, endPoint = {};
+                    Object.assign(startPoint, cm.getCursor('start'));
+                    Object.assign(endPoint, cm.getCursor('end'));
+                    cm.replaceSelection($(this).val());
+
+                    $(this).val('');
+                });
             });
 
             $(".easymde-iframe").attr('src',
