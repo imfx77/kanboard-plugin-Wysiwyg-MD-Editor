@@ -2,6 +2,7 @@
 .fieldset-WysiwygMDEditor {border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;}
 .icon-WysiwygMDEditor {border: none; padding-right: 10px; padding-left: 10px;}
 .descr-WysiwygMDEditor {border: none; width: 100%; padding-left: 10px;}
+details summary {cursor: pointer;}
 </style>
 
 <div class="page-header">
@@ -21,6 +22,28 @@
 
         <div>
             <?= $this->form->checkbox(
+                'WysiwygMDEditor_enable_emojipicker',
+                t('WysiwygMDEditor_SETTINGS_EDITING_ENABLE_BUTTON') . ' EmojiPicker ',
+                1,
+                isset($values['WysiwygMDEditor_enable_emojipicker']) ? $values['WysiwygMDEditor_enable_emojipicker'] == 1 : 0
+            ) ?>
+            <table><tr>
+                <td class="icon-WysiwygMDEditor">
+                    <div style="font-size: 2em">😀</div>
+                </td>
+                <td class="descr-WysiwygMDEditor markdown">
+                    <a href="https://github.com/woody180/vanilla-javascript-emoji-picker" target="_blank" title="<?= t('Opens in a new window') ?>"> EmojiPicker <i class="fa fa-external-link"></i></a>
+                    <br>
+                    <details>
+                    <summary><?= t('WysiwygMDEditor_SETTINGS_EDITING_DETAILS_SUMMARY') ?></summary>
+                    <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR')) ?></div>
+                    </details>
+                </td>
+            </tr></table>
+        </div>
+
+        <div>
+            <?= $this->form->checkbox(
                 'WysiwygMDEditor_enable_easymde',
                 t('WysiwygMDEditor_SETTINGS_EDITING_ENABLE_BUTTON') . ' EasyMDE ',
                 1,
@@ -33,7 +56,10 @@
                 <td class="descr-WysiwygMDEditor markdown">
                     <a href="https://github.com/Ionaru/easy-markdown-editor" target="_blank" title="<?= t('Opens in a new window') ?>"> EasyMDE <i class="fa fa-external-link"></i></a>
                     <br>
+                    <details>
+                    <summary><?= t('WysiwygMDEditor_SETTINGS_EDITING_DETAILS_SUMMARY') ?></summary>
                     <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_EASYMDE_DESCR')) ?></div>
+                    </details>
 
                     <?php
                     if (!isset($values['WysiwygMDEditor_easymde_default_theme'])) {
@@ -66,7 +92,10 @@
                     <a href="https://github.com/benweet/stackedit" target="_blank" title="<?= t('Opens in a new window') ?>"> StackEdit <i class="fa fa-external-link"></i></a>
                     <b> <?= t('WysiwygMDEditor_SETTINGS_STACKEDIT_ENGLISH_VERSION') ?> </b>
                     <br>
+                    <details>
+                    <summary><?= t('WysiwygMDEditor_SETTINGS_EDITING_DETAILS_SUMMARY') ?></summary>
                     <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR')) ?></div>
+                    </details>
                 </td>
             </tr></table>
         </div>
@@ -86,7 +115,10 @@
                     <a href="https://github.com/mafgwo/stackedit-plus" target="_blank" title="<?= t('Opens in a new window') ?>"> StackEdit+ <i class="fa fa-external-link"></i></a>
                     <b> <?= t('WysiwygMDEditor_SETTINGS_STACKEDIT_CHINESE_VERSION') ?> </b>
                     <br>
+                    <details>
+                    <summary><?= t('WysiwygMDEditor_SETTINGS_EDITING_DETAILS_SUMMARY') ?></summary>
                     <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_STACKEDIT_PLUS_DESCR')) ?></div>
+                    </details>
                 </td>
             </tr></table>
         </div>
@@ -112,7 +144,10 @@
                 <td class="descr-WysiwygMDEditor markdown">
                     <a href="https://github.com/Ionaru/easy-markdown-editor" target="_blank" title="<?= t('Opens in a new window') ?>"> EasyMDE <i class="fa fa-external-link"></i></a>
                     <br>
+                    <details>
+                    <summary><?= t('WysiwygMDEditor_SETTINGS_EDITING_DETAILS_SUMMARY') ?></summary>
                     <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR')) ?></div>
+                    </details>
 
                     <?php
                     if (!isset($values['WysiwygMDEditor_easymde_render_theme'])) {

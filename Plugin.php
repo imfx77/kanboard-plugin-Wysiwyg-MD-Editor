@@ -11,7 +11,23 @@ class Plugin extends Base
     {
         $cspRules = $this->container['cspRules'];
 
-        if ($this->configModel->get('WysiwygMDEditor_enable_easymde', '0') == '1') {
+        $enableEmojiPicker = ($this->configModel->get('WysiwygMDEditor_enable_emojipicker', '0') == '1');
+        $enableEasyMDE = ($this->configModel->get('WysiwygMDEditor_enable_easymde', '0') == '1');
+        $enableEasyMDERenering = ($this->configModel->get('WysiwygMDEditor_enable_easymde_rendering', '0') == '1');
+        $enableStackEdit = ($this->configModel->get('WysiwygMDEditor_enable_stackedit', '0') == '1');
+        $enableStackEditPlus = ($this->configModel->get('WysiwygMDEditor_enable_stackedit_plus', '0') == '1');
+
+        if ($enableEmojiPicker || $enableEasyMDE) {
+            //JS
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/woody180/vanilla-javascript-emoji-picker/vanillaEmojiPicker.js'));
+        }
+
+        if ($enableEmojiPicker) {
+            //JS
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/symbols/emojis.js'));
+        }
+
+        if ($enableEasyMDE) {
             //CSS
             $this->hook->on('template:layout:css', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/container.css'));
 
@@ -28,7 +44,7 @@ class Plugin extends Base
             }
         }
 
-        if ($this->configModel->get('WysiwygMDEditor_enable_stackedit', '0') == '1') {
+        if ($enableStackEdit) {
             //JS
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/benweet/stackedit.js/stackedit.min.js'));
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/stackedit/editor.js'));
@@ -41,7 +57,7 @@ class Plugin extends Base
             }
         }
 
-        if ($this->configModel->get('WysiwygMDEditor_enable_stackedit_plus', '0') == '1') {
+        if ($enableStackEditPlus) {
             //JS
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/benweet/stackedit.js/stackedit.min.js'));
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/stackedit-plus/editor.js'));
@@ -54,7 +70,7 @@ class Plugin extends Base
             }
         }
 
-        if ($this->configModel->get('WysiwygMDEditor_enable_easymde_rendering', '0') == '1') {
+        if ($enableEasyMDERenering) {
             //CSS
             $this->hook->on('template:layout:css', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/container.css'));
 
