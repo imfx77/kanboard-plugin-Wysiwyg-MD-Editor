@@ -23,7 +23,7 @@ return array(
     'WysiwygMDEditor_SETTINGS_EDITING_DESCR' => 'Choose which MD editors to use.
 * Enabling an editor will inject a corresponding button in the editing toolbar of each markdown textarea.
 * All editors open independently of each other in a fullscreen overlay mode so that they don\'t mess with Kanboard UI.
-* The actual UI of the editors is in **English**, **`no translations`** are available for them.',
+* The actual UI language of the editors is fixed (either **English** or **Chinese**), and **`no translations`** are available for them.',
     'WysiwygMDEditor_SETTINGS_EDITING_ENABLE_BUTTON' => 'Enable a button for',
     'WysiwygMDEditor_SETTINGS_EDITING_DETAILS_SUMMARY' => 'See Details ...',
     'WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR' => 'A fully offline vanilla JavaScript emoji picker.

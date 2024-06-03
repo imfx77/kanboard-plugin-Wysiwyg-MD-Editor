@@ -23,8 +23,13 @@ return array(
     'WysiwygMDEditor_SETTINGS_EDITING_DESCR' => 'Scegli quali editor MD utilizzare.
 * L\'abilitazione di un editor inserirà un pulsante corrispondente nella barra degli strumenti di modifica di ciascuna area di testo markdown.
 * Tutti gli editor si aprono indipendentemente l\'uno dall\'altro in modalità overlay a schermo intero in modo da non interferire con l\'interfaccia utente di Kanboard.
-* L\'interfaccia utente effettiva degli editor è in **inglese**, **`non sono disponibili traduzioni`** per loro.',
+* La lingua effettiva dell\'interfaccia utente degli editor è fissa (**inglese** o **cinese**) e **`non sono disponibili traduzioni`** per loro.',
     'WysiwygMDEditor_SETTINGS_EDITING_ENABLE_BUTTON' => 'Abilita un pulsante per',
+    'WysiwygMDEditor_SETTINGS_EDITING_DETAILS_SUMMARY' => 'Vedi dettagli ...',
+    'WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR' => 'Un selettore di emoji JavaScript vanilla completamente offline.
+* Ha categorie e ricerca.
+* Si sovrappone all\'area di testo di modifica e può essere trascinato.
+* Facendo clic sulle icone emoji si inserisce e sostituisce la selezione di testo corrente.',
     'WysiwygMDEditor_SETTINGS_EASYMDE_DESCR' => 'Un editor markdown JavaScript drop-in completamente offline.
 * Configurato per coprire tutta la sintassi **MD** e le funzionalità di anteprima compatibile con **GFM**.
 * Supporta l\'anteprima laterale e dispone di una barra di modifica personalizzata con più strumenti.

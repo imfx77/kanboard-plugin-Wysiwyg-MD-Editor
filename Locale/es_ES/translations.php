@@ -23,8 +23,13 @@ return array(
     'WysiwygMDEditor_SETTINGS_EDITING_DESCR' => 'Elige qué editores MD usar.
 * Al habilitar un editor se insertará un botón correspondiente en la barra de herramientas de edición de cada área de texto de rebajas.
 * Todos los editores se abren de forma independiente entre sí en un modo de superposición de pantalla completa para que no interfieran con la interfaz de usuario de Kanboard.
-* La interfaz de usuario real de los editores está en **inglés**, **`no hay traducciones`** disponibles para ellos.',
+* El idioma real de la interfaz de usuario de los editores es fijo (ya sea **inglés** o **chino**) y **`no hay traducciones`** disponibles para ellos.',
     'WysiwygMDEditor_SETTINGS_EDITING_ENABLE_BUTTON' => 'Habilitar un botón para',
+    'WysiwygMDEditor_SETTINGS_EDITING_DETAILS_SUMMARY' => 'Ver Detalles ...',
+    'WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR' => 'Un selector de emojis de JavaScript estándar completamente fuera de línea.
+* Tiene categorías y búsqueda.
+* Superpone el área de texto de edición y se puede arrastrar.
+* Al hacer clic en los íconos emoji, se inserta y reemplaza la selección de texto actual.',
     'WysiwygMDEditor_SETTINGS_EASYMDE_DESCR' => 'Un editor de rebajas de JavaScript totalmente fuera de línea.
 * Configurado para cubrir todas las funciones de vista previa y sintaxis de **MD** compatible con **GFM**.
 * Admite vista previa lateral y tiene una barra de edición personalizada con múltiples herramientas.

@@ -23,8 +23,13 @@ return array(
     'WysiwygMDEditor_SETTINGS_EDITING_DESCR' => 'Choisissez les éditeurs MD à utiliser.
 * L\'activation d\'un éditeur injectera un bouton correspondant dans la barre d\'outils d\'édition de chaque zone de texte markdown.
 * Tous les éditeurs s\'ouvrent indépendamment les uns des autres en mode superposition plein écran afin de ne pas gâcher l\'interface utilisateur de Kanboard.
-* L\'interface utilisateur actuelle des éditeurs est en **anglais**, **`aucune traduction`** n\'est disponible pour eux.',
+* La langue réelle de l\'interface utilisateur des éditeurs est fixe (soit **anglais**, soit **chinois**), et **`aucune traduction`** n\'est disponible pour eux.',
     'WysiwygMDEditor_SETTINGS_EDITING_ENABLE_BUTTON' => 'Activer un bouton pour',
+    'WysiwygMDEditor_SETTINGS_EDITING_DETAILS_SUMMARY' => 'Voir les détails ...',
+    'WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR' => 'Un sélecteur d\'emoji JavaScript vanille entièrement hors ligne.
+* A des catégories et une recherche.
+* Superpose la zone de texte d\'édition et peut être déplacée.
+* Cliquer sur les icônes emoji insère et remplace la sélection de texte actuelle.',
     'WysiwygMDEditor_SETTINGS_EASYMDE_DESCR' => 'Un éditeur de démarques JavaScript entièrement hors ligne.
 * Configuré pour couvrir toutes les fonctionnalités de syntaxe **MD** et d\'aperçu **Compatible GFM**.
 * Prend en charge l\'aperçu latéral et dispose d\'une barre d\'édition personnalisée avec plusieurs outils.

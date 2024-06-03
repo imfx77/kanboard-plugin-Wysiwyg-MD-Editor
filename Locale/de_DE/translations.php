@@ -23,8 +23,13 @@ return array(
     'WysiwygMDEditor_SETTINGS_EDITING_DESCR' => 'Wählen Sie aus, welche MD-Editoren verwendet werden sollen.
 * Durch die Aktivierung eines Editors wird eine entsprechende Schaltfläche in die Bearbeitungssymbolleiste jedes Markdown-Textbereichs eingefügt.
 * Alle Editoren werden unabhängig voneinander im Vollbild-Overlay-Modus geöffnet, damit sie nicht mit der Kanboard-Benutzeroberfläche in Konflikt geraten.
-* Die eigentliche Benutzeroberfläche der Editoren ist in **Englisch**, **`für sie sind keine Übersetzungen`** verfügbar.',
+* Die tatsächliche Benutzeroberflächensprache der Editoren ist festgelegt (entweder **Englisch** oder **Chinesisch**) und es sind **`keine Übersetzungen`** für sie verfügbar.',
     'WysiwygMDEditor_SETTINGS_EDITING_ENABLE_BUTTON' => 'Eine Schaltfläche aktivieren für',
+    'WysiwygMDEditor_SETTINGS_EDITING_DETAILS_SUMMARY' => 'Details anzeigen ...',
+    'WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR' => 'Ein vollständig offline verfügbarer Vanilla JavaScript-Emoji-Picker.
+* Verfügt über Kategorien und eine Suche.
+* Überlagert den Bearbeitungstextbereich und kann verschoben werden.
+* Durch Klicken auf Emoji-Symbole wird die aktuelle Textauswahl eingefügt und ersetzt.',
     'WysiwygMDEditor_SETTINGS_EASYMDE_DESCR' => 'Ein vollständig offline einsetzbarer JavaScript-Markdown-Editor.
 * Konfiguriert, um alle **MD**-Syntax- und Vorschaufunktionen abzudecken. **GFM**-kompatibel.
 * Unterstützt Seitenvorschau und verfügt über eine benutzerdefinierte Bearbeitungsleiste mit mehreren Werkzeugen.
