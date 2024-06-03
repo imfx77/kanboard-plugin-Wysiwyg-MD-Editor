@@ -51,7 +51,7 @@ function injectButtonWrapperStackEdit() {
 $(function() {
     injectButtonWrapperStackEdit();
 
-    var observerStackEdit = new MutationObserver(function() {
+    const observerStackEdit = new MutationObserver(function() {
         injectButtonWrapperStackEdit();
     });
     observerStackEdit.observe(document, { subtree: true, childList: true });

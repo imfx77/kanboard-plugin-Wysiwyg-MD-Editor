@@ -7530,9 +7530,9 @@ const EmojiPicker = function(options) {
                         height: ${pickerHeight}px;
                         border-radius: 5px;
                         box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.62);
-                        background-color: #ffffff77;
+                        background-color: #ffffff77 !important;
                         overflow: hidden;
-                        z-index: 999999;
+                        z-index: 99999;
                     }
 
                     .fg-emoji-container svg {
@@ -7554,7 +7554,7 @@ const EmojiPicker = function(options) {
                     }
 
                     .fg-emoji-nav {
-                        background-color: #646772;
+                        background-color: #646772 !important;
                     }
 
                     .fg-emoji-nav li a svg {
@@ -7588,15 +7588,15 @@ const EmojiPicker = function(options) {
                     }
 
                     .fg-emoji-nav ul li a:hover {
-                        background-color: #e9ebf1;
+                        background-color: #e9ebf1 !important;
                     }
 
                     .fg-emoji-nav ul li.active a {
-                        background-color: #e9ebf1;
+                        background-color: #e9ebf1 !important;
                     }
 
                     .fg-emoji-nav ul li.emoji-picker-nav-active a {
-                        background-color: #e9ebf1;
+                        background-color: #e9ebf1 !important;
                     }
 
                     .fg-emoji-nav ul li.emoji-picker-nav-active a svg {
@@ -7609,7 +7609,7 @@ const EmojiPicker = function(options) {
                     }
 
                     .fg-picker-special-buttons a {
-                        background-color: ${this.options.specialButtons ? this.options.specialButtons : '#ed5e2877'};
+                        background-color: ${this.options.specialButtons ? this.options.specialButtons : '#ed5e2877'} !important;
                     }
 
                     .fg-picker-special-buttons:last-child a {
@@ -7623,13 +7623,14 @@ const EmojiPicker = function(options) {
                         overflow-y: scroll;
                         overflow-x: hidden;
                         height: 323px;
-                        background-color: #f3f3f3aa;
+                        background-color: #f3f3f3aa !important;
                     }
 
                     .fg-emoji-picker-category-wrapper {
                         display: flex;
                         flex-wrap: wrap;
                         flex: 1;
+                        color: #606c71 !important; 
                     }
 
                     .fg-emoji-list li {
@@ -7657,7 +7658,7 @@ const EmojiPicker = function(options) {
                     }
                     
                     .fg-emoji-list li a:hover {
-                        background-color: #ebebeb77;
+                        background-color: #ebebeb77 !important;
                     }
 
                     .fg-emoji-picker-search {
@@ -7671,7 +7672,7 @@ const EmojiPicker = function(options) {
                         width: calc(100% - 30px);
                         display: block;
                         padding: 10px 15px;
-                        background-color: #f3f3f3dd;
+                        background-color: #f3f3f3dd !important;
                     }
 
                     .fg-emoji-picker-search .fg-emoji-picker-search-icon {
@@ -7683,7 +7684,7 @@ const EmojiPicker = function(options) {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        background-color: #f3f3f3;
+                        background-color: #f3f3f3 !important;
                     }
 
                 </style>
@@ -7718,7 +7719,8 @@ const EmojiPicker = function(options) {
 
         
         render: (e, attr) => {
-            if (functions.checkPickerExistShow(e)) {
+            if (this.options.softClose && localDocument.querySelector('.fg-emoji-container')) {
+                functions.showPicker(e);
                 return;
             }
 
@@ -7813,33 +7815,10 @@ const EmojiPicker = function(options) {
         },
 
         checkPickerExist(e) {
-            return (localDocument.querySelector('.fg-emoji-container') && !e.target.closest('.fg-emoji-container') && !moseMove);
-        },
-
-        checkPickerExistShow(e) {
-            if (functions.checkPickerExist.call(this, e)) {
-                functions.showPicker.call(this, e);
-                return true;
-            }
-            return false;
-        },
-
-        checkPickerExistHide(e) {
-            if (functions.checkPickerExist.call(this, e)) {
-                functions.hidePicker.call(this, e);
-                return true;
-            }
-            return false;
-        },
-
-        checkPickerExistClose(e) {
-            if (functions.checkPickerExist.call(this, e)) {
+            if (document.querySelector('.fg-emoji-container') && !e.target.closest('.fg-emoji-container') && !moseMove) {
                 functions.closePicker.call(this, e);
-                return true;
             }
-            return false;
         },
-
 
         setCaretPosition: (field, caretPos) => {
             var elem = field
@@ -7862,7 +7841,7 @@ const EmojiPicker = function(options) {
 
         insert: e => {
 
-                e.preventDefault();
+            e.preventDefault();
             
             const emoji = e.target.innerText.trim();
             const myField = localDocument.querySelectorAll(this.insertInto);
@@ -7956,9 +7935,14 @@ const EmojiPicker = function(options) {
 
 
     const bindEvents = () => {
-        this.lib(localDocument.body).on('click', functions.hidePicker, '#fg-emoji-picker-close-button');
-        //this.lib(localDocument.body).on('click', functions.checkPickerExistHide);
+        if (this.options.autoClose) this.lib(localDocument.body).on('click', functions.checkPickerExist);
+        if (this.options.softClose) {
+            this.lib(localDocument.body).on('click', functions.hidePicker, '#fg-emoji-picker-close-button');
+        } else {
+            this.lib(localDocument.body).on('click', functions.closePicker, '#fg-emoji-picker-close-button');
+        }
         this.lib(localDocument.body).on('click', functions.render, this.trigger);
+
         this.lib(localDocument.body).on('click', functions.insert, '.fg-emoji-list a');
         this.lib(localDocument.body).on('click', functions.categoryNav, '.fg-emoji-nav a');
         this.lib(localDocument.body).on('input', functions.search, '.fg-emoji-picker-search input');

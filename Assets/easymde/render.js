@@ -122,7 +122,7 @@ function injectRenderEasyMDE() {
 $(function() {
     injectRenderEasyMDE();
 
-    var observerRenderEasyMDE = new MutationObserver(function() {
+    const observerRenderEasyMDE = new MutationObserver(function() {
         injectRenderEasyMDE();
     });
     observerRenderEasyMDE.observe(document, { subtree: true, childList: true });

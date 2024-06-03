@@ -200,6 +200,7 @@ function injectButtonWrapperEasyMDE() {
                             },
                         ],
                         closeButton: true,
+                        softClose: true,
                     });
 
                     $(innerDoc.querySelector('.fg-emoji-picker-move')).draggable();
@@ -219,6 +220,7 @@ function injectButtonWrapperEasyMDE() {
                     CreateEmojiPicker();
                 });
 
+                // handle ESC
                 $(innerDoc).keydown(function(event) {
                     if (event.keyCode != 27) return;
 
@@ -279,7 +281,7 @@ function injectButtonWrapperEasyMDE() {
 $(function() {
     injectButtonWrapperEasyMDE();
 
-    var observerEasyMDE = new MutationObserver(function() {
+    const observerEasyMDE = new MutationObserver(function() {
         injectButtonWrapperEasyMDE();
     });
     observerEasyMDE.observe(document, { subtree: true, childList: true });
