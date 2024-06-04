@@ -202,8 +202,6 @@ function injectButtonWrapperEasyMDE() {
                         closeButton: true,
                         softClose: true,
                     });
-
-                    $(innerDoc.querySelector('.fg-emoji-picker-move')).draggable();
                 }
 
                 CreateEasyMDE();
@@ -225,7 +223,7 @@ function injectButtonWrapperEasyMDE() {
                     if (event.keyCode != 27) return;
 
                     // first hide the emojiPicker if open, rather than directly exit the editor
-                    emojiPicker = innerDoc.querySelector('.fg-emoji-container');
+                    const emojiPicker = innerDoc.querySelector('.fg-emoji-container');
                     if (emojiPicker && !$(emojiPicker).hasClass('fg-emoji-container-hidden')) {
                         $(emojiPicker).addClass('fg-emoji-container-hidden');
                         return;

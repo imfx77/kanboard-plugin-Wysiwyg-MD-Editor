@@ -7523,7 +7523,7 @@ const EmojiPicker = function(options) {
                     }
                     
                     .fg-emoji-container {
-                        position: fixed;
+                        position: absolute;
                         top: 0;
                         left: 0;
                         width: ${pickerWidth}px;
@@ -7604,9 +7604,10 @@ const EmojiPicker = function(options) {
                     }
 
                     .fg-emoji-picker-move {
-                        /* pointer-events: none; */
                         cursor: move;
-                    }
+                        -ms-touch-action: none;
+                        touch-action: none;
+                      }
 
                     .fg-picker-special-buttons a {
                         background-color: ${this.options.specialButtons ? this.options.specialButtons : '#ed5e2877'} !important;
@@ -7895,7 +7896,6 @@ const EmojiPicker = function(options) {
 
 
         search: e => {
-
             const val = e.target.value.trim();
 
             if (!emojiList) {
@@ -7923,13 +7923,19 @@ const EmojiPicker = function(options) {
         },
 
         mouseMove: e => {
-
             if (moseMove) {
                 e.preventDefault();
                 const el = localDocument.querySelector('.fg-emoji-container');
                 el.style.left = e.clientX - 10 + 'px';
                 el.style.top = e.clientY - 10 + 'px';
             }
+        },
+
+        touchMove: e => {
+            e.preventDefault();
+            const el = localDocument.querySelector('.fg-emoji-container');
+            el.style.left = e.targetTouches[0].pageX -10 + 'px';
+            el.style.top = e.targetTouches[0].pageY -10 + 'px';
         },
     };
 
@@ -7950,12 +7956,7 @@ const EmojiPicker = function(options) {
         this.lib(localDocument).on('mousedown', functions.mouseDown, '#fg-emoji-picker-move');
         this.lib(localDocument).on('mouseup', functions.mouseUp, '#fg-emoji-picker-move');
         this.lib(localDocument).on('mousemove', functions.mouseMove);
-
-        this.lib(localDocument).on('touchstart', functions.mouseDown, '#fg-emoji-picker-move');
-        this.lib(localDocument).on('touchend', functions.mouseUp, '#fg-emoji-picker-move');
-        this.lib(localDocument).on('touchcancel', functions.mouseUp, '#fg-emoji-picker-move');
-        this.lib(localDocument).on('touchleave', functions.mouseUp, '#fg-emoji-picker-move');
-        this.lib(localDocument).on('touchmove', functions.mouseMove);
+        this.lib(localDocument).on('touchmove', functions.touchMove, '#fg-emoji-picker-move');
     };
 
 

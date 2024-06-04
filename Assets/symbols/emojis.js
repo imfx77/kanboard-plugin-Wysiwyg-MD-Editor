@@ -46,12 +46,16 @@ function injectButtonWrapperEmojiPicker() {
             autoClose: true,
         });
 
-        $(".fg-emoji-picker-move").draggable();
-
         // handle ESC
         $(document).keydown(function (event) {
             if (event.keyCode != 27) return;
-            $(".fg-emoji-container").addClass('fg-emoji-container-hidden');
+
+            const emojiPicker = document.querySelector('.fg-emoji-container');
+            if (emojiPicker && !$(emojiPicker).hasClass('fg-emoji-container-hidden')) {
+                event.stopPropagation();
+                $(emojiPicker).addClass('fg-emoji-container-hidden');
+                return;
+            }
         });
         // handle modal close
         KB.on('modal.close', function () {
