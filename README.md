@@ -55,7 +55,7 @@ Rendering can parametrize theme, code highlight, and background transparency.
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
-## News
+## ⚠️ News
 
 **Unfortunately**, `stackedit.net` the **English** version of the `StackEdit+` online app, was eventually taken down and for good.
 Adopting this editor to embed in KB was an optimal choice I made amongst multiple editors, as it combined functionality flexibility and UI tweaks.
@@ -80,6 +80,8 @@ Overall:
 - ✅ the **Chinese** texts of `stackedit.net` don't get too much in the way, as the UI has intuitive buttons and shortcuts, while being much more pleasant and caring on the eyes !  
 
 So, you really need to try each of the editors for yourself !
+
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
