@@ -82,12 +82,15 @@ So, you really need to try each of the editors for yourself !
 
 ## Features
 
+### ✨ Emoji Picker is available as of v.0.9.3 ! ✨
+
 ### ✨ Rendering options are available as of v.0.9.0 ! ✨
 
-- Currently integrates the [EasyMDE](https://github.com/Ionaru/easy-markdown-editor), [StackEdit](https://github.com/benweet/stackedit) and [StackEdit+](https://github.com/mafgwo/stackedit-plus) markdown editors
-- All editors are configured to be [GFM](https://github.github.com/gfm/) compatible
-- Side preview is available, themes and various convenience options
-- Configurable buttons to inject into the KB editing toolbar of markdown textareas
+- Currently integrates the [EasyMDE](https://github.com/Ionaru/easy-markdown-editor), [StackEdit](https://github.com/benweet/stackedit) and [StackEdit+](https://github.com/mafgwo/stackedit-plus) markdown editors.
+- All editors are configured to be [GFM](https://github.github.com/gfm/) compatible.
+- Side preview is available, themes and various convenience options.
+- Configurable buttons for editors to inject into the KB editing toolbar of markdown textareas.
+- ✨ Configurable **Emoji Picker** button for editing toolbar of markdown textareas (also integrated into `EasyMDE`). ✨
 - ✨ Option for custom rendering of markdown fields (using `EasyMDE` locally with JavaScript). ✨
 - ✨ Rendering can be parametrized with theme, code highlight, and background transparency. ✨
 
@@ -158,6 +161,7 @@ The section `Setup Rendering Options` allows you to enable and parametrize custo
 
 - Available translations for some common languages `DE`, `ES`, `FR`, `IT`, `PT`, `RU` - yet, they are _mechanically translated using Google Translate_ !
 - _Translation for `en_US` is the default_ if there is no translation pack for the user selected language in KB.
+- The actual UI language of the editors is fixed (either **English** or **Chinese**), and **`no translations`** are available for them. 
 
 </details>
 
@@ -177,6 +181,7 @@ The section `Setup Rendering Options` allows you to enable and parametrize custo
 - [stackedit.js](https://github.com/benweet/stackedit.js)
 - [StackEdit](https://github.com/benweet/stackedit)
 - [StackEdit+](https://github.com/mafgwo/stackedit-plus)
+- [FG Emoji Picker](https://github.com/woody180/vanilla-javascript-emoji-picker)
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 

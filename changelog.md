@@ -1,6 +1,11 @@
 # Changelog
 
 
+## v0.9.3
+
+_(most recent changes are listed on top):_
+* Integrated an **Emoji Picker** into `EasyMDE` and as an optional button in the markdown edit toolbar.
+
 ## v0.9.2
 
 _(most recent changes are listed on top):_
