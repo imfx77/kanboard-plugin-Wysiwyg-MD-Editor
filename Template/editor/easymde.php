@@ -14,6 +14,12 @@
 <link rel="stylesheet" href="../../vendor/Ionaru/easy-markdown-editor/stylesheet.min.css">
 <link rel="stylesheet" href="../../vendor/highlightjs/highlight.js/github-dimmed.min.css" id="highlight-link">
 <link rel="stylesheet" href="../../Assets/easymde/theme.dimmed.css" id="theme-link">
+
+<?php
+
+// further dynamic customizations go here using $_GET[...]
+
+?>
 </head>
 
 <body>

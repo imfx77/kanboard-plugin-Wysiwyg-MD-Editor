@@ -67,6 +67,7 @@ And left the choice to you, to consider which one fits you better.
 See why in the section just below.
 
 ### ✨ `Bad` news and `Good` news as of v.0.9.2 ! ✨
+
 - ❌ `stackedit.net` is gone, sad 🙁
 - ✔️ yet there are `stackedit.io` and `stackedit.cn` to replace it
 - ❌ `stackedit.io` has basic features only

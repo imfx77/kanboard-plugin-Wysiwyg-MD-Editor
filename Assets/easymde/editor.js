@@ -42,7 +42,6 @@ function injectButtonWrapperEasyMDE() {
 
             let textedit = null;
             let easymde = null;
-            let emojipicker = null;
 
             $(".easymde-iframe").on("load", function() {
                 const innerDoc = this.contentDocument || this.contentWindow.document;
@@ -187,7 +186,7 @@ function injectButtonWrapperEasyMDE() {
 
                 // create emoji picker
                 function CreateEmojiPicker() {
-                    emojipicker = new EmojiPicker({
+                    new EmojiPicker({
                         localDocument: innerDoc,
                         trigger: [
                             {
@@ -212,7 +211,6 @@ function injectButtonWrapperEasyMDE() {
 
                     easymde.toTextArea();
                     easymde = null;
-                    emojipicker = null;
 
                     CreateEasyMDE();
                     CreateEmojiPicker();
@@ -237,7 +235,6 @@ function injectButtonWrapperEasyMDE() {
 
                     containerElement = null;
                     easymde = null;
-                    emojipicker = null;
                 });
 
                 // handle emoji picker input

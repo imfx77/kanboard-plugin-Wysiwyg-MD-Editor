@@ -3,7 +3,6 @@
  */
 
 function injectButtonWrapperEmojiPicker() {
-    let emojipicker = null;
     let insertedButtonWrapper= false;
     let triggerEmojiPicker = [];
 
@@ -40,7 +39,7 @@ function injectButtonWrapperEmojiPicker() {
 
     if (insertedButtonWrapper) {
         // create emoji picker
-        let emojipicker = new EmojiPicker({
+        new EmojiPicker({
             trigger: triggerEmojiPicker,
             closeButton: true,
             autoClose: true,
