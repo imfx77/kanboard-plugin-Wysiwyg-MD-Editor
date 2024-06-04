@@ -75,7 +75,7 @@ See why in the section just below.
 - ❌ `stackedit.net` is in **Chinese**
 - ✔️ but `stackedit.net` has extra features and themes
 
-Overall: 
+Overall:
 - ✅ `stackedit.io` is simple and minimalistic yet fully functional, and does the work just great if you don't need extras and a fixed light theme is fine !  
 - ✅ the **Chinese** texts of `stackedit.net` don't get too much in the way, as the UI has intuitive buttons and shortcuts, while being much more pleasant and caring on the eyes !  
 
@@ -162,7 +162,7 @@ The section `Setup Rendering Options` allows you to enable and parametrize custo
 
 - Available translations for some common languages `DE`, `ES`, `FR`, `IT`, `PT`, `RU` - yet, they are _mechanically translated using Google Translate_ !
 - _Translation for `en_US` is the default_ if there is no translation pack for the user selected language in KB.
-- The actual UI language of the editors is fixed (either **English** or **Chinese**), and **`no translations`** are available for them. 
+- The actual UI language of the editors is fixed (either **English** or **Chinese**), and **`no translations`** are available for them.
 
 </details>
 
