@@ -26,6 +26,7 @@
 <textarea id="easymde-textarea"></textarea>
 <button id="easymde-emoji-picker-btn" style="display:none"></button>
 <input id="easymde-emoji-input" type="text" style="display:none">
+<input id="easymde-faicons-input" type="text" style="display:none">
 </body>
 
 </html>

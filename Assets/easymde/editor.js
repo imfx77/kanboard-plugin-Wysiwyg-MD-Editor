@@ -97,6 +97,14 @@ function injectButtonWrapperEasyMDE() {
                                 className: "fa fa-smile-o",
                                 title: "Emoji Picker",
                             },
+                            {
+                                name: "faiconsPicker",
+                                action: function emojiPicker(){
+                                    innerDoc.getElementById("easymde-faicons-input").click();
+                                },
+                                className: "fa fa-font-awesome",
+                                title: "FontAwesome Icons Picker",
+                            },
                             "|",
                             {
                                 name: "themeLight",
@@ -220,7 +228,14 @@ function injectButtonWrapperEasyMDE() {
                 $(innerDoc).keydown(function(event) {
                     if (event.keyCode != 27) return;
 
-                    // first hide the emojiPicker if open, rather than directly exit the editor
+                    // firstly hide the faiconsPicker if open, rather than directly exit the editor
+                    const faiconsPicker = document.querySelector('.howl-iconpicker-outer');
+                    if (faiconsPicker && $(faiconsPicker).css('display') !== 'none') {
+                        $(faiconsPicker).css('display', 'none');
+                        return;
+                    }
+
+                    // secondly hide the emojiPicker if open, rather than directly exit the editor
                     const emojiPicker = innerDoc.querySelector('.fg-emoji-container');
                     if (emojiPicker && !$(emojiPicker).hasClass('fg-emoji-container-hidden')) {
                         $(emojiPicker).addClass('fg-emoji-container-hidden');
@@ -239,6 +254,21 @@ function injectButtonWrapperEasyMDE() {
 
                 // handle emoji picker input
                 $(innerDoc).find("#easymde-emoji-input").on("input", function(){
+                    if(!easymde) return;
+                    let cm = easymde.codemirror;
+                    if (cm.getWrapperElement().lastChild.classList.contains('editor-preview-active')) return;
+
+                    let startPoint = {}, endPoint = {};
+                    Object.assign(startPoint, cm.getCursor('start'));
+                    Object.assign(endPoint, cm.getCursor('end'));
+                    cm.replaceSelection($(this).val());
+
+                    $(this).val('');
+                });
+
+                // handle faicons picker input
+                $(innerDoc).find("#easymde-faicons-input").faiconpicker();
+                $(innerDoc).find("#easymde-faicons-input").on("input", function(){
                     if(!easymde) return;
                     let cm = easymde.codemirror;
                     if (cm.getWrapperElement().lastChild.classList.contains('editor-preview-active')) return;

@@ -185,6 +185,7 @@ The section `Setup Rendering Options` allows you to enable and parametrize custo
 - [StackEdit](https://github.com/benweet/stackedit)
 - [StackEdit+](https://github.com/mafgwo/stackedit-plus)
 - [FG Emoji Picker](https://github.com/woody180/vanilla-javascript-emoji-picker)
+- [FA Icons Picker](https://github.com/aumkarthakur/simple-fontawesome-iconpicker)
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 

@@ -23,11 +23,11 @@ function injectRenderEasyMDE() {
 
         $(".easymde-iframe-embedded", containerElement).on("load", function() {
             const innerDoc = this.contentDocument || this.contentWindow.document;
-            var textedit = innerDoc.querySelector('#easymde-textarea');
+            let textedit = innerDoc.querySelector('#easymde-textarea');
             textedit.value = valueMarkdown;
 
             // create the editor
-            var easymde = new EasyMDE({
+            let easymde = new EasyMDE({
                 element: textedit,
                 autoDownloadFontAwesome: false,
                 spellChecker: false,
