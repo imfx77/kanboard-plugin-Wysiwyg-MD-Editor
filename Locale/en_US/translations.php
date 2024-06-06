@@ -17,6 +17,31 @@ return array(
     'WysiwygMDEditor_LINK_SETTINGS_CHANGE' => 'Change Settings',
     'WysiwygMDEditor_CONTAINER_PREVIEW' => 'Preview Container',
     //
+    // Template/config/settings/common
+    //
+    'WysiwygMDEditor_SETTINGS_ENABLE_BUTTON' => 'Enable a button for',
+    'WysiwygMDEditor_SETTINGS_DETAILS_SUMMARY' => 'See Details ...',
+    'WysiwygMDEditor_SETTINGS_DESCR' => 'This plugin integrates symbol pickers and external MD editors as extra buttons into the editing view toolbar.',
+    //
+    // Template/config/settings/symbol-pickers
+    //
+    'WysiwygMDEditor_SETTINGS_SYMBOLPICKER_OPTIONS' => 'Setup Symbol Picker Options',
+    'WysiwygMDEditor_SETTINGS_SYMBOLPICKER_DESCR' => 'Choose which symbol pickers to use.
+* Enabling a symbol picker will inject a corresponding button in the editing toolbar of each markdown textarea.
+* The pickers open mutually exclusive, in transparent fullscreen (or modal) overlay mode, so that there is only one active at a time.
+* All pickers are draggable, it is conveniently to move them around in order to see the content underneath.',
+    'WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR' => 'A fully offline vanilla JavaScript emoji picker.
+* ⚠ The emoticons are **NOT** image based but rather are unicode symbols, so their look is browser and platform dependent !
+* Has categories and search.
+* Overlays the editing textarea and can be dragged around.
+* Clicking the emoji icons inserts at and replaces the current text selection.',
+    'WysiwygMDEditor_SETTINGS_FAICONSPICKER_DESCR' => 'A fully offline picker for `Font Awesome` icons, implemented with **jQuery**.
+* ⚠ The picker is **ONLY** compatible with `Font Awesome 4.7.0`, this is the version that is used by the latest Kanboard release !
+* ⚠ The inserted icons are actually `<i>` tags, so in order for them to show properly your chosen MD renderer must allow for raw HTML !
+* Has search.
+* Overlays the editing textarea and can be dragged around.
+* Clicking the Font Awesome icons inserts at and replaces the current text selection.',
+    //
     // Template/config/settings/editing
     //
     'WysiwygMDEditor_SETTINGS_EDITING_OPTIONS' => 'Setup Editing Options',
@@ -24,12 +49,6 @@ return array(
 * Enabling an editor will inject a corresponding button in the editing toolbar of each markdown textarea.
 * All editors open independently of each other in a fullscreen overlay mode so that they don\'t mess with Kanboard UI.
 * The actual UI language of the editors is fixed (either **English** or **Chinese**), and **`no translations`** are available for them.',
-    'WysiwygMDEditor_SETTINGS_EDITING_ENABLE_BUTTON' => 'Enable a button for',
-    'WysiwygMDEditor_SETTINGS_EDITING_DETAILS_SUMMARY' => 'See Details ...',
-    'WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR' => 'A fully offline vanilla JavaScript emoji picker.
-* Has categories and search.
-* Overlays the editing textarea and can be dragged around.
-* Clicking emoji icons inserts at and replaces the current text selection.',
     'WysiwygMDEditor_SETTINGS_EASYMDE_DESCR' => 'A fully offline drop-in JavaScript markdown editor.
 * Configured to cover all **MD** syntax and preview features **GFM** compatible.
 * Supports side preview and has customized editing bar with multiple tools.
@@ -46,7 +65,7 @@ return array(
     'WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR' => 'An online service based markdown editor and note taking tool.
 * Covers wide range of **MD** syntax variations but configured to comply with **GFM**.
 * Supports side preview and multiple tools.
-* ⚠️Basic light theme only !
+* ⚠ Basic light theme only !
 * Supports code syntax highlight for a myriad of languages.
 * Fully supports emoji syntax and also input through OS shortcuts (e.g. « **Windows + .** » on Windows or « **Control + Command + Space** » on Mac).
 * There are extra features like **KaTeX** math expressions, **Mermaid** UML diagrams and other extensions that are
@@ -62,8 +81,9 @@ supported by default **`BUT ARE NOT COMPATIBLE`** with the standard **MD** featu
     'WysiwygMDEditor_SETTINGS_RENDERING_DESCR' => 'Choose whether to use custom rendering for markdown fields.
 * Rendering feature is implemented entirely client side, it uses JavaScript and utilizes a specific editor visualization.
 * All markdown fields on the page will be processed, including those that are dynamically created or changed. Loading the page might be a bit slow if there are many of them.
-* <span style="border-bottom: 2px solid red; padding: 2px">If you have the **`MarkdownPlus`** plugin installed, then enabling this rendering feature will **`CONFLICT or OVERRIDE`** it\'s functionality,
-depending on the order in which the plugins are loaded !</span><br>⚠️ So, **make up your mind** which one you prefer to use !',
+* <span style="border-bottom: 2px solid red; padding: 2px">⚠ If you have the **`MarkdownPlus`** plugin installed, then enabling this rendering feature will **`CONFLICT or OVERRIDE`** it\'s functionality,
+depending on the order in which the plugins are loaded !</span>  
+⚠️ So, **make up your mind** which one you prefer to use !',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Enable markdown rendering with EasyMDE',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'Rendered markdown fields will look like the preview pane of the EasyMDE editor.
 * The render theme is configured independently of the selected theme for the EasyMDE editor.

@@ -17,6 +17,31 @@ return array(
     'WysiwygMDEditor_LINK_SETTINGS_CHANGE' => 'Einstellungen ändern',
     'WysiwygMDEditor_CONTAINER_PREVIEW' => 'Vorschaucontainer',
     //
+    // Template/config/settings/common
+    //
+    'WysiwygMDEditor_SETTINGS_ENABLE_BUTTON' => 'Eine Schaltfläche aktivieren für',
+    'WysiwygMDEditor_SETTINGS_DETAILS_SUMMARY' => 'Details anzeigen ...',
+    'WysiwygMDEditor_SETTINGS_DESCR' => 'Dieses Plugin integriert Symbolwähler und externe MD-Editoren als zusätzliche Schaltflächen in die Symbolleiste der Bearbeitungsansicht.',
+    //
+    // Template/config/settings/symbol-pickers
+    //
+    'WysiwygMDEditor_SETTINGS_SYMBOLPICKER_OPTIONS' => 'Symbolwähler-Optionen einrichten',
+    'WysiwygMDEditor_SETTINGS_SYMBOLPICKER_DESCR' => 'Wählen Sie aus, welche Symbolwähler verwendet werden sollen.
+* Durch Aktivieren eines Symbolwählers wird eine entsprechende Schaltfläche in die Bearbeitungssymbolleiste jedes Markdown-Textbereichs eingefügt.
+* Die Wähler öffnen sich gegenseitig ausschließend im transparenten Vollbild- (oder modalen) Overlay-Modus, sodass immer nur einer aktiv ist.
+* Alle Picker sind verschiebbar, man kann sie also bequem verschieben, um den Inhalt darunter zu sehen.',
+    'WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR' => 'Ein vollständig offline verfügbarer Vanilla JavaScript Emoji-Picker.
+* ⚠ Die Emoticons sind **NICHT** bildbasiert, sondern Unicode-Symbole, ihr Aussehen ist also browser- und plattformabhängig!
+* Hat Kategorien und eine Suche.
+* Überlagert den Bearbeitungstextbereich und kann verschoben werden.
+* Durch Klicken auf die Emoji-Symbole wird die aktuelle Textauswahl eingefügt und ersetzt.',
+    'WysiwygMDEditor_SETTINGS_FAICONSPICKER_DESCR' => 'Ein vollständig offline verfügbarer Picker für `Font Awesome`-Symbole, implementiert mit **jQuery**.
+* ⚠ Der Picker ist **NUR** mit `Font Awesome 4.7.0` kompatibel, dies ist die Version, die von der neuesten Kanboard-Version verwendet wird !
+* ⚠ Die eingefügten Symbole sind eigentlich `<i>`-Tags. Damit sie also richtig angezeigt werden, muss Ihr gewählter MD-Renderer reines HTML zulassen !
+* Hat eine Suche.
+* Überlagert den Bearbeitungstextbereich und kann verschoben werden.
+* Durch Klicken auf die Font Awesome-Symbole wird die aktuelle Textauswahl eingefügt und ersetzt.',
+    //
     // Template/config/settings/editing
     //
     'WysiwygMDEditor_SETTINGS_EDITING_OPTIONS' => 'Bearbeitungsoptionen einrichten',
@@ -24,12 +49,6 @@ return array(
 * Durch die Aktivierung eines Editors wird eine entsprechende Schaltfläche in die Bearbeitungssymbolleiste jedes Markdown-Textbereichs eingefügt.
 * Alle Editoren werden unabhängig voneinander im Vollbild-Overlay-Modus geöffnet, damit sie nicht mit der Kanboard-Benutzeroberfläche in Konflikt geraten.
 * Die tatsächliche Benutzeroberflächensprache der Editoren ist festgelegt (entweder **Englisch** oder **Chinesisch**) und es sind **`keine Übersetzungen`** für sie verfügbar.',
-    'WysiwygMDEditor_SETTINGS_EDITING_ENABLE_BUTTON' => 'Eine Schaltfläche aktivieren für',
-    'WysiwygMDEditor_SETTINGS_EDITING_DETAILS_SUMMARY' => 'Details anzeigen ...',
-    'WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR' => 'Ein vollständig offline verfügbarer Vanilla JavaScript-Emoji-Picker.
-* Verfügt über Kategorien und eine Suche.
-* Überlagert den Bearbeitungstextbereich und kann verschoben werden.
-* Durch Klicken auf Emoji-Symbole wird die aktuelle Textauswahl eingefügt und ersetzt.',
     'WysiwygMDEditor_SETTINGS_EASYMDE_DESCR' => 'Ein vollständig offline einsetzbarer JavaScript-Markdown-Editor.
 * Konfiguriert, um alle **MD**-Syntax- und Vorschaufunktionen abzudecken. **GFM**-kompatibel.
 * Unterstützt Seitenvorschau und verfügt über eine benutzerdefinierte Bearbeitungsleiste mit mehreren Werkzeugen.
@@ -46,7 +65,7 @@ return array(
     'WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR' => 'Ein auf einem Onlinedienst basierender Markdown-Editor und Notizentool.
 * Deckt ein breites Spektrum an **MD**-Syntaxvarianten ab, ist jedoch für die Einhaltung von **GFM** konfiguriert.
 * Unterstützt Seitenvorschau und mehrere Tools.
-* ⚠️Nur einfaches helles Design !
+* ⚠ Nur einfaches helles Design !
 * Unterstützt die Code-Syntax-Hervorhebung für eine Vielzahl von Sprachen.
 * Unterstützt die Emoji-Syntax vollständig und auch die Eingabe über Betriebssystem-Verknüpfungen (z. B. « **Windows + .** » auf dem Windows oder « **Strg + Befehl + Leertaste** » auf dem Mac).
 * Es gibt zusätzliche Funktionen wie **KaTeX**-Matheausdrücke, **Mermaid**-UML-Diagramme und andere Erweiterungen
@@ -62,8 +81,9 @@ standardmäßig unterstützt **`SIND ABER NICHT KOMPATIBEL`** mit dem standardm�
     'WysiwygMDEditor_SETTINGS_RENDERING_DESCR' => 'Wählen Sie, ob benutzerdefiniertes Rendering für Markdown-Felder verwendet werden soll.
 * Die Rendering-Funktion ist vollständig clientseitig implementiert, verwendet JavaScript und nutzt eine spezielle Editor-Visualisierung.
 * Alle Markdown-Felder auf der Seite werden verarbeitet, einschließlich derjenigen, die dynamisch erstellt oder geändert werden. Das Laden der Seite kann etwas langsam sein, wenn es viele davon gibt.
-* <span style="border-bottom: 2px solid red; padding: 2px">Wenn Sie das **`MarkdownPlus`**-Plugin installiert haben, führt die Aktivierung dieser Rendering-Funktion zu einem **`KONFLIKT oder ÜBERSCHREIBEN`** Funktionalität,
-abhängig von der Reihenfolge, in der die Plugins geladen werden!</span><br>⚠️ Also **entscheide**, welches du am liebsten verwendest !',
+* <span style="border-bottom: 2px solid red; padding: 2px">⚠ Wenn Sie das **`MarkdownPlus`**-Plugin installiert haben, führt die Aktivierung dieser Rendering-Funktion zu einem **`KONFLIKT oder ÜBERSCHREIBEN`** Funktionalität,
+abhängig von der Reihenfolge, in der die Plugins geladen werden!</span>  
+⚠️ Also **entscheide**, welches du am liebsten verwendest !',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Markdown-Rendering mit EasyMDE aktivieren',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'gerenderte Markdown-Felder sehen aus wie das Vorschaufenster des EasyMDE-Editors.
 * Das Renderthema wird unabhängig vom ausgewählten Thema für den EasyMDE-Editor konfiguriert.

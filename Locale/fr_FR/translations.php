@@ -17,6 +17,31 @@ return array(
     'WysiwygMDEditor_LINK_SETTINGS_CHANGE' => 'Modifier les paramètres',
     'WysiwygMDEditor_CONTAINER_PREVIEW' => 'Conteneur d\'aperçu',
     //
+    // Template/config/settings/common
+    //
+    'WysiwygMDEditor_SETTINGS_ENABLE_BUTTON' => 'Activer un bouton pour',
+    'WysiwygMDEditor_SETTINGS_DETAILS_SUMMARY' => 'Voir les détails ...',
+    'WysiwygMDEditor_SETTINGS_DESCR' => 'Ce plugin intègre des sélecteurs de symboles et des éditeurs MD externes sous forme de boutons supplémentaires dans la barre d\'outils de la vue d\édition.',
+    //
+    // Template/config/settings/symbol-pickers
+    //
+    'WysiwygMDEditor_SETTINGS_SYMBOLPICKER_OPTIONS' => 'Configurer les options du sélecteur de symboles',
+    'WysiwygMDEditor_SETTINGS_SYMBOLPICKER_DESCR' => 'Choisissez les sélecteurs de symboles à utiliser.
+* L\'activation d\'un sélecteur de symboles injectera un bouton correspondant dans la barre d\'outils d\'édition de chaque zone de texte markdown.
+* Les sélecteurs s\'ouvrent mutuellement, en mode superposition transparent plein écran (ou modal), de sorte qu\'il n\'y en a qu\'un seul actif à la fois.
+* Tous les sélecteurs peuvent être déplacés, il est pratique de les déplacer afin de voir le contenu en dessous.',
+    'WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR' => 'Un sélecteur d\'emoji JavaScript vanille entièrement hors ligne.
+* ⚠ Les émoticônes ne sont **PAS** basées sur des images mais sont plutôt des symboles Unicode, leur apparence dépend donc du navigateur et de la plateforme !
+* A des catégories et une recherche.
+* Superpose la zone de texte d\'édition et peut être déplacée.
+* Cliquer sur les icônes emoji insère et remplace la sélection de texte actuelle.',
+    'WysiwygMDEditor_SETTINGS_FAICONSPICKER_DESCR' => 'Un sélecteur entièrement hors ligne pour les icônes `Font Awesome`, implémenté avec **jQuery**.
+* ⚠ Le sélecteur est **UNIQUEMENT** compatible avec `Font Awesome 4.7.0`, c\'est la version utilisée par la dernière version de Kanboard !
+* ⚠ Les icônes insérées sont en fait des balises `<i>`, donc pour qu\'elles s\'affichent correctement, le moteur de rendu MD que vous avez choisi doit autoriser le HTML brut !
+* A une recherche.
+* Superpose la zone de texte d\'édition et peut être déplacée.
+* Cliquer sur les icônes Font Awesome insère et remplace la sélection de texte actuelle.',
+    //
     // Template/config/settings/editing
     //
     'WysiwygMDEditor_SETTINGS_EDITING_OPTIONS' => 'Configurer les options d\'édition',
@@ -24,12 +49,6 @@ return array(
 * L\'activation d\'un éditeur injectera un bouton correspondant dans la barre d\'outils d\'édition de chaque zone de texte markdown.
 * Tous les éditeurs s\'ouvrent indépendamment les uns des autres en mode superposition plein écran afin de ne pas gâcher l\'interface utilisateur de Kanboard.
 * La langue réelle de l\'interface utilisateur des éditeurs est fixe (soit **anglais**, soit **chinois**), et **`aucune traduction`** n\'est disponible pour eux.',
-    'WysiwygMDEditor_SETTINGS_EDITING_ENABLE_BUTTON' => 'Activer un bouton pour',
-    'WysiwygMDEditor_SETTINGS_EDITING_DETAILS_SUMMARY' => 'Voir les détails ...',
-    'WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR' => 'Un sélecteur d\'emoji JavaScript vanille entièrement hors ligne.
-* A des catégories et une recherche.
-* Superpose la zone de texte d\'édition et peut être déplacée.
-* Cliquer sur les icônes emoji insère et remplace la sélection de texte actuelle.',
     'WysiwygMDEditor_SETTINGS_EASYMDE_DESCR' => 'Un éditeur de démarques JavaScript entièrement hors ligne.
 * Configuré pour couvrir toutes les fonctionnalités de syntaxe **MD** et d\'aperçu **Compatible GFM**.
 * Prend en charge l\'aperçu latéral et dispose d\'une barre d\'édition personnalisée avec plusieurs outils.
@@ -46,7 +65,7 @@ return array(
     'WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR' => 'Un éditeur de démarques basé sur un service en ligne et un outil de prise de notes.
 * Couvre une large gamme de variations de syntaxe **MD** mais configuré pour se conformer à **GFM**.
 * Prend en charge l\'aperçu latéral et plusieurs outils.
-* ⚠️Thème lumineux de base uniquement !
+* ⚠ Thème lumineux de base uniquement !
 * Prend en charge la mise en évidence de la syntaxe du code pour une myriade de langues.
 * Prend entièrement en charge la syntaxe emoji et également la saisie via les raccourcis du système d\'exploitation (par exemple « **Windows + .** » sur Windows ou « **Control + Command + Space** » sur Mac).
 * Il existe des fonctionnalités supplémentaires telles que les expressions mathématiques **KaTeX**, les diagrammes UML **Mermaid** et d\'autres extensions qui sont
@@ -62,8 +81,9 @@ pris en charge par défaut **`MAIS NE SONT PAS COMPATIBLE`** avec l\'ensemble de
     'WysiwygMDEditor_SETTINGS_RENDERING_DESCR' => 'Choisissez si vous souhaitez utiliser le rendu personnalisé pour les champs de démarque.
 * La fonctionnalité de rendu est entièrement implémentée côté client, elle utilise JavaScript et utilise une visualisation d\'éditeur spécifique.
 * Tous les champs de démarque de la page seront traités, y compris ceux qui sont créés ou modifiés dynamiquement. Le chargement de la page peut être un peu lent s\'il y en a beaucoup.
-* <span style="border-bottom: 2px solid red; padding: 2px">Si le plug-in **`MarkdownPlus`** est installé, l\'activation de cette fonctionnalité de rendu **`CONFLIT ou OVERRIDE`** sera Fonctionnalité,
-selon l\'ordre dans lequel les plugins sont chargés !</span><br>⚠️ Alors, **décidez** lequel vous préférez utiliser !',
+* <span style="border-bottom: 2px solid red; padding: 2px">⚠ Si le plug-in **`MarkdownPlus`** est installé, l\'activation de cette fonctionnalité de rendu **`CONFLIT ou OVERRIDE`** sera Fonctionnalité,
+selon l\'ordre dans lequel les plugins sont chargés !</span>  
+⚠️ Alors, **décidez** lequel vous préférez utiliser !',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Activer le rendu markdown avec EasyMDE',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'Les champs de démarque rendus ressembleront au volet d\'aperçu de l\'éditeur EasyMDE.
 * Le thème de rendu est configuré indépendamment du thème sélectionné pour l\'éditeur EasyMDE.

@@ -17,6 +17,31 @@ return array(
     'WysiwygMDEditor_LINK_SETTINGS_CHANGE' => 'Modifica impostazioni',
     'WysiwygMDEditor_CONTAINER_PREVIEW' => 'Contenitore di anteprima',
     //
+    // Template/config/settings/common
+    //
+    'WysiwygMDEditor_SETTINGS_ENABLE_BUTTON' => 'Abilita un pulsante per',
+    'WysiwygMDEditor_SETTINGS_DETAILS_SUMMARY' => 'Vedi dettagli ...',
+    'WysiwygMDEditor_SETTINGS_DESCR' => 'Questo plugin integra selettori di simboli ed editor MD esterni come pulsanti aggiuntivi nella barra degli strumenti della vista di modifica.',
+    //
+    // Template/config/settings/symbol-pickers
+    //
+    'WysiwygMDEditor_SETTINGS_SYMBOLPICKER_OPTIONS' => 'Imposta le opzioni del selettore simboli',
+    'WysiwygMDEditor_SETTINGS_SYMBOLPICKER_DESCR' => 'Scegli quale selettore di simboli utilizzare.
+* L\'abilitazione di un selettore di simboli inserirà un pulsante corrispondente nella barra degli strumenti di modifica di ciascuna area di testo markdown.
+* I selettori si aprono in modo mutuamente esclusivo, in modalità sovrapposizione trasparente a schermo intero (o modale), in modo che ce ne sia solo uno attivo alla volta.
+* Tutti i selettori sono trascinabili, è conveniente spostarli per vedere il contenuto sottostante.',
+    'WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR' => 'Un selettore di emoji JavaScript vanilla completamente offline.
+* ⚠ Le emoticon **NON** sono basate su immagini ma sono piuttosto simboli Unicode, quindi il loro aspetto dipende dal browser e dalla piattaforma !
+* Ha categorie e ricerca.
+* Si sovrappone all\'area di testo di modifica e può essere trascinato.
+* Facendo clic sulle icone emoji si inserisce e sostituisce la selezione di testo corrente.',
+    'WysiwygMDEditor_SETTINGS_FAICONSPICKER_DESCR' => 'Un selettore completamente offline per le icone `Font Awesome`, implementato con **jQuery**.
+* ⚠ Il selettore è **SOLO** compatibile con `Font Awesome 4.7.0`, questa è la versione utilizzata dall\'ultima versione di Kanboard !
+* ⚠ Le icone inserite sono in realtà tag `<i>`, quindi affinché possano essere visualizzate correttamente il renderer MD scelto deve consentire l\'HTML non elaborato !
+* Ha la ricerca.
+* Si sovrappone all\'area di testo di modifica e può essere trascinato.
+* Facendo clic sulle icone Font Awesome si inserisce e sostituisce la selezione di testo corrente.',
+    //
     // Template/config/settings/editing
     //
     'WysiwygMDEditor_SETTINGS_EDITING_OPTIONS' => 'Imposta opzioni di modifica',
@@ -24,12 +49,6 @@ return array(
 * L\'abilitazione di un editor inserirà un pulsante corrispondente nella barra degli strumenti di modifica di ciascuna area di testo markdown.
 * Tutti gli editor si aprono indipendentemente l\'uno dall\'altro in modalità overlay a schermo intero in modo da non interferire con l\'interfaccia utente di Kanboard.
 * La lingua effettiva dell\'interfaccia utente degli editor è fissa (**inglese** o **cinese**) e **`non sono disponibili traduzioni`** per loro.',
-    'WysiwygMDEditor_SETTINGS_EDITING_ENABLE_BUTTON' => 'Abilita un pulsante per',
-    'WysiwygMDEditor_SETTINGS_EDITING_DETAILS_SUMMARY' => 'Vedi dettagli ...',
-    'WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR' => 'Un selettore di emoji JavaScript vanilla completamente offline.
-* Ha categorie e ricerca.
-* Si sovrappone all\'area di testo di modifica e può essere trascinato.
-* Facendo clic sulle icone emoji si inserisce e sostituisce la selezione di testo corrente.',
     'WysiwygMDEditor_SETTINGS_EASYMDE_DESCR' => 'Un editor markdown JavaScript drop-in completamente offline.
 * Configurato per coprire tutta la sintassi **MD** e le funzionalità di anteprima compatibile con **GFM**.
 * Supporta l\'anteprima laterale e dispone di una barra di modifica personalizzata con più strumenti.
@@ -46,7 +65,7 @@ return array(
     'WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR' => 'Un editor di markdown basato su un servizio online e uno strumento per prendere appunti.
 * Copre un\'ampia gamma di variazioni della sintassi **MD** ma configurato per essere conforme a **GFM**.
 * Supporta l\'anteprima laterale e più strumenti.
-* ⚠️Solo tema luce di base !
+* ⚠ Solo tema luce di base !
 * Supporta l\'evidenziazione della sintassi del codice per una miriade di lingue.
 * Supporta completamente la sintassi delle emoji e anche l\'input tramite scorciatoie del sistema operativo (ad esempio « **Windows + .** » su Windows o « **Control + Comando + Spazio**» su Mac).
 * Sono presenti funzionalità extra come le espressioni matematiche **KaTeX**, i diagrammi UML **Mermaid** e altre estensioni che sono
@@ -62,8 +81,9 @@ supportati per impostazione predefinita **`MA NON SONO COMPATIBILI`** con il set
     'WysiwygMDEditor_SETTINGS_RENDERING_DESCR' => 'Scegli se utilizzare il rendering personalizzato per i campi markdown.
 * La funzionalità di rendering è implementata interamente lato client, utilizza JavaScript e utilizza una visualizzazione dell\'editor specifica.
 * Verranno elaborati tutti i campi di markdown della pagina, compresi quelli creati o modificati dinamicamente. Il caricamento della pagina potrebbe essere un po\' lento se ce ne sono molti.
-* <span style="border-bottom: 2px solid red; padding: 2px">Se hai installato il plugin **`MarkdownPlus`**, abilitando questa funzione di rendering **`CONFLICT or OVERRIDE`** è funzionalità,
-a seconda dell\'ordine in cui i plugin vengono caricati!</span><br>⚠️ Quindi, **decidi** quale preferisci utilizzare !',
+* <span style="border-bottom: 2px solid red; padding: 2px">⚠ Se hai installato il plugin **`MarkdownPlus`**, abilitando questa funzione di rendering **`CONFLICT or OVERRIDE`** è funzionalità,
+a seconda dell\'ordine in cui i plugin vengono caricati!</span>  
+⚠️ Quindi, **decidi** quale preferisci utilizzare !',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Abilita rendering markdown con EasyMDE',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'I campi markdown visualizzati appariranno come il riquadro di anteprima dell\'editor EasyMDE.
 * Il tema di rendering viene configurato indipendentemente dal tema selezionato per l\'editor EasyMDE.

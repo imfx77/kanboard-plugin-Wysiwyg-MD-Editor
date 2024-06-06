@@ -17,6 +17,31 @@ return array(
     'WysiwygMDEditor_LINK_SETTINGS_CHANGE' => 'Alterar configurações',
     'WysiwygMDEditor_CONTAINER_PREVIEW' => 'Contêiner de visualização',
     //
+    // Template/config/settings/common
+    //
+    'WysiwygMDEditor_SETTINGS_ENABLE_BUTTON' => 'Ativar um botão para',
+    'WysiwygMDEditor_SETTINGS_DETAILS_SUMMARY' => 'Ver detalhes ...',
+    'WysiwygMDEditor_SETTINGS_DESCR' => 'Este plugin integra seletores de símbolos e editores MD externos como botões extras na barra de ferramentas da visualização de edição.',
+    //
+    // Template/config/settings/symbol-pickers
+    //
+    'WysiwygMDEditor_SETTINGS_SYMBOLPICKER_OPTIONS' => 'Configurar opções do seletor de símbolos',
+    'WysiwygMDEditor_SETTINGS_SYMBOLPICKER_DESCR' => 'Escolha quais seletores de símbolos usar.
+* Habilitar um seletor de símbolos injetará um botão correspondente na barra de ferramentas de edição de cada área de texto de redução.
+* Os seletores abrem mutuamente exclusivos, em modo de sobreposição de tela cheia transparente (ou modal), de forma que haja apenas um ativo por vez.
+* Todos os seletores são arrastáveis, é conveniente movê-los para ver o conteúdo abaixo.',
+    'WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR' => 'Um seletor de emoji JavaScript vanilla totalmente offline.
+* ⚠ Os emoticons **NÃO** são baseados em imagens, mas sim em símbolos Unicode, portanto, sua aparência depende do navegador e da plataforma !
+* Possui categorias e busca.
+* Sobrepõe a área de texto de edição e pode ser arrastado.
+* Clicar nos ícones de emoji insere e substitui a seleção de texto atual.',
+    'WysiwygMDEditor_SETTINGS_FAICONSPICKER_DESCR' => 'Um seletor totalmente offline para ícones `Font Awesome`, implementado com **jQuery**.
+* ⚠ O seletor é **SOMENTE** compatível com `Font Awesome 4.7.0`, esta é a versão usada pelo lançamento mais recente do Kanboard !
+* ⚠ Os ícones inseridos são na verdade tags `<i>`, portanto, para que eles sejam exibidos corretamente, o renderizador MD escolhido deve permitir HTML bruto !
+* Possui pesquisa.
+* Sobrepõe a área de texto de edição e pode ser arrastado.
+* Clicar nos ícones Font Awesome insere e substitui a seleção de texto atual.',
+    //
     // Template/config/settings/editing
     //
     'WysiwygMDEditor_SETTINGS_EDITING_OPTIONS' => 'Configurar opções de edição',
@@ -24,12 +49,6 @@ return array(
 * Habilitar um editor injetará um botão correspondente na barra de ferramentas de edição de cada área de texto de redução.
 * Todos os editores abrem independentemente uns dos outros em modo de sobreposição de tela inteira para que não mexam na interface do Kanboard.
 * O idioma real da UI dos editores é fixo (**inglês** ou **chinês**) e **`nenhuma tradução`** está disponível para eles.',
-    'WysiwygMDEditor_SETTINGS_EDITING_ENABLE_BUTTON' => 'Ativar um botão para',
-    'WysiwygMDEditor_SETTINGS_EDITING_DETAILS_SUMMARY' => 'Ver detalhes ...',
-    'WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR' => 'Um seletor de emoji JavaScript vanilla totalmente offline.
-* Possui categorias e busca.
-* Sobrepõe a área de texto de edição e pode ser arrastado.
-* Clicar nos ícones emoji insere e substitui a seleção de texto atual.',
     'WysiwygMDEditor_SETTINGS_EASYMDE_DESCR' => 'Um editor de markdown JavaScript totalmente offline.
 * Configurado para cobrir todos os recursos de sintaxe e visualização do **MD** compatível com **GFM**.
 * Suporta visualização lateral e possui barra de edição personalizada com múltiplas ferramentas.
@@ -46,7 +65,7 @@ return array(
     'WysiwygMDEditor_SETTINGS_STACKEDIT_DESCR' => 'Um editor de descontos baseado em serviço online e uma ferramenta de anotações.
 * Abrange uma ampla variedade de variações de sintaxe do **MD**, mas configurada para estar em conformidade com o **GFM**.
 * Suporta visualização lateral e várias ferramentas.
-* ⚠️Apenas tema leve básico !
+* ⚠ Apenas tema leve básico !
 * Suporta realce de sintaxe de código para uma infinidade de idiomas.
 * Suporta totalmente a sintaxe de emoji e também a entrada por meio de atalhos do sistema operacional (por exemplo, « **Windows + .** » no Windows ou « **Control + Command + Espaço** » no Mac).
 * Existem recursos extras como expressões matemáticas **KaTeX**, diagramas UML **Mermaid** e outras extensões que são
@@ -62,8 +81,9 @@ suportado por padrão **`MAS NÃO SÃO COMPATÍVEIS`** com o conjunto de recurso
     'WysiwygMDEditor_SETTINGS_RENDERING_DESCR' => 'Escolha se deseja usar renderização personalizada para campos de redução.
 * O recurso de renderização é implementado inteiramente no lado do cliente, usa JavaScript e utiliza uma visualização de editor específica.
 * Todos os campos de markdown na página serão processados, incluindo aqueles que são criados ou alterados dinamicamente. O carregamento da página pode ser um pouco lento se houver muitos deles.
-* <span style="border-bottom: 2px solid red; padding: 2px">Se você tiver o plug-in **`MarkdownPlus`** instalado, ativar esse recurso de renderização irá **`CONFLICTAR ou OVERRIDE`**. funcionalidade,
-dependendo da ordem em que os plugins são carregados !</span><br>⚠️ Então, **decida** qual você prefere usar !',
+* <span style="border-bottom: 2px solid red; padding: 2px">⚠ Se você tiver o plug-in **`MarkdownPlus`** instalado, ativar esse recurso de renderização irá **`CONFLICTAR ou OVERRIDE`**. funcionalidade,
+dependendo da ordem em que os plugins são carregados !</span>  
+⚠️ Então, **decida** qual você prefere usar !',
     'WysiwygMDEditor_SETTINGS_RENDERING_ENABLE_EASYMDE' => 'Ativar renderização de markdown com EasyMDE',
     'WysiwygMDEditor_SETTINGS_RENDERING_EASYMDE_DESCR' => 'Os campos de markdown renderizados serão parecidos com o painel de visualização do editor EasyMDE.
 * O tema de renderização é configurado independentemente do tema selecionado para o editor EasyMDE.

@@ -33,6 +33,9 @@ class WysiwygMDEditorConfigController extends \Kanboard\Controller\ConfigControl
         if (!isset($values['WysiwygMDEditor_enable_emojipicker'])) {
             $values['WysiwygMDEditor_enable_emojipicker'] = 0;
         }
+        if (!isset($values['WysiwygMDEditor_enable_faiconspicker'])) {
+            $values['WysiwygMDEditor_enable_faiconspicker'] = 0;
+        }
         if (!isset($values['WysiwygMDEditor_enable_easymde'])) {
             $values['WysiwygMDEditor_enable_easymde'] = 0;
         }
