@@ -1,6 +1,12 @@
 # Changelog
 
 
+## v0.9.4
+
+_(most recent changes are listed on top):_
+* Integrated a **Font Awesome Icons Picker** into `EasyMDE` and as an optional button in the markdown edit toolbar.
+* Reworked settings sections layout and descriptions.
+
 ## v0.9.3
 
 _(most recent changes are listed on top):_

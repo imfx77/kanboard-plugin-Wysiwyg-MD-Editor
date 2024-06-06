@@ -85,6 +85,8 @@ So, you really need to try each of the editors for yourself !
 
 ## Features
 
+### ✨ Font Awesome Icons Picker is available as of v.0.9.4 ! ✨
+
 ### ✨ Emoji Picker is available as of v.0.9.3 ! ✨
 
 ### ✨ Rendering options are available as of v.0.9.0 ! ✨
@@ -93,9 +95,10 @@ So, you really need to try each of the editors for yourself !
 - All editors are configured to be [GFM](https://github.github.com/gfm/) compatible.
 - Side preview is available, themes and various convenience options.
 - Configurable buttons for editors to inject into the KB editing toolbar of markdown textareas.
-- ✨ Configurable **Emoji Picker** button for editing toolbar of markdown textareas (also integrated into `EasyMDE`). ✨
-- ✨ Option for custom rendering of markdown fields (using `EasyMDE` locally with JavaScript). ✨
-- ✨ Rendering can be parametrized with theme, code highlight, and background transparency. ✨
+- ✨ Option for custom rendering of markdown fields (using `EasyMDE` locally with JavaScript).
+- ✨ Rendering can be parametrized with theme, code highlight, and background transparency.
+- ✨ Configurable **Emoji Picker** button for editing toolbar of markdown textareas (also integrated into `EasyMDE`).
+- ✨ Configurable **Font Awesome Icons Picker** button for editing toolbar of markdown textareas (also integrated into `EasyMDE`). Compatible with [Font Awesome 4.7.0](https://fontawesome.com/v4/icons/), since this is what Kanboard comes with.
 
 For a better preview and feel of the actual editors visit:
 - `EasyMDE` [Live Demo](https://stackblitz.com/edit/easymde/?file=index.html)
@@ -106,49 +109,109 @@ For a better preview and feel of the actual editors visit:
 
 ## Screenshots
 
-**Configurable buttons of MD editors injected into the textarea editing toolbar.**
+<details>
+<summary><strong>
+Configurable buttons of MD editors injected into the textarea editing toolbar.
+</strong></summary>
 
 ![textarea editing toolbar injected buttons](Screenshots/textarea-editing-toolbar-injected-buttons.png "textarea editing toolbar with injected MD editors buttons")
 
-**EasyMDE with side preview using the dimmed theme.**
+</details>
 
-![preview easymde](Screenshots/preview-easymde.png "preview easymde")
+<details>
+<summary><strong>
+Preview of Emoji Picker.
+</strong></summary>
 
-**StackEdit+ with side preview using the default dark theme.**
+![preview easymde](Screenshots/preview-picker-emoji.png "preview emoji picker")
 
-![preview stackedit plus](Screenshots/preview-stackedit-plus.png "preview stackedit plus")
+</details>
 
-**Example of task description tooltip rendered with EasyMDE.**
+<details>
+<summary><strong>
+Preview of Font Awesome Icons Picker.
+</strong></summary>
 
-![preview tooltip render](Screenshots/preview-tootip-render.png "preview tooltip render")
+![preview easymde](Screenshots/preview-picker-faicons.png "preview faicons picker")
+
+</details>
+
+<details>
+<summary><strong>
+EasyMDE with side preview using the dimmed theme.
+</strong></summary>
+
+![preview easymde](Screenshots/preview-editor-easymde.png "preview easymde")
+
+</details>
+
+<details>
+<summary><strong>
+StackEdit+ with side preview using the default dark theme.
+</strong></summary>
+
+![preview stackedit plus](Screenshots/preview-editor-stackedit-plus.png "preview stackedit plus")
+
+</details>
+
+<details>
+<summary><strong>
+Example of task description tooltip rendered with EasyMDE.
+</strong></summary>
+
+![preview tooltip render](Screenshots/preview-render-tootip.png "preview tooltip render")
+
+</details>
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
-## Usage
+## Configure
 
-Go to `Settings` &#10562; `Wysiwyg MD Editor`
+Go to `Settings` &#10562; `Wysiwyg MD Editor`.
 
-Follow the explanations in `Setup Editing Options` to configure and preview the MD editor(s) of your preference.
+<details>
+<summary><strong>
+Setup Symbol Picker Options
+</strong></summary>
+Follow the explanations to configure and preview the symbol picker(s) of your preference.
 
-![setup editing options](Screenshots/setup-editing-options.png "setup editing options")
+![setup symbol picker options](Screenshots/setup-options-symbol-picker.png "setup symbol picker options")
 
-The section `Setup Rendering Options` allows you to enable and parametrize custom rendering of markdown fields that will override the original KB display.
+</details>
 
-![setup rendering options](Screenshots/setup-rendering-options.png "setup rendering options")
+<details>
+<summary><strong>
+Setup Editing Options
+</strong></summary>
+Follow the explanations to configure and preview the MD editor(s) of your preference.
+
+![setup editing options](Screenshots/setup-options-editing.png "setup editing options")
+
+</details>
+
+<details>
+<summary><strong>
+Setup Rendering Options
+</strong></summary>
+This section allows you to enable and parametrize custom rendering of markdown fields that will override the original KB display.
+
+![setup rendering options](Screenshots/setup-options-rendering.png "setup rendering options")
+
+</details>
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Installation & Compatibility
 
 <details>
-    <summary><strong>Installation</strong></summary>
+<summary><strong>Installation</strong></summary>
 
 - Install via the **Kanboard Plugin Directory** or see [INSTALL.md](INSTALL.md)
 - Read the full [**Changelog**](changelog.md "See changes") to see the latest updates
 
 </details>
 <details>
-    <summary><strong>Compatibility</strong></summary>
+<summary><strong>Compatibility</strong></summary>
 
 - Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.33`
 - **Other Plugins & Action Plugins**
@@ -160,7 +223,7 @@ The section `Setup Rendering Options` allows you to enable and parametrize custo
 
 </details>
 <details>
-    <summary><strong>Translations</strong></summary>
+<summary><strong>Translations</strong></summary>
 
 - Available translations for some common languages `DE`, `ES`, `FR`, `IT`, `PT`, `RU` - yet, they are _mechanically translated using Google Translate_ !
 - _Translation for `en_US` is the default_ if there is no translation pack for the user selected language in KB.
