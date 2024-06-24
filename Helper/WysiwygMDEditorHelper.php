@@ -9,9 +9,12 @@
 namespace Kanboard\Plugin\WysiwygMDEditor\Helper;
 
 use Kanboard\Core\Base;
+use Kanboard\Core\Markdown;
 
 class WysiwygMDEditorHelper extends Base
 {
+    const FORCE_FALLBACK_IMPL = '__{WysiwygMDEditor_FORCE_FALLBACK_IMPL}__';
+
     /**
      * HTML escaping
      *
@@ -47,6 +50,16 @@ class WysiwygMDEditorHelper extends Base
      */
     public function markdown($text, $isPublicLink = false)
     {
+        $isForceFallbackImpl = str_starts_with($text, WysiwygMDEditorHelper::FORCE_FALLBACK_IMPL);
+
+        if ($isForceFallbackImpl) {
+            // the original KB impl
+            $parser = new Markdown($this->container, $isPublicLink);
+            $parser->setMarkupEscaped(MARKDOWN_ESCAPE_HTML);
+            $parser->setBreaksEnabled(true);
+            return $parser->text($text ? str_replace(WysiwygMDEditorHelper::FORCE_FALLBACK_IMPL, '', $text) : '');
+        }
+
         $returnText = '';
         $returnText .= '<textarea class="WysiwygMDEditor-MarkdownTextContainer" style="display: none" ';
         $returnText .= 'renderTheme="' . $this->configModel->get('WysiwygMDEditor_easymde_render_theme', 'dimmed') . '" ';
