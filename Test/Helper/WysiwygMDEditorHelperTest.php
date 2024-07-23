@@ -9,9 +9,10 @@
 
 namespace Kanboard\Plugin\WysiwygMDEditor\Test\Helper;
 
-require_once 'tests/units/Base.php';
+//require_once 'tests/units/Base.php';
 
 use Kanboard\Core\Plugin\Loader;
+use Kanboard\tests\units\Base;
 use Kanboard\Plugin\WysiwygMDEditor\Helper\WysiwygMDEditorHelper;
 
 class WysiwygMDEditorHelperTest extends Base

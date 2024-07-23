@@ -9,8 +9,8 @@
 
 namespace Kanboard\Plugin\WysiwygMDEditor\Test;
 
-require_once 'tests/units/Base.php';
-
+//require_once 'tests/units/Base.php';
+use Kanboard\tests\units\Base;
 use Kanboard\Plugin\WysiwygMDEditor\Plugin;
 
 class PluginTest extends Base

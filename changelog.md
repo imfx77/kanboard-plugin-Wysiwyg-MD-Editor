@@ -4,7 +4,7 @@
 ## v0.9.5
 
 _(most recent changes are listed on top):_
-* Added automated GitHub actions for UnitTests 
+* Added automated GitHub actions for UnitTests
 
 ## v0.9.4
 
