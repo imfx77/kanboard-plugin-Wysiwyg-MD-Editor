@@ -13,7 +13,7 @@ require_once __DIR__ . '/../../../tests/units/Base.php';
 
 use Kanboard\Plugin\WysiwygMDEditor\Plugin;
 
-class PluginTest extends Base
+class PluginTest extends \Base
 {
     public function testPlugin()
     {

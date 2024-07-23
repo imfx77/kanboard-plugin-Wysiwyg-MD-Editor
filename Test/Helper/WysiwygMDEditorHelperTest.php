@@ -14,7 +14,7 @@ require_once __DIR__ . '/../../../../tests/units/Base.php';
 use Kanboard\Core\Plugin\Loader;
 use Kanboard\Plugin\WysiwygMDEditor\Helper\WysiwygMDEditorHelper;
 
-class WysiwygMDEditorHelperTest extends Base
+class WysiwygMDEditorHelperTest extends \Base
 {
     /**
      * @var Plugin
