@@ -25,6 +25,6 @@ class WysiwygMDEditorHelperTest extends Base
 
         $result = $helper->bytes(1024);
 
-        $this->assertEquals('1.00 KB', $result);
+        $this->assertEquals('1k', $result);
     }
 }
