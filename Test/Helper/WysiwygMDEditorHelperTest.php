@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * Class WysiwygMDEditorHelperTest
+ * @package Kanboard\Plugin\WysiwygMDEditor\Test\Helper
+ * @author  lastlink
+ * @author  Im[F(x)]
+ */
+
+namespace Kanboard\Plugin\WysiwygMDEditor\Test\Helper;
+
 require_once 'tests/units/Base.php';
 
 use Kanboard\Core\Plugin\Loader;
@@ -12,7 +21,7 @@ class WysiwygMDEditorHelperTest extends Base
      */
     protected $plugin;
 
-    protected function setUp(): void
+    protected function setUp()
     {
         parent::setUp();
 
@@ -20,7 +29,8 @@ class WysiwygMDEditorHelperTest extends Base
         $plugin->scan();
     }
 
-    public function testBytes(){
+    public function testBytes()
+    {
         $helper = new WysiwygMDEditorHelper($this->container);
 
         $result = $helper->bytes(1024);

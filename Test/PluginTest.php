@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * Class PluginTest
+ * @package Kanboard\Plugin\WysiwygMDEditor\Test
+ * @author  lastlink
+ * @author  Im[F(x)]
+ */
+
+namespace Kanboard\Plugin\WysiwygMDEditor\Test;
+
 require_once 'tests/units/Base.php';
 
 use Kanboard\Plugin\WysiwygMDEditor\Plugin;
