@@ -1,25 +1,25 @@
-This issue is:
+# This issue is :
 
 - [ ] Bug report
 - [ ] Feature request
-- [ ] Improvement
+- [ ] Improvement request
 
-### Actual behaviour
-
-
-### Expected behaviour
+## Actual behaviour
 
 
-### Steps to reproduce
+## Expected behaviour
 
 
-### Screenshots
+## Steps to reproduce
 
 
-### Logs
+## Screenshots
 
 
-### Configuration
+## Logs
+
+
+## Configuration
 
 - Kanboard version:
 - Plugin version:

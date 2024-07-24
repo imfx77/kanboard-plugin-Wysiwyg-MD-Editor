@@ -1,18 +1,23 @@
-### All Submissions:
+# This PR is :
 
-* [ ] Have you updated to the latest `dev` branch before making changes?
-* [ ] Have you checked to ensure there aren't other open [Pull Requests](https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/pulls) for the same update/change?
+- [ ] Bugfix
+- [ ] Feature
+- [ ] Improvement
 
-### New Feature Submissions:
+## I have done the following :
 
-* [ ] Have you added an explanation of what your changes do and why you'd like us to include them?
+- [ ] Updated to the latest `dev` branch before making changes.
+- [ ] Checked to ensure there aren't other open [Pull Requests](https://github.com/imfx77/kanboard-plugin-Wysiwyg-MD-Editor/pulls) for the same update/change.
+- [ ] Added an explanation of what the proposed changes do and why they should be included.
 
-### Description
+## Description :
 
-Fixes # .
 
-Changes proposed in this pull request:
+### Fix for issue(s) : #...
 
-* 
-* 
-* 
+
+### Feature / Improvement changes :
+
+- ...
+- ...
+- ...
