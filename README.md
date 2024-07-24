@@ -114,7 +114,7 @@ For a better preview and feel of the actual editors visit:
 Configurable buttons of MD editors injected into the textarea editing toolbar.
 </strong></summary>
 
-![textarea editing toolbar injected buttons](Screenshots/textarea-editing-toolbar-injected-buttons.png "textarea editing toolbar with injected MD editors buttons")
+![textarea editing toolbar injected buttons](Assets/config/textarea-editing-toolbar-injected-buttons.png "textarea editing toolbar with injected MD editors buttons")
 
 </details>
 

@@ -8,7 +8,7 @@
 details summary {cursor: pointer;}
 </style>
 
-<?= $this->asset->js('plugins/WysiwygMDEditor/Assets/settings.js') ?>
+<?= $this->asset->js('plugins/WysiwygMDEditor/Assets/config/settings.js') ?>
 
 <div class="page-header">
     <h2><?= t('WysiwygMDEditor_TITLE_SETTINGS') ?></h2>
@@ -20,7 +20,7 @@ details summary {cursor: pointer;}
     <?= $this->form->csrf() ?>
 
     <div class="descr-WysiwygMDEditor markdown"><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_DESCR')) ?></div>
-    <div class="icon-WysiwygMDEditor"><img src="<?= $this->helper->url->base() ?>plugins/WysiwygMDEditor/Screenshots/textarea-editing-toolbar-injected-buttons.png"></div>
+    <div class="icon-WysiwygMDEditor"><img src="<?= $this->helper->url->base() ?>plugins/WysiwygMDEditor/Assets/config/textarea-editing-toolbar-injected-buttons.png"></div>
 
     <!-------------------------------------------------------------------------------------------------------->
     <!-- SYMBOL PICKER OPTIONS -->
