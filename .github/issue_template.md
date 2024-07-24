@@ -1,4 +1,4 @@
-# This issue is :
+# This issue is : 
 
 - [ ] Bug report
 - [ ] Feature request
