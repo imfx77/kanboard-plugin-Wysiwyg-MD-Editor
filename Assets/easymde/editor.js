@@ -262,9 +262,9 @@ function WysiwygMDEditor_injectButtonWrapperEasyMDE() {
                     }
 
                     // secondly hide the emojiPicker if open, rather than directly exit the editor
-                    const emojiPicker = innerDoc.querySelector('.fg-emoji-container');
-                    if (emojiPicker && !$(emojiPicker).hasClass('fg-emoji-container-hidden')) {
-                        $(emojiPicker).addClass('fg-emoji-container-hidden');
+                    const emojiPicker = innerDoc.querySelector('.fg-emoji-picker-container-outer');
+                    if (emojiPicker && !$(emojiPicker).hasClass('fg-emoji-picker-container-outer-hidden')) {
+                        $(emojiPicker).addClass('fg-emoji-picker-container-outer-hidden');
                         return;
                     }
 
