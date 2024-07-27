@@ -2,7 +2,7 @@
  * @author  Im[F(x)]
  */
 
-function injectButtonWrapperEasyMDE() {
+function WysiwygMDEditor_injectButtonWrapperEasyMDE() {
 
     const easymdeHtmlContainer = `
     <div class="easymde-iframe-container">
@@ -317,10 +317,10 @@ function injectButtonWrapperEasyMDE() {
 }
 
 $(function() {
-    injectButtonWrapperEasyMDE();
+    WysiwygMDEditor_injectButtonWrapperEasyMDE();
 
     const observerEasyMDE = new MutationObserver(function() {
-        injectButtonWrapperEasyMDE();
+        WysiwygMDEditor_injectButtonWrapperEasyMDE();
     });
     observerEasyMDE.observe(document, { subtree: true, childList: true });
 });

@@ -2,7 +2,7 @@
  * @author  Im[F(x)]
  */
 
-function injectButtonWrapperStackEdit() {
+function WysiwygMDEditor_injectButtonWrapperStackEdit() {
 
     $('.text-editor-write-mode').each(function() {
         // check if button already injected
@@ -60,10 +60,10 @@ function injectButtonWrapperStackEdit() {
 }
 
 $(function() {
-    injectButtonWrapperStackEdit();
+    WysiwygMDEditor_injectButtonWrapperStackEdit();
 
     const observerStackEdit = new MutationObserver(function() {
-        injectButtonWrapperStackEdit();
+        WysiwygMDEditor_injectButtonWrapperStackEdit();
     });
     observerStackEdit.observe(document, { subtree: true, childList: true });
 });

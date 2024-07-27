@@ -2,7 +2,7 @@
  * @author  Im[F(x)]
  */
 
-function injectButtonWrapperFAIconsPicker() {
+function WysiwygMDEditor_injectButtonWrapperFAIconsPicker() {
 
     $('.text-editor-write-mode').each(function() {
         const textareaElement = this.querySelector('textarea');
@@ -58,10 +58,10 @@ function injectButtonWrapperFAIconsPicker() {
 }
 
 $(function() {
-    injectButtonWrapperFAIconsPicker();
+    WysiwygMDEditor_injectButtonWrapperFAIconsPicker();
 
     const observerFAIconsPicker = new MutationObserver(function () {
-        injectButtonWrapperFAIconsPicker();
+        WysiwygMDEditor_injectButtonWrapperFAIconsPicker();
     });
     observerFAIconsPicker.observe(document, { subtree: true, childList: true });
 });

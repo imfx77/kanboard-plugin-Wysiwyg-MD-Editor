@@ -2,7 +2,7 @@
  * @author  Im[F(x)]
  */
 
-function injectButtonWrapperEmojiPicker() {
+function WysiwygMDEditor_injectButtonWrapperEmojiPicker() {
     let insertedButtonWrapper= false;
     let triggerEmojiPicker = [];
 
@@ -64,10 +64,10 @@ function injectButtonWrapperEmojiPicker() {
 }
 
 $(function() {
-    injectButtonWrapperEmojiPicker();
+    WysiwygMDEditor_injectButtonWrapperEmojiPicker();
 
     const observerEmojiPicker = new MutationObserver(function () {
-        injectButtonWrapperEmojiPicker();
+        WysiwygMDEditor_injectButtonWrapperEmojiPicker();
     });
     observerEmojiPicker.observe(document, { subtree: true, childList: true });
 });

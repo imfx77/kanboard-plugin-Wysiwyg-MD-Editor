@@ -2,7 +2,7 @@
  * @author  Im[F(x)]
  */
 
-function injectRenderEasyMDE() {
+function WysiwygMDEditor_injectRenderEasyMDE() {
 
     $('.WysiwygMDEditor-MarkdownTextContainer').each(function() {
         const markdownElement = $(this);
@@ -120,10 +120,10 @@ function injectRenderEasyMDE() {
 }
 
 $(function() {
-    injectRenderEasyMDE();
+    WysiwygMDEditor_injectRenderEasyMDE();
 
     const observerRenderEasyMDE = new MutationObserver(function() {
-        injectRenderEasyMDE();
+        WysiwygMDEditor_injectRenderEasyMDE();
     });
     observerRenderEasyMDE.observe(document, { subtree: true, childList: true });
 });
