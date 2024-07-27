@@ -33,6 +33,8 @@ function injectButtonWrapperEasyMDE() {
 
         const textareaElement = this.querySelector('textarea');
 
+        let shouldInvalidateModal = (KB.modal.getForm()) ? true : false;
+
         $( buttonWrapper ).click(function() {
             let containerElement = document.createElement('div');
             containerElement.className = 'easymde-container';
@@ -42,6 +44,29 @@ function injectButtonWrapperEasyMDE() {
 
             let textedit = null;
             let easymde = null;
+
+            function Close() {
+                if (!easymde) return;
+
+                easymde.toTextArea();
+
+                // if textarea is in a modal form that needs invalidation
+                if (shouldInvalidateModal) {
+                    const modalForm = KB.modal.getForm();
+                    if (modalForm && textareaElement.value !== textedit.value) {
+                        modalForm.dispatchEvent(new Event('change'));
+                        shouldInvalidateModal = false; // once is enough!
+                    }
+                }
+
+                textareaElement.value = textedit.value;
+
+                document.body.className = document.body.className.replace(/\seasymde-no-overflow\b/, '');
+                document.body.removeChild(containerElement);
+
+                containerElement = null;
+                easymde = null;
+            }
 
             $(".easymde-iframe").on("load", function() {
                 const innerDoc = this.contentDocument || this.contentWindow.document;
@@ -221,12 +246,13 @@ function injectButtonWrapperEasyMDE() {
                     easymde = null;
 
                     CreateEasyMDE();
-                    CreateEmojiPicker();
                 });
 
                 // handle ESC
                 $(innerDoc).keydown(function(event) {
                     if (event.keyCode != 27) return;
+
+                    event.stopPropagation();
 
                     // firstly hide the faiconsPicker if open, rather than directly exit the editor
                     const faiconsPicker = document.querySelector('.howl-iconpicker-outer');
@@ -242,14 +268,8 @@ function injectButtonWrapperEasyMDE() {
                         return;
                     }
 
-                    easymde.toTextArea();
-                    textareaElement.value = textedit.value;
-
-                    document.body.className = document.body.className.replace(/\seasymde-no-overflow\b/, '');
-                    document.body.removeChild(containerElement);
-
-                    containerElement = null;
-                    easymde = null;
+                    // actually close EasyMDE
+                    Close();
                 });
 
                 // handle emoji picker input
@@ -287,14 +307,7 @@ function injectButtonWrapperEasyMDE() {
             );
 
             $( ".easymde-close-button" ).click(function() {
-                easymde.toTextArea();
-                textareaElement.value = textedit.value;
-
-                document.body.className = document.body.className.replace(/\seasymde-no-overflow\b/, '');
-                document.body.removeChild(containerElement);
-
-                containerElement = null;
-                easymde = null;
+                Close();
             });
 
         });
