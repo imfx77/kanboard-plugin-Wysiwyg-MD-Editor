@@ -22,12 +22,10 @@ jQuery(document).ready(function(){
 
     //Search Box Code Starts
     jQuery('.howl-iconpicker .srchicons').keyup(function() {
-
         const filter = jQuery(this).val();
         let count = 0;
 
         jQuery('.howl-iconpicker .geticonval').each(function() {
-
             if (jQuery(this).text().search(new RegExp(filter, "i")) < 0) {
                 jQuery(this).fadeOut();
             } else {
@@ -50,10 +48,11 @@ jQuery(document).ready(function(){
         const input_element = this;
 
         jQuery(this).click(function() {
-
             jQuery('.howl-iconpicker-outer').css('display', 'table');
             jQuery('.howl-iconpicker .geticonval').removeClass('selectedicon');
-            jQuery('.howl-iconpicker .geticonval').unbind('click'); // prevent multiple bindings
+
+            // Pick icon
+            jQuery('.howl-iconpicker .geticonval').off('click'); // prevent multiple bindings
             jQuery('.howl-iconpicker .geticonval').click(function() {
                 const getIconId = jQuery(this).text();
                 jQuery('.howl-iconpicker .geticonval').removeClass('selectedicon');
@@ -63,31 +62,27 @@ jQuery(document).ready(function(){
             });
 
             // Close button
-            jQuery('.howl-iconpicker-close').unbind('click'); // prevent multiple bindings
+            jQuery('.howl-iconpicker-close').off('click'); // prevent multiple bindings
             jQuery('.howl-iconpicker-close').click(function(){
                 jQuery('.howl-iconpicker-outer').css('display', 'none');
-                if (localDocument) {
-                    localDocument.defaultView.focus();
-                }
+                if (localDocument) localDocument.defaultView.focus();
             });
+
             // Click outside
-            jQuery('.howl-iconpicker-outer').unbind('click'); // prevent multiple bindings
+            jQuery('.howl-iconpicker-outer').off('click'); // prevent multiple bindings
             jQuery('.howl-iconpicker-outer').click(function(){
                 jQuery('.howl-iconpicker-outer').css('display', 'none');
-                if (localDocument) {
-                    localDocument.defaultView.focus();
-                }
+                if (localDocument) localDocument.defaultView.focus();
             });
+
             // Handle ESC
-            jQuery(document).unbind('keydown'); // prevent multiple bindings
-            jQuery(document).keydown(function(e) {
-                if (e.keyCode != 27) return;
+            jQuery(document).off('.faiconpicker'); // prevent multiple bindings
+            jQuery(document).on('keydown.faiconpicker', function(e) {
+                if (e.keyCode !== 27) return;
                 if (jQuery('.howl-iconpicker-outer').css('display') !== 'none') {
                     e.stopPropagation();
                     jQuery('.howl-iconpicker-outer').css('display', 'none');
-                    if (localDocument) {
-                        localDocument.defaultView.focus();
-                    }
+                    if (localDocument) localDocument.defaultView.focus();
                 }
             });
         });
