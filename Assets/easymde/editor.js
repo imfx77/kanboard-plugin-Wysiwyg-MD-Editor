@@ -267,7 +267,7 @@ function injectButtonWrapperEasyMDE() {
                 });
 
                 // handle faicons picker input
-                $(innerDoc).find("#easymde-faicons-input").faiconpicker();
+                $(innerDoc).find("#easymde-faicons-input").faiconpicker(innerDoc);
                 $(innerDoc).find("#easymde-faicons-input").on("input", function(){
                     if(!easymde) return;
                     let cm = easymde.codemirror;
