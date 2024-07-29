@@ -85,6 +85,8 @@ So, you really need to try each of the editors for yourself !
 
 ## Features
 
+### ✨ Explicit internal Emoji Font is available as of v.0.9.6 ! ✨
+
 ### ✨ Font Awesome Icons Picker is available as of v.0.9.4 ! ✨
 
 ### ✨ Emoji Picker is available as of v.0.9.3 ! ✨
@@ -249,6 +251,7 @@ This section allows you to enable and parametrize custom rendering of markdown f
 - [StackEdit+](https://github.com/mafgwo/stackedit-plus)
 - [FG Emoji Picker](https://github.com/woody180/vanilla-javascript-emoji-picker)
 - [FA Icons Picker](https://github.com/aumkarthakur/simple-fontawesome-iconpicker)
+- [Twemoji Color Font](https://github.com/mrdrogdrog/twemoji-color-font)
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
