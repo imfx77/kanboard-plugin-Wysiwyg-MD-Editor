@@ -6,7 +6,7 @@
 _(most recent changes are listed on top):_
 * Added an explicit **Emoji Font** and an option in settings to override browser and system provided emojis.
 * MAJOR refactoring cleanup and simplifying of the Emoji Picker!
-* Multiple fixes for both Emoji Picker and FA Icons Picker to improve looks, behavior and performance. 
+* Multiple fixes for both Emoji Picker and FA Icons Picker to improve looks, behavior and performance.
 
 ## v0.9.5
 
