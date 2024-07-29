@@ -20,7 +20,7 @@ class Plugin extends Base
 
         if ($enableEmojiPicker || $enableEasyMDE) {
             //JS
-            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/woody180/vanilla-javascript-emoji-picker/vanillaEmojiPicker.js'));
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/woody180/simple-emoji-picker/simpleEmojiPicker.js'));
         }
 
         if ($enableFAIconsPicker || $enableEasyMDE) {
