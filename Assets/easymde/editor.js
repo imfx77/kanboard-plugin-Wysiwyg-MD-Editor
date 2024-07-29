@@ -215,6 +215,22 @@ function WysiwygMDEditor_injectButtonWrapperEasyMDE() {
                             alert(e);
                         }
                     });
+
+                    // set emoji font
+                    $.ajax({
+                        cache: false,
+                        type: "POST",
+                        url: '/?controller=WysiwygMDEditorConfigController&action=getEasyMDEUseEmojiFont&plugin=WysiwygMDEditor',
+                        success: function(response) {
+                            if (response === '1') { // use the internal emoji font
+                                $(innerDoc.head).append(`<link rel="stylesheet" href="../../Assets/symbols/emojis.css">`);
+                            }
+                        },
+                        error: function(xhr,textStatus,e) {
+                            alert('getEasyMDEUseEmojiFont');
+                            alert(e);
+                        }
+                    });
                 }
 
                 // create emoji picker

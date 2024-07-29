@@ -35,6 +35,13 @@ return array(
 * A des catégories et une recherche.
 * Superpose la zone de texte d\'édition et peut être déplacée.
 * Cliquer sur les icônes emoji insère et remplace la sélection de texte actuelle.',
+    'WysiwygMDEditor_SETTINGS_EMOJIFONT_ENABLE' => 'Imposer l\'utilisation de la police Emoji interne',
+    'WysiwygMDEditor_SETTINGS_EMOJIFONT_DESCR' => 'Le plugin fournit une police Emoji explicite (basée sur Mozilla Twemoji) si nécessaire pour remplacer les présentations d\'emoji existantes.
+* Son utilisation garantira que les emojis auront la même apparence dans tous les navigateurs sur toutes les plateformes.
+* De plus, aucun emoji ne sera manquant ou mal affiché en raison de versions incomplètes ou anciennes des polices fournies par le navigateur ou le système.
+* ⚠ D\'autre part, comme cette option remplacera la chaîne de priorité des polices par défaut, les textes sur les pages de la base de connaissances pourraient avoir un aspect différent !
+* ⚠ Lorsqu\'elle est activée, la police sera utilisée dans toutes les pages normales, les vues d\'édition et de rendu d\'EasyMDE, quel que soit le paramètre du sélecteur d\'emoji !
+* ⚠ La modification de cette option nécessite un rechargement explicite de la page pour prendre effet !',
     'WysiwygMDEditor_SETTINGS_FAICONSPICKER_DESCR' => 'Un sélecteur entièrement hors ligne pour les icônes `Font Awesome`, implémenté avec **jQuery**.
 * ⚠ Le sélecteur est **UNIQUEMENT** compatible avec `Font Awesome 4.7.0`, c\'est la version utilisée par la dernière version de Kanboard !
 * ⚠ Les icônes insérées sont en fait des balises `<i>`, donc pour qu\'elles s\'affichent correctement, le moteur de rendu MD que vous avez choisi doit autoriser le HTML brut !

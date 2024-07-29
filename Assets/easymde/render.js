@@ -18,6 +18,7 @@ function WysiwygMDEditor_injectRenderEasyMDE() {
         const valueRenderTheme = markdownElement.attr("renderTheme");
         const valueRenderTransparentBackground = (markdownElement.attr("renderTransparentBackground") == "1");
         const valueRenderCodeHighlight = markdownElement.attr("renderCodeHighlight");
+        const valueUseEmojiFont = markdownElement.attr("useEmojiFont");
 
         containerElement.html('<iframe class="easymde-iframe-embedded" style="display: none"></iframe>');
 
@@ -114,6 +115,7 @@ function WysiwygMDEditor_injectRenderEasyMDE() {
             + '?renderTheme=' + valueRenderTheme
             + '&renderTransparentBackground=' + valueRenderTransparentBackground
             + '&renderCodeHighlight=' + valueRenderCodeHighlight
+            + '&useEmojiFont=' + valueUseEmojiFont
         );
 
     });

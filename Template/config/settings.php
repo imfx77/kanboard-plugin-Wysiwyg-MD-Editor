@@ -49,6 +49,17 @@ details summary {cursor: pointer;}
                     <summary><?= t('WysiwygMDEditor_SETTINGS_DETAILS_SUMMARY') ?></summary>
                     <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_EMOJIPICKER_DESCR')) ?></div>
                     </details>
+
+                    <br><?= $this->form->checkbox(
+                        'WysiwygMDEditor_enable_emojifont',
+                        t('WysiwygMDEditor_SETTINGS_EMOJIFONT_ENABLE'),
+                        1,
+                        isset($values['WysiwygMDEditor_enable_emojifont']) ? $values['WysiwygMDEditor_enable_emojifont'] == 1 : 0
+                    ) ?>
+                    <details>
+                    <summary><?= t('WysiwygMDEditor_SETTINGS_DETAILS_SUMMARY') ?></summary>
+                    <div><?= $this->helper->text->markdown(e('WysiwygMDEditor_SETTINGS_EMOJIFONT_DESCR')) ?></div>
+                    </details>
                 </td>
             </tr></table>
         </div>
