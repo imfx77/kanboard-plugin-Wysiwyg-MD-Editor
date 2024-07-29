@@ -13,11 +13,11 @@ jobs:
     container: kanboard/tests:latest
     steps:
     - name: Checkout Kanboard repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         repository: kanboard/kanboard
     - name: Checkout Plugin repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         path: plugins/WysiwygMDEditor
     - name: Install dependencies
@@ -44,11 +44,11 @@ jobs:
           --health-retries 5
     steps:
     - name: Checkout Kanboard repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         repository: kanboard/kanboard
     - name: Checkout Plugin repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         path: plugins/WysiwygMDEditor
     - name: Install dependencies
@@ -76,11 +76,11 @@ jobs:
           --health-retries 5
     steps:
     - name: Checkout Kanboard repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         repository: kanboard/kanboard
     - name: Checkout Plugin repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         path: plugins/WysiwygMDEditor
     - name: Install dependencies
