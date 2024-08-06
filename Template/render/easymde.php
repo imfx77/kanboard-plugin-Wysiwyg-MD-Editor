@@ -17,6 +17,10 @@
 
 <?php
 
+if ($_GET['useEmojiFont'] == 1) {
+    // Emoji Font
+    print '<link rel="stylesheet" href="../../Assets/symbols/emojis.css">';
+}
 if ($_GET['renderCodeHighlight'] == 1) {
     // Highlight.js
     print '<link rel="stylesheet" href="../../vendor/highlightjs/highlight.js/github-' . $_GET['renderTheme'] . '.min.css">';

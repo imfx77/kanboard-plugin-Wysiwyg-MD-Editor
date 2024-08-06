@@ -2,7 +2,7 @@
  * @author  Im[F(x)]
  */
 
-function injectButtonWrapperFAIconsPicker() {
+function WysiwygMDEditor_injectButtonWrapperFAIconsPicker() {
 
     $('.text-editor-write-mode').each(function() {
         const textareaElement = this.querySelector('textarea');
@@ -40,19 +40,15 @@ function injectButtonWrapperFAIconsPicker() {
                 const endPos = textareaElement.selectionEnd;
                 textareaElement.value = textareaElement.value.substring(0, startPos) + $(this).val() + textareaElement.value.substring(endPos, textareaElement.value.length);
 
-                //functions.setCaretPosition(myField, startPos + 2)
                 textareaElement.selectionStart = startPos + $(this).val().length;
                 textareaElement.selectionEnd = textareaElement.selectionStart;
 
             } else {
                 textareaElement.value += $(this).val();
             }
-
             $(this).val('');
-        });
 
-        // if textarea is in a modal form that needs invalidation
-        $(textareaElement).on("input", function(){
+            // if textarea is in a modal form that needs invalidation
             const modalForm = KB.modal.getForm();
             if (modalForm) {
                 modalForm.dispatchEvent(new Event('change'));
@@ -62,10 +58,10 @@ function injectButtonWrapperFAIconsPicker() {
 }
 
 $(function() {
-    injectButtonWrapperFAIconsPicker();
+    WysiwygMDEditor_injectButtonWrapperFAIconsPicker();
 
     const observerFAIconsPicker = new MutationObserver(function () {
-        injectButtonWrapperFAIconsPicker();
+        WysiwygMDEditor_injectButtonWrapperFAIconsPicker();
     });
     observerFAIconsPicker.observe(document, { subtree: true, childList: true });
 });

@@ -2,7 +2,7 @@
  * @author  Im[F(x)]
  */
 
-function injectButtonWrapperStackEdit() {
+function WysiwygMDEditor_injectButtonWrapperStackEdit() {
 
     $('.text-editor-write-mode').each(function() {
         // check if button already injected
@@ -20,11 +20,22 @@ function injectButtonWrapperStackEdit() {
 
         const textareaElement = this.querySelector('textarea');
 
+        let shouldInvalidateModal = (KB.modal.getForm()) ? true : false;
+
         $( buttonWrapper ).click(function() {
             const stackedit = new Stackedit({ url: 'https://stackedit.io/app' }); // redirect to StackEdit
 
             stackedit.on('fileChange', function onFileChange(file) {
-              textareaElement.value = file.content.text;
+                // if textarea is in a modal form that needs invalidation
+                if (shouldInvalidateModal) {
+                    const modalForm = KB.modal.getForm();
+                    if (modalForm) {
+                        modalForm.dispatchEvent(new Event('change'));
+                        shouldInvalidateModal = false; // once is enough!
+                    }
+                }
+
+                textareaElement.value = file.content.text;
             });
 
             stackedit.openFile({
@@ -49,10 +60,10 @@ function injectButtonWrapperStackEdit() {
 }
 
 $(function() {
-    injectButtonWrapperStackEdit();
+    WysiwygMDEditor_injectButtonWrapperStackEdit();
 
     const observerStackEdit = new MutationObserver(function() {
-        injectButtonWrapperStackEdit();
+        WysiwygMDEditor_injectButtonWrapperStackEdit();
     });
     observerStackEdit.observe(document, { subtree: true, childList: true });
 });

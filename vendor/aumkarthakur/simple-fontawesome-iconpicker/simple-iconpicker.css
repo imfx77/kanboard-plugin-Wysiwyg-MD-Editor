@@ -24,36 +24,13 @@
     display: table-cell;
     vertical-align: middle;
 }
-.howl-iconpicker-close {
-    background: #e83131;
-    color: #fff;
-    padding: 5px;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-align: center;
-    margin: 0 auto;
-    cursor: pointer;
-}
-.howl-iconpicker-close:hover{
-    background: #c51e1e;
-}
-.howl-iconpicker-title {
-    background: #571d1d;
-    color: #fff;
-    padding: 5px;
-    font-size: 12px;
-    text-align: center;
-    margin-bottom: 5px;
-    cursor: move;
-}
 .howl-iconpicker {
     border: 1px solid #ccc;
     background: #efefef;
     color: #333333;
     width: 260px;
-    margin:0 auto;
-    position:relative;
+    margin: 0 auto;
+    position: relative;
 }
 .howl-iconpicker:hover,
 .howl-iconpicker:active,
@@ -83,6 +60,29 @@
 .howl-iconpicker .geticonval:active {
     background: #ccc;
 }
+.howl-iconpicker-close {
+    background: #e83131;
+    color: #fff;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.howl-iconpicker-close:hover{
+    background: #c51e1e;
+}
+.howl-iconpicker-title {
+    background: #571d1d;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+    cursor: move;
+}
 .srchicons {
     margin: 5px;
     border: 1px solid #ccc;
@@ -90,7 +90,6 @@
     border-radius: 3px;
     width: 225px;
     position: absolute;
-    margin-bottom: 60px;
     display: block;
 }
 .iconsholder {

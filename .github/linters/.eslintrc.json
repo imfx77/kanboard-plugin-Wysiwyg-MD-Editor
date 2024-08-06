@@ -7,7 +7,7 @@
     },
     "root": true,
     "extends": "eslint:recommended",
-    "ignorePatterns": ["Assets/**/*.min.js", "Assets/**/*.min.css", "vendor/"],
+    "ignorePatterns": [".github/", ".build/", "vendor/", "Screenshots/"],
     "globals": {
       "ClipboardJS": "readonly"
     },

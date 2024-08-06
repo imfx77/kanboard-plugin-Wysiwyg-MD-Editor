@@ -65,6 +65,7 @@ class WysiwygMDEditorHelper extends Base
         $returnText .= 'renderTheme="' . $this->configModel->get('WysiwygMDEditor_easymde_render_theme', 'dimmed') . '" ';
         $returnText .= 'renderTransparentBackground="' . $this->configModel->get('WysiwygMDEditor_easymde_render_transparent_background', 0) . '" ';
         $returnText .= 'renderCodeHighlight="' . $this->configModel->get('WysiwygMDEditor_easymde_render_code_highlight', 1) . '" ';
+        $returnText .= 'useEmojiFont="' . $this->configModel->get('WysiwygMDEditor_enable_emojifont', 0) . '" ';
         $returnText .= '>';
         $returnText .= $text;
         $returnText .= '</textarea>';

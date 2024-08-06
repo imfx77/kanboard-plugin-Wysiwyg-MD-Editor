@@ -2,7 +2,7 @@
  * @author  Im[F(x)]
  */
 
-function injectButtonWrapperEmojiPicker() {
+function WysiwygMDEditor_injectButtonWrapperEmojiPicker() {
     let insertedButtonWrapper= false;
     let triggerEmojiPicker = [];
 
@@ -42,32 +42,30 @@ function injectButtonWrapperEmojiPicker() {
         new EmojiPicker({
             trigger: triggerEmojiPicker,
             closeButton: true,
-            autoClose: true,
         });
 
         // handle ESC
         $(document).keydown(function (event) {
             if (event.keyCode != 27) return;
 
-            const emojiPicker = document.querySelector('.fg-emoji-container');
-            if (emojiPicker && !$(emojiPicker).hasClass('fg-emoji-container-hidden')) {
+            const emojiPicker = document.querySelector('.fg-emoji-picker-container-outer');
+            if (emojiPicker && !$(emojiPicker).hasClass('fg-emoji-picker-container-outer-hidden')) {
                 event.stopPropagation();
-                $(emojiPicker).addClass('fg-emoji-container-hidden');
-                return;
+                $(emojiPicker).addClass('fg-emoji-picker-container-outer-hidden');
             }
         });
         // handle modal close
         KB.on('modal.close', function () {
-            $(".fg-emoji-container").addClass('fg-emoji-container-hidden');
+            $(".fg-emoji-picker-container").addClass('fg-emoji-picker-container-hidden');
         });
     }
 }
 
 $(function() {
-    injectButtonWrapperEmojiPicker();
+    WysiwygMDEditor_injectButtonWrapperEmojiPicker();
 
     const observerEmojiPicker = new MutationObserver(function () {
-        injectButtonWrapperEmojiPicker();
+        WysiwygMDEditor_injectButtonWrapperEmojiPicker();
     });
     observerEmojiPicker.observe(document, { subtree: true, childList: true });
 });

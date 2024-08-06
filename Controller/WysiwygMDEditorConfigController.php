@@ -33,6 +33,9 @@ class WysiwygMDEditorConfigController extends \Kanboard\Controller\ConfigControl
         if (!isset($values['WysiwygMDEditor_enable_emojipicker'])) {
             $values['WysiwygMDEditor_enable_emojipicker'] = 0;
         }
+        if (!isset($values['WysiwygMDEditor_enable_emojifont'])) {
+            $values['WysiwygMDEditor_enable_emojifont'] = 0;
+        }
         if (!isset($values['WysiwygMDEditor_enable_faiconspicker'])) {
             $values['WysiwygMDEditor_enable_faiconspicker'] = 0;
         }
@@ -104,5 +107,10 @@ class WysiwygMDEditorConfigController extends \Kanboard\Controller\ConfigControl
     public function getEasyMDERenderCodeHighlight()
     {
         print $this->configModel->get('WysiwygMDEditor_easymde_render_code_highlight', 1);
+    }
+
+    public function getEasyMDEUseEmojiFont()
+    {
+        print $this->configModel->get('WysiwygMDEditor_enable_emojifont', 0);
     }
 }

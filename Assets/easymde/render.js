@@ -2,7 +2,7 @@
  * @author  Im[F(x)]
  */
 
-function injectRenderEasyMDE() {
+function WysiwygMDEditor_injectRenderEasyMDE() {
 
     $('.WysiwygMDEditor-MarkdownTextContainer').each(function() {
         const markdownElement = $(this);
@@ -18,6 +18,7 @@ function injectRenderEasyMDE() {
         const valueRenderTheme = markdownElement.attr("renderTheme");
         const valueRenderTransparentBackground = (markdownElement.attr("renderTransparentBackground") == "1");
         const valueRenderCodeHighlight = markdownElement.attr("renderCodeHighlight");
+        const valueUseEmojiFont = markdownElement.attr("useEmojiFont");
 
         containerElement.html('<iframe class="easymde-iframe-embedded" style="display: none"></iframe>');
 
@@ -114,16 +115,17 @@ function injectRenderEasyMDE() {
             + '?renderTheme=' + valueRenderTheme
             + '&renderTransparentBackground=' + valueRenderTransparentBackground
             + '&renderCodeHighlight=' + valueRenderCodeHighlight
+            + '&useEmojiFont=' + valueUseEmojiFont
         );
 
     });
 }
 
 $(function() {
-    injectRenderEasyMDE();
+    WysiwygMDEditor_injectRenderEasyMDE();
 
     const observerRenderEasyMDE = new MutationObserver(function() {
-        injectRenderEasyMDE();
+        WysiwygMDEditor_injectRenderEasyMDE();
     });
     observerRenderEasyMDE.observe(document, { subtree: true, childList: true });
 });

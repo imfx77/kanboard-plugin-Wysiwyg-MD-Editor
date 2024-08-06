@@ -12,6 +12,7 @@ class Plugin extends Base
         $cspRules = $this->container['cspRules'];
 
         $enableEmojiPicker = ($this->configModel->get('WysiwygMDEditor_enable_emojipicker', '0') == '1');
+        $enableEmojiFont = ($this->configModel->get('WysiwygMDEditor_enable_emojifont', '0') == '1');
         $enableFAIconsPicker = ($this->configModel->get('WysiwygMDEditor_enable_faiconspicker', '0') == '1');
         $enableEasyMDE = ($this->configModel->get('WysiwygMDEditor_enable_easymde', '0') == '1');
         $enableEasyMDERenering = ($this->configModel->get('WysiwygMDEditor_enable_easymde_rendering', '0') == '1');
@@ -20,7 +21,7 @@ class Plugin extends Base
 
         if ($enableEmojiPicker || $enableEasyMDE) {
             //JS
-            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/woody180/vanilla-javascript-emoji-picker/vanillaEmojiPicker.js'));
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/vendor/woody180/simple-emoji-picker/simpleEmojiPicker.js'));
         }
 
         if ($enableFAIconsPicker || $enableEasyMDE) {
@@ -33,6 +34,11 @@ class Plugin extends Base
         if ($enableEmojiPicker) {
             //JS
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/symbols/emojis.js'));
+        }
+
+        if ($enableEmojiFont) {
+            //CSS
+            $this->hook->on('template:layout:css', array('template' => 'plugins/WysiwygMDEditor/Assets/symbols/emojis.css'));
         }
 
         if ($enableFAIconsPicker) {
@@ -146,7 +152,7 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
-        return '0.9.4';
+        return '0.9.6';
     }
 
     public function getCompatibleVersion()
