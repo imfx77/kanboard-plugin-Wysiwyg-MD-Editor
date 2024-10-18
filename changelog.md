@@ -81,4 +81,4 @@ _(most recent changes are listed on top):_
 
 ---
 
-Read the full [**Changelog**](changelog.md "See changes") or view the [**README**](README.md "View README")
+Read the [**Plugin Installation**](INSTALL.md "View Installation instructions") or view the [**README**](README.md "View README")
