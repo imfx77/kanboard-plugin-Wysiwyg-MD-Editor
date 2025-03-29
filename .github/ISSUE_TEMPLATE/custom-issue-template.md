@@ -1,3 +1,12 @@
+---
+name: Custom Issue Template
+about: Used to submit a Bug report or Feature/Improvement request
+title: ''
+labels: ''
+assignees: imfx77
+
+---
+
 ### This issue is :
 
 - [ ] Bug report
