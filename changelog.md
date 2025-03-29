@@ -1,6 +1,12 @@
 # Changelog
 
 
+## v0.9.7
+
+_(most recent changes are listed on top):_
+* Added github buttons to settings page
+* Small fixes in changelog and README
+
 ## v0.9.6
 
 _(most recent changes are listed on top):_
