@@ -72,12 +72,12 @@ See why in the section just below.
 - ✔️ yet there are `stackedit.io` and `stackedit.cn` to replace it
 - ❌ `stackedit.io` has basic features only
 - ✔️ but `stackedit.io` is in **English**
-- ❌ `stackedit.net` is in **Chinese**
-- ✔️ but `stackedit.net` has extra features and themes
+- ❌ `stackedit.cn` is in **Chinese**
+- ✔️ but `stackedit.cn` has extra features and themes
 
 Overall:
 - ✅ `stackedit.io` is simple and minimalistic yet fully functional, and does the work just great if you don't need extras and a fixed light theme is fine !  
-- ✅ the **Chinese** texts of `stackedit.net` don't get too much in the way, as the UI has intuitive buttons and shortcuts, while being much more pleasant and caring on the eyes !  
+- ✅ the **Chinese** texts of `stackedit.cn` don't get too much in the way, as the UI has intuitive buttons and shortcuts, while being much more pleasant and caring on the eyes !  
 
 So, you really need to try each of the editors for yourself !
 
