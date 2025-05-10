@@ -111,7 +111,7 @@ function WysiwygMDEditor_injectRenderEasyMDE() {
 
         $(".easymde-iframe-embedded", containerElement).show();
         $(".easymde-iframe-embedded", containerElement).attr('src',
-            '/plugins/WysiwygMDEditor/Template/render/easymde.php'
+            _WysiwygMDEditor_BaseAppDir_.baseAppDir + 'plugins/WysiwygMDEditor/Template/render/easymde.php'
             + '?renderTheme=' + valueRenderTheme
             + '&renderTransparentBackground=' + valueRenderTransparentBackground
             + '&renderCodeHighlight=' + valueRenderCodeHighlight

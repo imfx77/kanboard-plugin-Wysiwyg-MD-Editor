@@ -13,7 +13,7 @@ function WysiwygMDEditor_injectButtonWrapperStackEditPlus() {
         buttonWrapper.style = 'margin: 0px 0px 0px 20px; cursor: pointer;';
         buttonWrapper.title = 'Edit with StackEdit+';
         buttonWrapper.innerHTML = '<img height="24" width="24" style="vertical-align: bottom" '
-                                + 'src="'+ location.origin +'/plugins/WysiwygMDEditor/Assets/stackedit-plus/icon.svg">';
+                                + 'src="'+ _WysiwygMDEditor_BaseAppDir_.baseAppDir +'plugins/WysiwygMDEditor/Assets/stackedit-plus/icon.svg">';
 
         const toolbarElement = this.querySelector('div');
         toolbarElement.insertBefore(buttonWrapper, toolbarElement.lastElementChild.nextSibling);

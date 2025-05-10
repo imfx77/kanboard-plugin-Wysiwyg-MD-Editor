@@ -19,8 +19,8 @@ function WysiwygMDEditor_injectButtonWrapperEasyMDE() {
         // check if button already injected
         if (this.querySelector('.easymde-button-wrapper')) return;
 
-        const urlAssetsEasyMDE = '/plugins/WysiwygMDEditor/Assets/easymde/';
-        const urlVendorHLJS = '/plugins/WysiwygMDEditor/vendor/highlightjs/highlight.js/';
+        const urlAssetsEasyMDE = _WysiwygMDEditor_BaseAppDir_.baseAppDir + 'plugins/WysiwygMDEditor/Assets/easymde/';
+        const urlVendorHLJS = _WysiwygMDEditor_BaseAppDir_.baseAppDir + 'plugins/WysiwygMDEditor/vendor/highlightjs/highlight.js/';
 
         const buttonWrapper = document.createElement('span');
         buttonWrapper.className = 'easymde-button-wrapper';
@@ -193,7 +193,7 @@ function WysiwygMDEditor_injectButtonWrapperEasyMDE() {
                     $.ajax({
                         cache: false,
                         type: "POST",
-                        url: '/?controller=WysiwygMDEditorConfigController&action=getEasyMDEDefaultTheme&plugin=WysiwygMDEditor',
+                        url: _WysiwygMDEditor_BaseAppDir_.baseAppDir + '?controller=WysiwygMDEditorConfigController&action=getEasyMDEDefaultTheme&plugin=WysiwygMDEditor',
                         success: function(response) {
                             innerDoc.getElementById("theme-link").setAttribute('href', urlAssetsEasyMDE + 'theme.' + response + '.css');
                             innerDoc.getElementById("highlight-link").setAttribute('href', urlVendorHLJS + 'github-' + response + '.min.css');
@@ -220,7 +220,7 @@ function WysiwygMDEditor_injectButtonWrapperEasyMDE() {
                     $.ajax({
                         cache: false,
                         type: "POST",
-                        url: '/?controller=WysiwygMDEditorConfigController&action=getEasyMDEUseEmojiFont&plugin=WysiwygMDEditor',
+                        url: _WysiwygMDEditor_BaseAppDir_.baseAppDir + '?controller=WysiwygMDEditorConfigController&action=getEasyMDEUseEmojiFont&plugin=WysiwygMDEditor',
                         success: function(response) {
                             if (response === '1') { // use the internal emoji font
                                 $(innerDoc.head).append(`<link rel="stylesheet" href="../../Assets/symbols/emojis.css">`);
@@ -319,7 +319,7 @@ function WysiwygMDEditor_injectButtonWrapperEasyMDE() {
             });
 
             $(".easymde-iframe").attr('src',
-                '/plugins/WysiwygMDEditor/Template/editor/easymde.php'
+                _WysiwygMDEditor_BaseAppDir_.baseAppDir + 'plugins/WysiwygMDEditor/Template/editor/easymde.php'
             );
 
             $( ".easymde-close-button" ).click(function() {
