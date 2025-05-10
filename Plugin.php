@@ -46,6 +46,11 @@ class Plugin extends Base
             $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/symbols/faicons.js'));
         }
 
+        if ($enableEasyMDE || $enableStackEdit || $enableStackEditPlus) {
+            //JS
+            $this->hook->on('template:layout:js', array('template' => 'plugins/WysiwygMDEditor/Assets/baseappdir.js'));
+        }
+
         if ($enableEasyMDE) {
             //CSS
             $this->hook->on('template:layout:css', array('template' => 'plugins/WysiwygMDEditor/Assets/easymde/container.css'));
