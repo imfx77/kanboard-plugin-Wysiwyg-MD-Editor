@@ -1,6 +1,12 @@
 # Changelog
 
 
+## v0.9.8
+
+_(most recent changes are listed on top):_
+* fixed issues in order to handle KB installed in a subfolder
+* workaround for a change in the app interface of the `StackEdit+` (the chinese version) that closes prematurely the embedded editor within KB
+
 ## v0.9.7
 
 _(most recent changes are listed on top):_
